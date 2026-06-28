@@ -462,5 +462,30 @@
   </footer>
 
 </div>
+
+<div id="lightbox" aria-hidden="true">
+  <img id="lightbox-img" alt="Enlarged design">
+  <div id="lightbox-close" title="Close">&times;</div>
+</div>
+<style>
+  #lightbox{display:none;position:fixed;inset:0;background:rgba(22,20,18,.93);z-index:9999;align-items:center;justify-content:center;cursor:zoom-out;padding:28px}
+  #lightbox.open{display:flex}
+  #lightbox img{max-width:95vw;max-height:92vh;object-fit:contain;border-radius:6px;box-shadow:0 16px 70px rgba(0,0,0,.6)}
+  #lightbox-close{position:fixed;top:18px;right:26px;color:#fff;font-size:40px;line-height:1;cursor:pointer;opacity:.8;font-family:Arial,sans-serif}
+  #lightbox-close:hover{opacity:1}
+  figure.card img{cursor:zoom-in}
+</style>
+<script>
+(function(){
+  var lb=document.getElementById('lightbox'),li=document.getElementById('lightbox-img');
+  function close(){lb.classList.remove('open');li.src='';}
+  document.addEventListener('click',function(e){
+    var img=e.target.closest('figure.card img');
+    if(img&&!lb.classList.contains('open')){li.src=img.src;lb.classList.add('open');return;}
+    if(lb.classList.contains('open')){close();}
+  });
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')close();});
+})();
+</script>
 </body>
 </html>

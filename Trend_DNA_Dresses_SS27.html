@@ -84,15 +84,36 @@
   footer{margin-top:46px;padding-top:24px;border-top:1px solid var(--line);font-size:13px;color:var(--muted)}
   footer a{color:var(--accent)}
   .note{background:#fff7ed;border:1px solid #f3d9b8;border-radius:10px;padding:12px 16px;font-size:13px;color:#7a5a2e;margin-top:20px}
+  @media(max-width:680px){
+    .wrap{padding:0 16px 60px}
+    header{padding:40px 0 24px}
+    h1{font-size:38px}
+    .sub{font-size:16px}
+    .overview{font-size:17px}
+    section{margin-top:36px}
+    .thead{flex-wrap:wrap}
+    .thead .tname{font-size:22px}
+    .look4 figure.card .imgwrap{height:400px}
+    .prompt{font-size:12px;line-height:1.5}
+    .palette{grid-template-columns:1fr 1fr}
+    .srcbox{padding:16px}
+  }
   @media print{
-    @page{size:A4;margin:14mm}
-    body{background:#fff}.wrap{max-width:none;padding:0}a{color:#1e8e8a;text-decoration:none}
-    header{padding:0 0 18px}h1{font-size:46px}section{margin-top:24px}
-    .theme{break-inside:avoid;page-break-inside:avoid;break-before:page;page-break-before:always;box-shadow:none}
+    @page{size:A4;margin:12mm}
+    body{background:#fff;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+    .wrap{max-width:none;padding:0}a{color:#1e8e8a;text-decoration:none}
+    header{padding:0 0 18px}h1{font-size:42px}section{margin-top:20px}
+    .theme{break-inside:auto;box-shadow:none;border:none;break-before:page;page-break-before:always}
     section .theme:first-of-type{break-before:auto;page-break-before:auto}
-    .look,figure.card,.pack,.prompt,.srcbox,.note{break-inside:avoid;page-break-inside:avoid}
-    figure.card:hover img{transform:none}.sec-h{break-after:avoid}
-    .note,.srcbox{break-before:page;page-break-before:always}
+    .thead{break-after:avoid;page-break-after:avoid}
+    .look,.look4{break-inside:avoid;page-break-inside:avoid}
+    .look4{grid-template-columns:repeat(4,1fr)}
+    .look4 figure.card .imgwrap{height:300px}
+    figure.card,.grid,.pack,.prompt,.refs{break-inside:avoid;page-break-inside:avoid}
+    figure.card:hover img{transform:none}.sec-h{break-after:avoid;page-break-after:avoid}
+    .moodrow{break-before:page;page-break-before:always;break-inside:avoid;page-break-inside:avoid;max-width:none;text-align:center}
+    .moodrow figure.card .imgwrap img{max-height:235mm!important;width:auto!important;max-width:100%;margin:0 auto}
+    .note,.srcbox{break-before:page;page-break-before:always;break-inside:avoid}
   }
 </style>
 </head>
@@ -145,13 +166,20 @@
         <div class="tag">Directional · Rising</div>
       </div>
       <div class="tbody">
-        <div class="look">
-          <figure class="card"><div class="imgwrap"><img src="https://images.pexels.com/photos/20364793/pexels-photo-20364793.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Bias satin slip dress"><a class="credit" href="https://www.pexels.com/photo/a-woman-in-a-purple-satin-slip-dress-20364793/" target="_blank" rel="noopener">Pexels</a></div>
-            <figcaption><div class="cap-t"><span class="dot" style="background:#7A4A6B"></span>Bias satin slip</div><div class="cap-d">Liquid satin · cowl drape · Wood Violet 18-3013</div></figcaption></figure>
-          <figure class="card"><div class="imgwrap"><img src="https://images.pexels.com/photos/31331108/pexels-photo-31331108.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Plunge evening dress"><a class="credit" href="https://www.pexels.com/photo/elegant-woman-in-red-dress-at-sunset-by-lake-31331108/" target="_blank" rel="noopener">Pexels</a></div>
-            <figcaption><div class="cap-t"><span class="dot" style="background:#6E2235"></span>Deep-plunge column</div><div class="cap-d">Fluid satin · plunge V · Wine 19-1627</div></figcaption></figure>
-          <figure class="card"><div class="imgwrap"><img src="https://images.pexels.com/photos/14814788/pexels-photo-14814788.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Elegant draped dress"><a class="credit" href="https://www.pexels.com/photo/a-woman-in-elegant-red-dress-sitting-on-a-chair-by-the-table-14814788/" target="_blank" rel="noopener">Pexels</a></div>
-            <figcaption><div class="cap-t"><span class="dot" style="background:#5A1E2A"></span>Draped evening dress</div><div class="cap-d">Satin-back crepe · soft volume · Oxblood 19-1521</div></figcaption></figure>
+        <div class="rh">Designs — generated on Slayteq</div>
+        <div class="look look4">
+          <figure class="card"><div class="imgwrap"><img src="https://assets.geniemode.com/geniemode-assets/geniemode-ai/51d339d9-7939-4511-8933-05a47ebd159f/1782640058173.jpeg?format=webp" alt="Plunge satin slip on model"></div>
+            <figcaption><div class="cap-t"><span class="dot" style="background:#6E2235"></span>Garment 1 · Plunge satin slip</div><div class="cap-d">Liquid silk satin · wine · Pantone 19-1627 TCX</div></figcaption></figure>
+          <figure class="card"><div class="imgwrap"><img src="https://assets.geniemode.com/geniemode-assets/geniemode-ai/9a391d4a-76c9-43c9-b85e-f35fc6c51086/1782640106465.jpeg?format=webp" alt="Cowl satin column on model"></div>
+            <figcaption><div class="cap-t"><span class="dot" style="background:#5A1E2A"></span>Garment 2 · Cowl satin column</div><div class="cap-d">Sandwashed silk satin · oxblood · Pantone 19-1521 TCX</div></figcaption></figure>
+          <figure class="card"><div class="imgwrap"><img src="https://assets.geniemode.com/geniemode-assets/geniemode-ai/d037c3f9-a488-459a-a51e-b9c0f12c5fdf/1782640163667.jpeg?format=webp" alt="Wrap-front gown on model"></div>
+            <figcaption><div class="cap-t"><span class="dot" style="background:#7A4A6B"></span>Garment 3 · Wrap-front gown</div><div class="cap-d">Satin-back crepe · wood violet · Pantone 18-3013 TCX</div></figcaption></figure>
+          <figure class="card"><div class="imgwrap"><img src="https://assets.geniemode.com/geniemode-assets/geniemode-ai/471987bf-dc6a-4102-9eac-281212e28a06/1782640228142.jpeg?format=webp" alt="Halter-plunge midi on model"></div>
+            <figcaption><div class="cap-t"><span class="dot" style="background:#1E5A57"></span>Garment 4 · Halter-plunge midi</div><div class="cap-d">Fluid charmeuse · deep teal · Pantone 18-5115 TCX</div></figcaption></figure>
+        </div>
+        <div class="moodrow">
+          <figure class="card"><div class="imgwrap"><img src="https://assets.geniemode.com/geniemode-assets/geniemode-ai/7ab15010-1c98-4169-bf64-c5ee97f2e42f/1782639417055.jpeg?format=webp" alt="Plunge Reverie mood board"></div>
+            <figcaption><div class="cap-t"><span class="ptag" style="margin:0;background:var(--brand)">Mood board</span></div><div class="cap-d">References, materials &amp; trims — liquid satin, obsidian, dark orchid, silk swatches, fine straps &amp; rolled edges · Pantone wine / oxblood / wood violet</div></figcaption></figure>
         </div>
         <p class="why">The deep front plunge emerges as the season's symbol of bold yet refined femininity. Bias-cut satin slips and fluid columns in wine-to-oxblood depth — eveningwear that reads modern, not overt. A directional, occasion-led bet.</p>
         <div class="grid">
@@ -175,10 +203,10 @@
         </div>
         <div class="pack">
           <h4>Prompt pack — 4 garments + mood board</h4>
-          <div class="prompt"><span class="ptag">① Garment 1</span> Deep-plunge bias-cut satin slip maxi dress, fine adjustable straps, low draped cowl back, thigh-high slit; liquid silk satin, soft sheen, fluid drape; hand-rolled edges, French seams, concealed side zip; wine burgundy (Pantone 19-1627 TCX). Invisible ghost-mannequin product shot, garment only, no person, on a soft oxblood seamless background; even soft key with gentle satin highlight; straight-on, 85mm, high-detail e-commerce photography.</div>
-          <div class="prompt"><span class="ptag">② Garment 2</span> Cowl-neck satin column dress, sleeveless, low draped back, floor-length; sandwashed silk satin; concealed side zip, hand-rolled hem; oxblood (Pantone 19-1521 TCX). Invisible ghost-mannequin product shot, garment only, no person, on a soft oxblood seamless background; even soft key with gentle satin highlight; straight-on, 85mm, high-detail e-commerce photography.</div>
-          <div class="prompt"><span class="ptag">③ Garment 3</span> Wrap-front draped gown, deep V-neck, long sleeve, self-tie waist, full-length; matte satin-back crepe; covered buttons, French seams, hidden snaps; wood violet (Pantone 18-3013 TCX). Invisible ghost-mannequin product shot, garment only, no person, on a soft oxblood seamless background; even soft key; straight-on, 85mm, high-detail e-commerce photography.</div>
-          <div class="prompt"><span class="ptag">④ Garment 4</span> Halter-plunge midi dress, open back, bias skirt; fluid charmeuse; thin halter ties, hand-rolled edges, concealed zip; deep teal (Pantone 18-5115 TCX). Invisible ghost-mannequin product shot, garment only, no person, on a soft oxblood seamless background; even soft key with gentle satin highlight; straight-on, 85mm, high-detail e-commerce photography.</div>
+          <div class="prompt"><span class="ptag">① Garment 1</span> Liquid and low-lit, all quiet drama. A statuesque female model, late-20s, fair luminous skin, sleek dark hair, a slow confident gaze over her shoulder, caught in a pool of warm lamplight. She wears a deep-plunge bias-cut satin slip maxi dress with fine straps, a low draped cowl back and a thigh-high slit; liquid silk satin; wine burgundy (Pantone 19-1627 TCX). A shadowed interior, single warm key, deep chiaroscuro; 85mm, photorealistic, cinematic and sensual.</div>
+          <div class="prompt"><span class="ptag">② Garment 2</span> Still and sculptural, like a figure in an old-master painting. A female model, mid-20s, warm olive skin, dark hair in a low chignon, serene downward gaze, one hand grazing the draped satin. She wears a cowl-neck satin column dress, sleeveless with a low draped back, floor-length; sandwashed silk satin; oxblood (Pantone 19-1521 TCX). Deep shadow, a single soft warm light, baroque darkness; 85mm, photorealistic, painterly and quiet.</div>
+          <div class="prompt"><span class="ptag">③ Garment 3</span> Velvet-hour drama. A female model, late-20s, deep brown skin, short cropped hair, poised and powerful, caught mid-turn so the gown sweeps. She wears a wrap-front draped gown with a deep V-neck, long sleeves and a self-tie waist; matte satin-back crepe; wood violet (Pantone 18-3013 TCX). A dim plum-lit room, soft moody key, rich shadow; 85mm, photorealistic, cinematic and statuesque.</div>
+          <div class="prompt"><span class="ptag">④ Garment 4</span> A cool counterpoint in the dark. A female model, mid-20s, light tan skin, long dark waves, a soft over-the-shoulder glance revealing the open back. She wears a halter-plunge midi dress with an open back and a bias-cut skirt; fluid charmeuse with a deep sheen; deep teal (Pantone 18-5115 TCX). Moody low light, teal shadow, a single warm rim; 85mm, photorealistic, sultry and refined.</div>
           <div class="prompt mood"><span class="ptag">⑤ Mood board</span> Design moodboard, flat-lay collage grid mixing references and trims: liquid satin draping and polished obsidian, a single dark-wine orchid, bias silk-satin and sandwashed-silk swatches, fine spaghetti-strap and hand-rolled-edge trim samples, a torn page of a chiaroscuro figure painting, a crystal coupe, Pantone chips in wine 19-1627, oxblood 19-1521 and wood violet 18-3013; soft moody Rembrandt light, dark satin surface, top-down editorial moodboard photography.</div>
         </div>
         <div class="refs">Sources: <a href="https://mmsclothing.com/spring-summer-2027-dress-trends-craftsmanship-key-design-details/" target="_blank" rel="noopener">MMS SS27 dress trends</a> · <a href="https://www.todaydresses.com/paris-fashion-week-ss27/" target="_blank" rel="noopener">PFW SS27 guide (deep plunge)</a></div>
@@ -230,10 +258,10 @@
         </div>
         <div class="pack">
           <h4>Prompt pack — 4 garments + mood board</h4>
-          <div class="prompt"><span class="ptag">① Garment 1</span> Bias slip midi dress, fine straps, sheer tulle overlay, French corded-lace trim at neckline and hem; delicate Chantilly lace over silk-touch slip; scalloped lace edge, picot hem, concealed back zip; ivory with peach cast (Pantone 11-0507 / 13-1023 TCX). Invisible ghost-mannequin product shot, garment only, no person, on a warm ivory seamless background; soft diffused light to reveal lace detail; straight-on, 85mm, high-detail e-commerce photography.</div>
-          <div class="prompt"><span class="ptag">② Garment 2</span> Tulle-overlay A-line midi dress, sweetheart neckline, sheer cap sleeve; sheer embroidered tulle over cotton voile; concealed back zip, scalloped hem; peach fuzz (Pantone 13-1023 TCX). Invisible ghost-mannequin product shot, garment only, no person, on a warm ivory seamless background; soft diffused light; straight-on, 85mm, high-detail e-commerce photography.</div>
-          <div class="prompt"><span class="ptag">③ Garment 3</span> Corded-lace sheath dress, high neck, long sheer sleeve, midi length; fine corded lace over lining; covered buttons, scalloped hem; soft lilac (Pantone 15-3620 TCX). Invisible ghost-mannequin product shot, garment only, no person, on a warm ivory seamless background; soft diffused light; straight-on, 85mm, high-detail e-commerce photography.</div>
-          <div class="prompt"><span class="ptag">④ Garment 4</span> Layered sheer slip dress, V-neck, double-tulle skirt, fine straps; organza over tulle; rolled tulle edge, concealed zip; pale dogwood blush (Pantone 13-1407 TCX). Invisible ghost-mannequin product shot, garment only, no person, on a warm ivory seamless background; soft diffused light; straight-on, 85mm, high-detail e-commerce photography.</div>
+          <div class="prompt"><span class="ptag">① Garment 1</span> Soft romantic fine-art photograph, dreamy analog-film aesthetic. A female model, early-20s, fair skin with light freckles, loose auburn waves, eyes gently closed, holding a single cream rose softly near her cheek. She wears a bias slip midi dress with fine French corded-lace trim and a sheer tulle overlay; Chantilly lace over a silk-touch slip; ivory (Pantone 11-0507 TCX). Beside a sunlit sheer curtain, soft hazy backlight, drifting tulle, gentle grain; 85mm, photorealistic, evocative and story-driven.</div>
+          <div class="prompt"><span class="ptag">② Garment 2</span> Soft romantic fine-art photograph. A female model, mid-20s, warm fair skin, soft blonde waves, eyes closed, peaceful, reclining gently on draped pale fabric with cream rose petals scattered around her. She wears a tulle-overlay A-line midi dress with a sweetheart neckline and sheer cap sleeves; embroidered tulle over cotton voile; peach fuzz (Pantone 13-1023 TCX). Hazy warm window light, pale dreamy tones; 85mm, photorealistic, emotional and artful.</div>
+          <div class="prompt"><span class="ptag">③ Garment 3</span> A whisper of a dress, caught between dream and daylight. A female model, early-20s, porcelain skin, dark hair loosely undone, a faraway poetic gaze, standing among bare silver branches as gossamer fabric lifts on the breeze. She wears a corded-lace sheath dress with a high neck, long sheer sleeves and a midi length; fine corded lace; soft lilac (Pantone 15-3620 TCX). Soft overcast light, faint mist, film grain; 85mm, photorealistic, poetic and ethereal.</div>
+          <div class="prompt"><span class="ptag">④ Garment 4</span> Tender and weightless, like the morning after a dream. A female model, mid-20s, soft warm skin, auburn waves, a quiet half-smile, cradling a loose bunch of baby's-breath. She wears a layered sheer slip dress with a V-neck and a double-tulle skirt; airy organza over fine tulle; pale dogwood blush (Pantone 13-1407 TCX). A sunlit room behind sheer curtains, dust motes in the light; 85mm, photorealistic, soft and emotional.</div>
           <div class="prompt mood"><span class="ptag">⑤ Mood board</span> Design moodboard, flat-lay collage grid mixing references and trims: sheer tulle and pressed baby&#39;s-breath, fine French corded-lace and organza swatches, scalloped-lace and picot-edge trim samples, watercolour florals, a torn page of an impressionist pastel painting, frosted glass and pearl beads, Pantone chips in whisper white 11-0507, peach fuzz 13-1023, soft lilac 15-3620 and pale dogwood 13-1407; hazy backlit daylight, cream linen surface, top-down editorial moodboard photography.</div>
         </div>
         <div class="refs">Sources: <a href="https://mmsclothing.com/spring-summer-2027-dress-trends-craftsmanship-key-design-details/" target="_blank" rel="noopener">MMS SS27 (lace, barely-there)</a> · <a href="https://ecolorworld.com/q3-spring-summer-2027/" target="_blank" rel="noopener">eColorWorld SS27 (Peach Fuzz→Soft Lilac)</a></div>
@@ -248,13 +276,21 @@
         <div class="tag">Building · Rising</div>
       </div>
       <div class="tbody">
-        <div class="look">
-          <figure class="card"><div class="imgwrap"><img src="https://images.pexels.com/photos/29636955/pexels-photo-29636955.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Ethereal flowing dress"><a class="credit" href="https://www.pexels.com/photo/ethereal-portrait-of-woman-in-flowing-dress-29636955/" target="_blank" rel="noopener">Pexels</a></div>
-            <figcaption><div class="cap-t"><span class="dot" style="background:#E5D8C0"></span>Billowing maxi</div><div class="cap-d">Floaty chiffon · generous volume · Ecru</div></figcaption></figure>
-          <figure class="card"><div class="imgwrap"><img src="https://images.pexels.com/photos/8717931/pexels-photo-8717931.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Long-sleeve flowing dress"><a class="credit" href="https://www.pexels.com/photo/woman-in-white-long-sleeve-dress-lying-near-flowing-plants-8717931/" target="_blank" rel="noopener">Pexels</a></div>
-            <figcaption><div class="cap-t"><span class="dot" style="background:#D6E0E6"></span>High-low ruffle dress</div><div class="cap-d">Soft poplin · tiered hem · Nimbus Cloud</div></figcaption></figure>
-          <figure class="card"><div class="imgwrap"><img src="https://images.pexels.com/photos/15910518/pexels-photo-15910518.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Flowing summer dress"><a class="credit" href="https://www.pexels.com/photo/beautiful-woman-wearing-summer-dress-15910518/" target="_blank" rel="noopener">Pexels</a></div>
-            <figcaption><div class="cap-t"><span class="dot" style="background:#F2D479"></span>Cascading ruffle midi</div><div class="cap-d">Cotton voile · movement · Butter 12-0721</div></figcaption></figure>
+        <div class="rh">Designs — generated on Slayteq</div>
+        <div class="look look4">
+          <figure class="card"><div class="imgwrap"><img src="https://assets.geniemode.com/geniemode-assets/geniemode-ai/ba080dfd-f347-405d-b343-79e0b1804bd3/1782640344879.jpeg?format=webp" alt="Tiered ruffle midi on model"></div>
+            <figcaption><div class="cap-t"><span class="dot" style="background:#F2D479"></span>Garment 1 · Tiered ruffle midi</div><div class="cap-d">Cotton voile · butter · Pantone 12-0721 TCX</div></figcaption></figure>
+          <figure class="card"><div class="imgwrap"><img src="https://assets.geniemode.com/geniemode-assets/geniemode-ai/ca18655a-fbe3-44a5-9814-79fe4fb0e139/1782640404596.jpeg?format=webp" alt="Billowing maxi on model"></div>
+            <figcaption><div class="cap-t"><span class="dot" style="background:#A7B57A"></span>Garment 2 · Billowing maxi</div><div class="cap-d">Floaty chiffon · soft sage · Pantone 16-0421 TCX</div></figcaption></figure>
+          <figure class="card"><div class="imgwrap"><img src="https://assets.geniemode.com/geniemode-assets/geniemode-ai/f90f4bbf-9319-42d3-98d0-27944dcfc61d/1782640461561.jpeg?format=webp" alt="Cascading-ruffle wrap on model"></div>
+            <figcaption><div class="cap-t"><span class="dot" style="background:#D6E0E6"></span>Garment 3 · Cascading-ruffle wrap</div><div class="cap-d">Georgette · nimbus cloud · Pantone 13-4108 TCX</div></figcaption></figure>
+          <figure class="card"><div class="imgwrap"><img src="https://assets.geniemode.com/geniemode-assets/geniemode-ai/629259be-74d8-4c11-ab9b-9d32705f7d84/1782640532612.jpeg?format=webp" alt="Structured organza dress on model"></div>
+            <figcaption><div class="cap-t"><span class="dot" style="background:#E5D8C0"></span>Garment 4 · Structured organza</div><div class="cap-d">Crisp organza · bleached sand · Pantone 13-1008 TCX</div></figcaption></figure>
+        </div>
+        <div class="moodrow">
+          <figure class="card"><div class="imgwrap"><img src="https://assets.geniemode.com/geniemode-assets/geniemode-ai/3ca16c50-1b66-4cb9-834f-25f4a0fa5116/1782640593227.jpeg?format=webp" alt="Volume & Ruffle mood board"></div>
+            <figcaption><div class="cap-t"><span class="ptag" style="margin:0;background:var(--brand)">Mood board</span></div><div class="cap-d">References, materials &amp; trims — paper-sculpture folds, seashell, voile &amp; organza swatches, ruffle &amp; lettuce-edge trims · Pantone butter / sage / nimbus / sand</div></figcaption></figure>
+        </div>
         </div>
         <p class="why">Richly layered, voluminous forms that embrace freedom and movement — billowing dresses, cascading ruffles and generous high-low hems. Light pastels and ecru keep the volume airy rather than heavy. Strong commercial breadth for vacation and event.</p>
         <div class="grid">
@@ -278,10 +314,10 @@
         </div>
         <div class="pack">
           <h4>Prompt pack — 4 garments + mood board</h4>
-          <div class="prompt"><span class="ptag">① Garment 1</span> Voluminous tiered ruffle midi dress, cascading multi-tier skirt, high-low hem, shirred square neck, volume short sleeve; lightweight cotton voile, airy drape; gathered tier seams, lettuce edge, concealed zip; butter yellow (Pantone 12-0721 TCX). Invisible ghost-mannequin product shot, garment only, no person, tiers fanned to show volume, on a warm off-white seamless background; even soft box light; straight-on, 50mm, high-detail e-commerce photography.</div>
-          <div class="prompt"><span class="ptag">② Garment 2</span> Billowing maxi dress, off-shoulder shirred bodice, puff sleeve, full skirt; floaty chiffon; smocking, self-fabric ties, hidden zip; soft sage (Pantone 16-0421 TCX). Invisible ghost-mannequin product shot, garment only, no person, on a warm off-white seamless background; even soft box light; straight-on, 50mm, high-detail e-commerce photography.</div>
-          <div class="prompt"><span class="ptag">③ Garment 3</span> Cascading-ruffle wrap dress, V-neck, self-tie waist, asymmetric ruffle hem, midi; lightweight georgette; rolled ruffle edges, French seams; nimbus cloud blue-grey (Pantone 13-4108 TCX). Invisible ghost-mannequin product shot, garment only, no person, on a warm off-white seamless background; even soft box light; straight-on, 50mm, high-detail e-commerce photography.</div>
-          <div class="prompt"><span class="ptag">④ Garment 4</span> Structured organza dress, square neck, dramatic volume sleeve, full A-line; crisp organza; horsehair-braid hem, hidden back zip; bleached sand (Pantone 13-1008 TCX). Invisible ghost-mannequin product shot, garment only, no person, on a warm off-white seamless background; even soft box light; straight-on, 50mm, high-detail e-commerce photography.</div>
+          <div class="prompt"><span class="ptag">① Garment 1</span> Pure movement and light. A female model, mid-20s, warm tan skin, dark hair in soft waves, a joyful open smile, caught mid-twirl so the tiers lift and float around her. She wears a voluminous tiered ruffle midi dress with a shirred square neck, volume short sleeves and a high-low hem; airy cotton voile; butter yellow (Pantone 12-0721 TCX). A sunlit open meadow, warm golden daylight, fabric in motion, soft lens flare; 35mm, photorealistic, joyful and alive.</div>
+          <div class="prompt"><span class="ptag">② Garment 2</span> Caught on the breeze. A female model, mid-20s, fair skin, blonde hair loose in the wind, eyes closed and blissful, arms softly lifted as the dress billows. She wears a billowing maxi dress with an off-shoulder shirred bodice, puff sleeves and a full skirt; floaty chiffon; soft sage (Pantone 16-0421 TCX). A breezy coastal field at golden hour, warm backlight, fabric floating in the wind; 35mm, photorealistic, free and dreamy.</div>
+          <div class="prompt"><span class="ptag">③ Garment 3</span> Soft as weather. A female model, mid-20s, warm brown skin, dark curls, a calm content expression, walking slowly so the asymmetric ruffle trails behind her. She wears a cascading-ruffle wrap dress with a V-neck, self-tie waist, asymmetric ruffle hem and a midi length; lightweight georgette; nimbus-cloud blue-grey (Pantone 13-4108 TCX). An airy white-washed terrace, bright soft daylight, gentle wind; 35mm, photorealistic, serene and fluid.</div>
+          <div class="prompt"><span class="ptag">④ Garment 4</span> Sculpture in light. A female model, mid-20s, fair skin, sleek low bun, a poised elegant stance with the dramatic sleeves framing her. She wears a structured organza dress with a square neck, dramatic volume sleeves and a full A-line skirt; crisp organza; bleached sand (Pantone 13-1008 TCX). A bright minimalist room with soft window light and clean shadows; 50mm, photorealistic, sculptural and luminous.</div>
           <div class="prompt mood"><span class="ptag">⑤ Mood board</span> Design moodboard, flat-lay collage grid mixing references and trims: billowing cotton voile and folded paper sculpture, a meringue swirl and pale seashell, voile, poplin and organza swatches, multi-tier ruffle and lettuce-edge trim samples, a torn page of a soft sky-and-cloud watercolour, dried pampas grass, Pantone chips in butter 12-0721, soft sage 16-0421, nimbus cloud 13-4108 and bleached sand 13-1008; bright airy daylight, off-white surface, top-down editorial moodboard photography.</div>
         </div>
         <div class="refs">Sources: <a href="https://fashionunited.com/specials/spring-summer-2027-fashion-trends" target="_blank" rel="noopener">FashionUnited SS27 (volume, ruffles)</a> · <a href="https://www.peclersparis.com/en/trend-books/womens-fashion-trends-ss27/" target="_blank" rel="noopener">Peclers SS27 women's</a></div>
@@ -296,13 +332,21 @@
         <div class="tag">Safe bet · Peak</div>
       </div>
       <div class="tbody">
-        <div class="look">
-          <figure class="card"><div class="imgwrap"><img src="https://images.pexels.com/photos/13197273/pexels-photo-13197273.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Pink floral dress in garden"><a class="credit" href="https://www.pexels.com/photo/a-woman-wearing-pink-floral-dress-standing-in-the-garden-13197273/" target="_blank" rel="noopener">Pexels</a></div>
-            <figcaption><div class="cap-t"><span class="dot" style="background:#E58FA6"></span>Floral-print midi</div><div class="cap-d">Printed voile · garden floral · Rose 15-1821</div></figcaption></figure>
-          <figure class="card"><div class="imgwrap"><img src="https://images.pexels.com/photos/18192196/pexels-photo-18192196.jpeg?auto=compress&cs=tinysrgb&w=800" alt="A-line midi dress in garden"><a class="credit" href="https://www.pexels.com/photo/young-woman-wearing-red-a-line-midi-dress-in-the-garden-18192196/" target="_blank" rel="noopener">Pexels</a></div>
-            <figcaption><div class="cap-t"><span class="dot" style="background:#E8765B"></span>A-line garden midi</div><div class="cap-d">Crisp cotton · full skirt · Carnelian 16-1542</div></figcaption></figure>
-          <figure class="card"><div class="imgwrap"><img src="https://images.pexels.com/photos/8452039/pexels-photo-8452039.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Dress with floral detail"><a class="credit" href="https://www.pexels.com/photo/woman-in-white-lace-dress-holding-white-flowers-8452039/" target="_blank" rel="noopener">Pexels</a></div>
-            <figcaption><div class="cap-t"><span class="dot" style="background:#5E8C4E"></span>3D floral appliqué</div><div class="cap-d">Voile + petals · occasion · Meadow 17-0220</div></figcaption></figure>
+        <div class="rh">Designs — generated on Slayteq</div>
+        <div class="look look4">
+          <figure class="card"><div class="imgwrap"><img src="https://assets.geniemode.com/geniemode-assets/geniemode-ai/811f6105-5a9a-47ee-b1b2-e729aa74ddb1/1782640671562.jpeg?format=webp" alt="Floral A-line midi on model"></div>
+            <figcaption><div class="cap-t"><span class="dot" style="background:#E58FA6"></span>Garment 1 · Floral A-line midi</div><div class="cap-d">Printed voile + 3D appliqué · rose · Pantone 15-1821 TCX</div></figcaption></figure>
+          <figure class="card"><div class="imgwrap"><img src="https://assets.geniemode.com/geniemode-assets/geniemode-ai/fa7f909a-e899-4ead-be60-ed6085fc55f7/1782640747754.jpeg?format=webp" alt="Fit-and-flare day dress on model"></div>
+            <figcaption><div class="cap-t"><span class="dot" style="background:#E8765B"></span>Garment 2 · Fit-and-flare day dress</div><div class="cap-d">Printed cotton · coral · Pantone 16-1542 TCX</div></figcaption></figure>
+          <figure class="card"><div class="imgwrap"><img src="https://assets.geniemode.com/geniemode-assets/geniemode-ai/6301fe8b-17e8-4c53-9562-686d9bf74875/1782640807182.jpeg?format=webp" alt="Appliqué occasion midi on model"></div>
+            <figcaption><div class="cap-t"><span class="dot" style="background:#5E8C4E"></span>Garment 3 · Appliqué occasion midi</div><div class="cap-d">Crepe + organza petals · meadow green · Pantone 17-0220 TCX</div></figcaption></figure>
+          <figure class="card"><div class="imgwrap"><img src="https://assets.geniemode.com/geniemode-assets/geniemode-ai/c2ecfc8a-2334-4592-9147-9e2dca275b4c/1782640863632.jpeg?format=webp" alt="Garden-print shirt-dress on model"></div>
+            <figcaption><div class="cap-t"><span class="dot" style="background:#B79CE0"></span>Garment 4 · Garden-print shirt-dress</div><div class="cap-d">Cotton poplin · lavender floral · Pantone 16-3815 TCX</div></figcaption></figure>
+        </div>
+        <div class="moodrow">
+          <figure class="card"><div class="imgwrap"><img src="https://assets.geniemode.com/geniemode-assets/geniemode-ai/2f1fddda-9427-4baf-8ef8-286a408b13ba/1782640925877.jpeg?format=webp" alt="Garden Bloom mood board"></div>
+            <figcaption><div class="cap-t"><span class="ptag" style="margin:0;background:var(--brand)">Mood board</span></div><div class="cap-d">References, materials &amp; trims — garden roses, botanical print, voile &amp; organza swatches, 3D floral appliqué, shirred trims · Pantone rose / meadow / lavender / carnelian</div></figcaption></figure>
+        </div>
         </div>
         <p class="why">3D floral embellishment and garden-print midis bring soft yet dramatic focus — ideal for vacation, weddings and occasion. Lifelike floral shapes meet a romantic, blooming palette. The season's most commercial, broadly-appealing dress story.</p>
         <div class="grid">
@@ -362,13 +406,38 @@
     </div>
   </section>
 
-  <div class="note"><b>Imagery note:</b> lookbook photos are free-license Pexels references for silhouette and color mood (no model release verified). For customer- and supplier-facing exports, these slots are populated with rights-cleared Getty runway/retail imagery; prompt packs feed the image-gen pipeline to render concept product shots on demand.</div>
+  <div class="note"><b>Imagery note:</b> every garment and mood board shown is an AI design generated on Slayteq from the prompt packs in this report — art-directed, on-model, story-driven. Click any image to enlarge.</div>
 
   <footer>
     <b>Trend DNA</b> — generated by Geniemode's trend engine · worked example, SS27 Dresses · June 2026.<br>
-    Tracked in Jira: <a href="https://geniemode.atlassian.net/browse/GM-5328" target="_blank" rel="noopener">GM-5328</a>.
+    Tracked in Jira: <a href="https://geniemode.atlassian.net/browse/GM-5328" target="_blank" rel="noopener">GM-5328</a> · Slayteq collection: <a href="https://slayteq.ai/collections/6397" target="_blank" rel="noopener">view all designs</a>.
   </footer>
 
 </div>
+
+<div id="lightbox" aria-hidden="true">
+  <img id="lightbox-img" alt="Enlarged design">
+  <div id="lightbox-close" title="Close">&times;</div>
+</div>
+<style>
+  #lightbox{display:none;position:fixed;inset:0;background:rgba(22,20,18,.93);z-index:9999;align-items:center;justify-content:center;cursor:zoom-out;padding:28px}
+  #lightbox.open{display:flex}
+  #lightbox img{max-width:95vw;max-height:92vh;object-fit:contain;border-radius:6px;box-shadow:0 16px 70px rgba(0,0,0,.6)}
+  #lightbox-close{position:fixed;top:18px;right:26px;color:#fff;font-size:40px;line-height:1;cursor:pointer;opacity:.8;font-family:Arial,sans-serif}
+  #lightbox-close:hover{opacity:1}
+  figure.card img{cursor:zoom-in}
+</style>
+<script>
+(function(){
+  var lb=document.getElementById('lightbox'),li=document.getElementById('lightbox-img');
+  function close(){lb.classList.remove('open');li.src='';}
+  document.addEventListener('click',function(e){
+    var img=e.target.closest('figure.card img');
+    if(img&&!lb.classList.contains('open')){li.src=img.src;lb.classList.add('open');return;}
+    if(lb.classList.contains('open')){close();}
+  });
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')close();});
+})();
+</script>
 </body>
 </html>
