@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trend DNA — Kids Wear SS27</title>
+<style>
+  :root{--ink:#1c1b1a;--muted:#6c6760;--line:#e7e2da;--bg:#faf8f4;--card:#ffffff;--brand:#7a3b2e;--accent:#1e8e8a}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.5}
+  .wrap{max-width:1480px;margin:0 auto;padding:0 40px 80px}
+  header{padding:64px 0 32px;border-bottom:3px solid var(--ink)}
+  .kicker{font-size:12px;letter-spacing:.28em;text-transform:uppercase;color:var(--brand);font-weight:700}
+  h1{font-size:62px;line-height:.98;letter-spacing:-.02em;margin:14px 0 8px;font-weight:800}
+  .sub{font-size:20px;color:var(--muted);max-width:680px}
+  .meta{margin-top:22px;display:flex;flex-wrap:wrap;gap:10px}
+  .chip{font-size:12px;font-weight:600;background:#fff;border:1px solid var(--line);border-radius:999px;padding:6px 13px;color:var(--muted)}
+  .chip b{color:var(--ink)}
+  section{margin-top:54px}
+  .sec-h{font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);font-weight:700;margin-bottom:16px;display:flex;align-items:center;gap:12px}
+  .sec-h::after{content:"";flex:1;height:1px;background:var(--line)}
+  .overview{font-size:21px;line-height:1.5;max-width:820px}
+  .overview b{color:var(--brand)}
+  .palette{display:grid;grid-template-columns:repeat(5,1fr);gap:0;border-radius:14px;overflow:hidden;border:1px solid var(--line);margin-top:6px}
+  .sw{height:138px;position:relative;display:flex;align-items:flex-end;padding:12px}
+  .sw span{font-size:11px;font-weight:700;background:rgba(255,255,255,.88);padding:4px 8px;border-radius:5px;color:#222;line-height:1.3}
+  .sw span b{display:block;font-size:10px;font-weight:700;color:#555;letter-spacing:.02em}
+  @media(max-width:760px){.palette{grid-template-columns:repeat(2,1fr)}.sw{height:104px}}
+  .theme{background:var(--card);border:1px solid var(--line);border-radius:18px;overflow:hidden;margin-top:26px;box-shadow:0 1px 0 rgba(0,0,0,.02)}
+  .thead{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:18px 24px;border-bottom:1px solid var(--line)}
+  .thead .tname{font-size:26px;font-weight:800;letter-spacing:-.01em}
+  .thead .swatchrow{display:flex;gap:6px;margin-top:6px}
+  .thead .mini{width:26px;height:14px;border-radius:4px;border:1px solid rgba(0,0,0,.1)}
+  .tag{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;background:#1c1b1a;color:#fff;padding:6px 12px;border-radius:999px;white-space:nowrap}
+  .tbody{padding:24px 26px 30px}
+  .look{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:22px}
+  @media(max-width:760px){.look{grid-template-columns:1fr 1fr}}
+  @media(max-width:480px){.look{grid-template-columns:1fr}}
+  .look4{grid-template-columns:repeat(4,1fr)}
+  @media(max-width:900px){.look4{grid-template-columns:1fr 1fr}}
+  @media(max-width:520px){.look4{grid-template-columns:1fr}}
+  .look4 figure.card .imgwrap{height:430px}
+  .moodrow{max-width:1100px;margin:10px auto 30px}
+  .moodrow figure.card{margin:0}
+  .moodrow figure.card .imgwrap{height:auto!important;background:#f1ece4}
+  .moodrow figure.card .imgwrap img{width:100%;height:auto!important;display:block;object-fit:contain;position:static}
+  .rh{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);font-weight:700;margin-bottom:12px}
+  .look4 figure.card figcaption::after,.moodrow figure.card figcaption::after{content:"✦ Generated on Slayteq";display:block;margin-top:8px;font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);font-weight:700;opacity:.85}
+  figure.card{border:1px solid var(--line);border-radius:12px;overflow:hidden;background:#fff;margin:0}
+  figure.card .imgwrap{position:relative;height:250px;overflow:hidden}
+  figure.card img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .4s ease;cursor:zoom-in}
+  figure.card:hover img{transform:scale(1.04)}
+  figcaption{padding:11px 13px}
+  figcaption .cap-t{font-size:13px;font-weight:700;display:flex;align-items:center;gap:7px}
+  figcaption .cap-t .dot{width:13px;height:13px;border-radius:50%;border:1px solid rgba(0,0,0,.12)}
+  figcaption .cap-d{font-size:11.5px;color:var(--muted);margin-top:3px}
+  .why{font-size:15.5px;color:#3a3631;max-width:820px;margin-bottom:20px}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+  @media(max-width:760px){.grid{grid-template-columns:1fr}}
+  .attr h4{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-bottom:8px}
+  .attr ul{list-style:none;font-size:14.5px}
+  .attr li{padding:3px 0;border-bottom:1px dashed var(--line)}
+  .attr li:last-child{border:none}
+  .colors{display:flex;gap:8px;flex-wrap:wrap;margin-top:4px}
+  .col{display:flex;align-items:center;gap:7px;font-size:12px;font-weight:600;background:#faf8f4;border:1px solid var(--line);border-radius:999px;padding:4px 11px 4px 5px}
+  .col .pan{color:var(--muted);font-weight:600}
+  .dot{width:18px;height:18px;border-radius:50%;border:1px solid rgba(0,0,0,.12)}
+  .pack{margin-top:22px;background:#f6f2ec;border:1px solid var(--line);border-radius:12px;padding:16px 18px}
+  .pack h4{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--brand);margin-bottom:10px}
+  .prompt{font-size:13px;font-family:"SF Mono",ui-monospace,Menlo,monospace;background:#fff;border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:7px;padding:10px 12px;margin-bottom:8px;color:#2c2a27;line-height:1.45}
+  .ptag{display:inline-block;font-family:-apple-system,Helvetica,Arial,sans-serif;font-size:10px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:#fff;background:var(--accent);border-radius:5px;padding:2px 7px;margin-right:6px;vertical-align:1px}
+  .prompt.mood{border-left-color:var(--brand);background:#fbf6f1}
+  .prompt.mood .ptag{background:var(--brand)}
+  .refs{margin-top:14px;font-size:13px;color:var(--muted)}
+  .refs a{color:var(--accent);text-decoration:none;border-bottom:1px solid #bfe0de}
+  .srcbox{background:#fff;border:1px solid var(--line);border-radius:14px;padding:22px 24px}
+  .srcbox h4{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--brand);margin:14px 0 8px}
+  .srcbox h4:first-child{margin-top:0}
+  .srcbox ul{list-style:none;font-size:14px}
+  .srcbox li{padding:5px 0;border-bottom:1px solid var(--line)}
+  .srcbox li:last-child{border:none}
+  .srcbox a{color:var(--accent);text-decoration:none}
+  footer{margin-top:46px;padding-top:24px;border-top:1px solid var(--line);font-size:13px;color:var(--muted)}
+  footer a{color:var(--accent)}
+  .note{background:#fff7ed;border:1px solid #f3d9b8;border-radius:10px;padding:12px 16px;font-size:13px;color:#7a5a2e;margin-top:20px}
+  @media(max-width:680px){
+    .wrap{padding:0 16px 60px}header{padding:40px 0 24px}h1{font-size:38px}.sub{font-size:16px}.overview{font-size:17px}
+    section{margin-top:36px}.thead{flex-wrap:wrap}.thead .tname{font-size:22px}.look4 figure.card .imgwrap{height:400px}
+    .prompt{font-size:12px;line-height:1.5}.palette{grid-template-columns:1fr 1fr}.srcbox{padding:16px}
+  }
+  @media print{
+    @page{size:A4;margin:12mm}
+    body{background:#fff;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+    .wrap{max-width:none;padding:0}a{color:#1e8e8a;text-decoration:none}
+    header{padding:0 0 18px}h1{font-size:42px}section{margin-top:20px}
+    .theme{break-inside:auto;box-shadow:none;border:none;break-before:page;page-break-before:always}
+    section .theme:first-of-type{break-before:auto;page-break-before:auto}
+    .thead{break-after:avoid;page-break-after:avoid}
+    .look,.look4{break-inside:avoid;page-break-inside:avoid}.look4{grid-template-columns:repeat(4,1fr)}.look4 figure.card .imgwrap{height:300px}
+    figure.card,.grid,.pack,.prompt,.refs{break-inside:avoid;page-break-inside:avoid}
+    figure.card:hover img{transform:none}.sec-h{break-after:avoid;page-break-after:avoid}
+    .moodrow{break-before:page;page-break-before:always;break-inside:avoid;page-break-inside:avoid;max-width:none;text-align:center}
+    .moodrow figure.card .imgwrap img{max-height:235mm!important;width:auto!important;max-width:100%;margin:0 auto}
+    .note,.srcbox{break-before:page;page-break-before:always;break-inside:avoid}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="kicker">Trend DNA · Geniemode</div>
+    <h1>Kids Wear</h1>
+    <div class="sub">Spring / Summer 2027 — an auto-generated childrenswear trend profile: color stories with Pantone, art-directed lookbook, fabrics, construction, and ready-to-run prompt packs.</div>
+    <div class="meta">
+      <div class="chip">Category: <b>Kids Wear</b></div>
+      <div class="chip">Season: <b>SS27 · Summer</b></div>
+      <div class="chip">Segment: <b>Ages 4–10 · unisex</b></div>
+      <div class="chip">Generated: <b>Jun 2026</b></div>
+      <div class="chip">Confidence: <b>Medium–High</b></div>
+    </div>
+  </header>
+
+  <section>
+    <div class="sec-h">Season read</div>
+    <p class="overview">SS27 kidswear is <b>bright, playful and imaginative</b>. Prints lead — <b>gingham picnic-party</b>, fruit and floral motifs, <b>reimagined paisley</b> and <b>dreamy soft-focus washes</b> — in a joyful, gender-inclusive palette of <b>pop pink, fresh greens, butter and floral brights</b>. Silhouettes are tailored-but-relaxed and breathable, with a strong <b>sporty color-block</b> story (mesh + quick-dry knit) alongside garden-fresh nature dressing. Fun, functional and full of personality.</p>
+  </section>
+
+  <section>
+    <div class="sec-h">Master palette · Pantone TCX</div>
+    <div class="palette">
+      <div class="sw" style="background:#E0457B"><span>Pop Pink<b>17-2034 TCX</b></span></div>
+      <div class="sw" style="background:#5B8C3E"><span>Fresh Green<b>15-0343 TCX</b></span></div>
+      <div class="sw" style="background:#F2D479"><span>Butter Yellow<b>12-0721 TCX</b></span></div>
+      <div class="sw" style="background:#7BB5D9"><span>Sky Blue<b>14-4318 TCX</b></span></div>
+      <div class="sw" style="background:#F37D5A"><span>Coral<b>16-1546 TCX</b></span></div>
+      <div class="sw" style="background:#C7A8DE"><span>Soft Lilac<b>15-3620 TCX</b></span></div>
+      <div class="sw" style="background:#F4B98E"><span>Peach Fuzz<b>13-1023 TCX</b></span></div>
+      <div class="sw" style="background:#9FCB3B"><span>Lime<b>14-0452 TCX</b></span></div>
+      <div class="sw" style="background:#2A4FB0"><span>Cobalt<b>18-4051 TCX</b></span></div>
+      <div class="sw" style="background:#F0B7C4"><span>Soft Pink<b>13-2807 TCX</b></span></div>
+    </div>
+    <p style="font-size:12px;color:var(--muted);margin-top:8px">Pantone values are nearest TCX references for direction — confirm against physical chips before lab-dip approval.</p>
+  </section>
+
+  <section>
+    <div class="sec-h">Macro themes · lookbook</div>
+
+    <!-- THEME 1 — PICNIC GINGHAM -->
+    <div class="theme">
+      <div class="thead">
+        <div><div class="tname">01 · Picnic Gingham</div>
+          <div class="swatchrow"><span class="mini" style="background:#E0457B"></span><span class="mini" style="background:#5B8C3E"></span><span class="mini" style="background:#F2D479"></span><span class="mini" style="background:#F37D5A"></span></div></div>
+        <div class="tag">Safe bet · Peak</div>
+      </div>
+      <div class="tbody">
+        <div class="rh">Designs — generated on Slayteq</div>
+        <div class="look look4">
+          <figure class="card"><div class="imgwrap"><img src="https://assets.geniemode.com/geniemode-assets/geniemode-ai/edd9f744-c523-4b19-8915-a2a92f89071d/1782645196491.jpeg?format=webp" alt="Gingham dress on child"></div>
+            <figcaption><div class="cap-t"><span class="dot" style="background:#E0457B"></span>Garment 1 · Gingham dress</div><div class="cap-d">Cotton gingham · pop pink · Pantone 17-2034 TCX</div></figcaption></figure>
+          <figure class="card"><div class="imgwrap"><img src="https://assets.geniemode.com/geniemode-assets/geniemode-ai/0966327e-6881-44aa-8aee-49d17f03d45c/1782645258406.jpeg?format=webp" alt="Floral sundress on child"></div>
+            <figcaption><div class="cap-t"><span class="dot" style="background:#F37D5A"></span>Garment 2 · Floral sundress</div><div class="cap-d">Cotton voile · floral brights · Pantone 16-1546 TCX</div></figcaption></figure>
+          <figure class="card"><div class="imgwrap"><img src="https://assets.geniemode.com/geniemode-assets/geniemode-ai/52596c18-e73d-47c3-94c2-8b2c92d422d2/1782645317414.jpeg?format=webp" alt="Fruit-print tee set on child"></div>
+            <figcaption><div class="cap-t"><span class="dot" style="background:#F2D479"></span>Garment 3 · Fruit-print tee set</div><div class="cap-d">Cotton jersey · butter/cherry · Pantone 12-0721 TCX</div></figcaption></figure>
+          <figure class="card"><div class="imgwrap"><img src="https://assets.geniemode.com/geniemode-assets/geniemode-ai/ec591c55-1108-4a42-b8e3-2b8fef0a14af/1782645380145.jpeg?format=webp" alt="Gingham romper on child"></div>
+            <figcaption><div class="cap-t"><span class="dot" style="background:#5B8C3E"></span>Garment 4 · Gingham romper</div><div class="cap-d">Cotton gingham · fresh green · Pantone 15-0343 TCX</div></figcaption></figure>
+        </div>
+        <div class="moodrow">
+          <figure class="card"><div class="imgwrap"><img src="https://assets.geniemode.com/geniemode-assets/geniemode-ai/36fec1a5-4215-43a4-a755-d7481ba2c54b/1782645441596.jpeg?format=webp" alt="Picnic Gingham mood board"></div>
+            <figcaption><div class="cap-t"><span class="ptag" style="margin:0;background:var(--brand)">Mood board</span></div><div class="cap-d">References, materials &amp; trims — gingham &amp; floral swatches, fruit illustrations, peter-pan collar &amp; daisy-button samples · Pantone pop pink / green / butter / coral</div></figcaption></figure>
+        </div>
+        <p class="why">The sweetest, safest commercial story: gingham and florals in a picnic-party mood, with fruit motifs and fresh brights. Charming, gender-inclusive and full of summer joy.</p>
+        <div class="grid">
+          <div class="attr">
+            <h4>Color story</h4>
+            <div class="colors"><div class="col"><span class="dot" style="background:#E0457B"></span>Pop Pink&nbsp;<span class="pan">· 17-2034</span></div><div class="col"><span class="dot" style="background:#5B8C3E"></span>Fresh Green&nbsp;<span class="pan">· 15-0343</span></div><div class="col"><span class="dot" style="background:#F2D479"></span>Butter&nbsp;<span class="pan">· 12-0721</span></div><div class="col"><span class="dot" style="background:#F37D5A"></span>Coral&nbsp;<span class="pan">· 16-1546</span></div></div>
+            <h4 style="margin-top:16px">Fabrics</h4>
+            <ul><li>Cotton gingham &amp; poplin</li><li>Printed cotton voile</li><li>Soft cotton jersey</li></ul>
+          </div>
+          <div class="attr">
+            <h4>Silhouettes</h4>
+            <ul><li>Gingham dress &amp; romper</li><li>Floral sundress</li><li>Fruit-print tee &amp; shorts set</li></ul>
+            <h4 style="margin-top:16px">Construction — neck · cut · sleeve · trims · hem</h4>
+            <ul><li><b>Neck/collar:</b> peter-pan collar, shirred neck</li><li><b>Cut &amp; fit:</b> relaxed, full skirt, easy romper</li><li><b>Sleeve:</b> short puff / cap sleeve</li><li><b>Trims:</b> daisy buttons, tie straps, rick-rack, fruit prints</li><li><b>Hem:</b> gathered / ruffle hem</li></ul>
+          </div>
+        </div>
+        <div class="pack">
+          <h4>Prompt pack — 4 garments + mood board</h4>
+          <div class="prompt"><span class="ptag">① Garment 1</span> Picnic in the park. A cheerful child, around 6, on a checked picnic blanket with a basket of fruit, sunny day. They wear a gingham short-sleeve dress, peter-pan collar, full skirt; cotton gingham; pop pink and white (Pantone 17-2034 TCX). Bright warm daylight, fresh greens behind; 50mm, photorealistic, wholesome and joyful.</div>
+          <div class="prompt"><span class="ptag">② Garment 2</span> Among the flowers. A child, around 5, twirling in a garden of blooms. They wear a floral-print sundress, shirred bodice, tie straps; cotton voile; floral brights on cream with coral (Pantone 16-1546 TCX). Bright sunny garden, soft bokeh; 50mm, photorealistic, joyful and sweet.</div>
+          <div class="prompt"><span class="ptag">③ Garment 3</span> Cherry picking. A child, around 7, holding a basket of cherries in a sunny orchard. They wear a fruit-print tee and shorts set; soft cotton jersey; butter yellow with cherry print (Pantone 12-0721 TCX). Bright warm daylight, leafy green; 50mm, photorealistic, playful and fresh.</div>
+          <div class="prompt"><span class="ptag">④ Garment 4</span> Sunny stroll. A child, around 5, on a garden path. They wear a gingham romper, button front, short sleeves; cotton gingham; fresh green and white (Pantone 15-0343 TCX). Bright sunny garden, soft bokeh; 50mm, photorealistic, sweet and fresh.</div>
+          <div class="prompt mood"><span class="ptag">⑤ Mood board</span> Design moodboard, flat-lay collage, no people: gingham &amp; floral-print swatches, fruit illustrations, picnic check, peter-pan collar &amp; shirred-trim samples, daisy buttons, a sweet picnic watercolour, fresh leaves, Pantone chips in pop pink, fresh green, butter and coral; bright warm daylight, gingham-cloth surface, top-down.</div>
+        </div>
+        <div class="refs">Sources: <a href="https://www.modacable.com/prodotto/ss-27-kidswear-fashion-trends/" target="_blank" rel="noopener">Modacable SS27 kidswear</a> · <a href="https://www.thedesignagent.com/blog-posts/ss27-trend-forecast" target="_blank" rel="noopener">The Pattern Cloud — SS27 (gingham, fruit)</a></div>
+      </div>
+    </div>
+
+    <!-- THEME 2 — GARDEN SPROUT -->
+    <div class="theme">
+      <div class="thead">
+        <div><div class="tname">02 · Garden Sprout</div>
+          <div class="swatchrow"><span class="mini" style="background:#5B8C3E"></span><span class="mini" style="background:#C7A8DE"></span><span class="mini" style="background:#7BB5D9"></span><span class="mini" style="background:#9FCB3B"></span></div></div>
+        <div class="tag">Building · Rising</div>
+      </div>
+      <div class="tbody">
+        <div class="rh">Designs — generated on Slayteq</div>
+        <div class="look look4">
+          <figure class="card"><div class="imgwrap"><img src="https://assets.geniemode.com/geniemode-assets/geniemode-ai/12979cb5-69c1-4e2c-bea2-9f3c99472d8e/1782645524000.jpeg?format=webp" alt="Leaf-print pinafore on child"></div>
+            <figcaption><div class="cap-t"><span class="dot" style="background:#5B8C3E"></span>Garment 1 · Leaf-print pinafore</div><div class="cap-d">Cotton canvas · fresh green · Pantone 15-0343 TCX</div></figcaption></figure>
+          <figure class="card"><div class="imgwrap"><img src="https://assets.geniemode.com/geniemode-assets/geniemode-ai/80f57b08-7a88-4e93-863c-3a98c85a4214/1782645586469.jpeg?format=webp" alt="Floral romper on child"></div>
+            <figcaption><div class="cap-t"><span class="dot" style="background:#C7A8DE"></span>Garment 2 · Floral romper</div><div class="cap-d">Cotton voile · floral/lilac · Pantone 15-3620 TCX</div></figcaption></figure>
+          <figure class="card"><div class="imgwrap"><img src="https://assets.geniemode.com/geniemode-assets/geniemode-ai/f8a558cd-0f55-4d0a-8ca4-cb96d586a640/1782645643224.jpeg?format=webp" alt="Botanical shirt set on child"></div>
+            <figcaption><div class="cap-t"><span class="dot" style="background:#7BB5D9"></span>Garment 3 · Botanical shirt set</div><div class="cap-d">Lightweight cotton · sky blue · Pantone 14-4318 TCX</div></figcaption></figure>
+          <figure class="card"><div class="imgwrap"><img src="https://assets.geniemode.com/geniemode-assets/geniemode-ai/e3aaf572-5cc1-4d1a-a573-a133c9d64353/1782645728999.jpeg?format=webp" alt="Open-knit cardigan on child"></div>
+            <figcaption><div class="cap-t"><span class="dot" style="background:#9FCB3B"></span>Garment 4 · Open-knit cardigan</div><div class="cap-d">Cotton knit · lime · Pantone 14-0452 TCX</div></figcaption></figure>
+        </div>
+        <div class="moodrow">
+          <figure class="card"><div class="imgwrap"><img src="https://assets.geniemode.com/geniemode-assets/geniemode-ai/c2454a7b-6b68-42ea-92ea-d6bca5b896dc/1782645784471.jpeg?format=webp" alt="Garden Sprout mood board"></div>
+            <figcaption><div class="cap-t"><span class="ptag" style="margin:0;background:var(--brand)">Mood board</span></div><div class="cap-d">References, materials &amp; trims — leaf &amp; botanical-print swatches, pressed leaves, seed packets, daisy buttons &amp; ruffle trims · Pantone green / lilac / sky / lime</div></figcaption></figure>
+        </div>
+        <p class="why">Nature-led dressing in fresh greens and floral brights — leaf prints, botanicals and garden play. Wholesome, breathable and gender-neutral, with a renewal mood. A building, broadly-loved story.</p>
+        <div class="grid">
+          <div class="attr">
+            <h4>Color story</h4>
+            <div class="colors"><div class="col"><span class="dot" style="background:#5B8C3E"></span>Fresh Green&nbsp;<span class="pan">· 15-0343</span></div><div class="col"><span class="dot" style="background:#C7A8DE"></span>Lilac&nbsp;<span class="pan">· 15-3620</span></div><div class="col"><span class="dot" style="background:#7BB5D9"></span>Sky Blue&nbsp;<span class="pan">· 14-4318</span></div><div class="col"><span class="dot" style="background:#9FCB3B"></span>Lime&nbsp;<span class="pan">· 14-0452</span></div></div>
+            <h4 style="margin-top:16px">Fabrics</h4>
+            <ul><li>Cotton canvas &amp; voile</li><li>Lightweight printed cotton</li><li>Soft cotton knit</li></ul>
+          </div>
+          <div class="attr">
+            <h4>Silhouettes</h4>
+            <ul><li>Leaf-print pinafore</li><li>Floral romper</li><li>Botanical shirt set &amp; open cardigan</li></ul>
+            <h4 style="margin-top:16px">Construction — neck · cut · sleeve · trims · hem</h4>
+            <ul><li><b>Neck/collar:</b> bib front, camp collar, shirred neck</li><li><b>Cut &amp; fit:</b> easy, breathable, room to play</li><li><b>Sleeve:</b> short / cap / sleeveless</li><li><b>Trims:</b> daisy buttons, ruffle straps, leaf prints, open-knit</li><li><b>Hem:</b> gathered / scalloped hem</li></ul>
+          </div>
+        </div>
+        <div class="pack">
+          <h4>Prompt pack — 4 garments + mood board</h4>
+          <div class="prompt"><span class="ptag">① Garment 1</span> Little gardener. A child, around 6, watering plants in a sunny vegetable garden. They wear a leaf-print pinafore dress over a tee, bib front; cotton canvas; fresh green (Pantone 15-0343 TCX). Bright sunny garden, soft bokeh; 50mm, photorealistic, wholesome and fresh.</div>
+          <div class="prompt"><span class="ptag">② Garment 2</span> Butterfly chase. A child, around 5, running through a meadow. They wear a floral-print romper, shirred bodice, ruffle straps; cotton voile; floral brights with soft lilac (Pantone 15-3620 TCX). Bright meadow, golden light; 50mm, photorealistic, joyful and free.</div>
+          <div class="prompt"><span class="ptag">③ Garment 3</span> Garden explorer. A child, around 7, examining a leaf. They wear a botanical-print short-sleeve shirt and shorts, camp collar; lightweight cotton; sky blue with botanical print (Pantone 14-4318 TCX). Sunny leafy garden; 50mm, photorealistic, curious and bright.</div>
+          <div class="prompt"><span class="ptag">④ Garment 4</span> Morning in the greenhouse. A child, around 6, among potted plants. They wear an open-knit cardigan over a tee; soft cotton knit; lime sprout green (Pantone 14-0452 TCX). Soft sunny greenhouse light; 50mm, photorealistic, fresh and gentle.</div>
+          <div class="prompt mood"><span class="ptag">⑤ Mood board</span> Design moodboard, flat-lay collage, no people: leaf &amp; botanical-print swatches, floral cotton, pressed leaves &amp; petals, seed packets, daisy buttons &amp; ruffle trims, a botanical illustration, a terracotta pot, Pantone chips in fresh green, lilac, sky blue and lime; bright sunny daylight, mossy garden surface, top-down.</div>
+        </div>
+        <div class="refs">Sources: <a href="https://fashionunited.com/specials/spring-summer-2027-fashion-trends" target="_blank" rel="noopener">FashionUnited SS27 (fresh greens, florals)</a> · <a href="https://www.wgsn.com/en/blog/s-s-27-key-colours-have-landed" target="_blank" rel="noopener">WGSN S/S 27 key colours</a></div>
+      </div>
+    </div>
+
+    <!-- THEME 3 — SPORTY SPLASH -->
+    <div class="theme">
+      <div class="thead">
+        <div><div class="tname">03 · Sporty Splash</div>
+          <div class="swatchrow"><span class="mini" style="background:#2A4FB0"></span><span class="mini" style="background:#F37D5A"></span><span class="mini" style="background:#9FCB3B"></span><span class="mini" style="background:#7BB5D9"></span></div></div>
+        <div class="tag">Directional · Rising</div>
+      </div>
+      <div class="tbody">
+        <div class="rh">Designs — generated on Slayteq</div>
+        <div class="look look4">
+          <figure class="card"><div class="imgwrap"><img src="https://assets.geniemode.com/geniemode-assets/geniemode-ai/437199cc-3b17-4d71-8663-315bc11c6c5e/1782645866541.jpeg?format=webp" alt="Colour-block sporty set on child"></div>
+            <figcaption><div class="cap-t"><span class="dot" style="background:#2A4FB0"></span>Garment 1 · Colour-block sport set</div><div class="cap-d">Quick-dry knit · cobalt · Pantone 18-4051 TCX</div></figcaption></figure>
+          <figure class="card"><div class="imgwrap"><img src="https://assets.geniemode.com/geniemode-assets/geniemode-ai/eb57871f-32d7-4516-a2f8-594bc3159d50/1782645927418.jpeg?format=webp" alt="Mesh windbreaker on child"></div>
+            <figcaption><div class="cap-t"><span class="dot" style="background:#9FCB3B"></span>Garment 2 · Mesh windbreaker</div><div class="cap-d">Nylon + mesh · lime · Pantone 14-0452 TCX</div></figcaption></figure>
+          <figure class="card"><div class="imgwrap"><img src="https://assets.geniemode.com/geniemode-assets/geniemode-ai/f97a6d67-6cff-4cc5-8c4e-3faff0870dc1/1782645984890.jpeg?format=webp" alt="Track set on child"></div>
+            <figcaption><div class="cap-t"><span class="dot" style="background:#F37D5A"></span>Garment 3 · Track set</div><div class="cap-d">Smooth tricot · coral · Pantone 16-1546 TCX</div></figcaption></figure>
+          <figure class="card"><div class="imgwrap"><img src="https://assets.geniemode.com/geniemode-assets/geniemode-ai/8cf262b9-7252-4ceb-af85-c901484ef561/1782646044682.jpeg?format=webp" alt="Tank + bike shorts on child"></div>
+            <figcaption><div class="cap-t"><span class="dot" style="background:#7BB5D9"></span>Garment 4 · Tank + bike-shorts set</div><div class="cap-d">Quick-dry jersey · sky/yellow · Pantone 14-4318 TCX</div></figcaption></figure>
+        </div>
+        <div class="moodrow">
+          <figure class="card"><div class="imgwrap"><img src="https://assets.geniemode.com/geniemode-assets/geniemode-ai/fb212942-b6a4-474c-b129-71789b62d13d/1782646113964.jpeg?format=webp" alt="Sporty Splash mood board"></div>
+            <figcaption><div class="cap-t"><span class="ptag" style="margin:0;background:var(--brand)">Mood board</span></div><div class="cap-d">References, materials &amp; trims — mesh &amp; quick-dry knit swatches, colour-block panels, zips &amp; drawcords, sport-graphic print · Pantone cobalt / coral / lime / sky</div></figcaption></figure>
+        </div>
+        <p class="why">The active, directional story — color-block sporty tees, mesh windbreakers and quick-dry sets in bold brights. Mixed materials (mesh + knit) add depth; multi-pocket utility adds function. Built for movement and summer play.</p>
+        <div class="grid">
+          <div class="attr">
+            <h4>Color story</h4>
+            <div class="colors"><div class="col"><span class="dot" style="background:#2A4FB0"></span>Cobalt&nbsp;<span class="pan">· 18-4051</span></div><div class="col"><span class="dot" style="background:#F37D5A"></span>Coral&nbsp;<span class="pan">· 16-1546</span></div><div class="col"><span class="dot" style="background:#9FCB3B"></span>Lime&nbsp;<span class="pan">· 14-0452</span></div><div class="col"><span class="dot" style="background:#7BB5D9"></span>Sky&nbsp;<span class="pan">· 14-4318</span></div></div>
+            <h4 style="margin-top:16px">Fabrics</h4>
+            <ul><li>Quick-dry knit + mesh</li><li>Lightweight nylon</li><li>Smooth tricot</li></ul>
+          </div>
+          <div class="attr">
+            <h4>Silhouettes</h4>
+            <ul><li>Colour-block tee &amp; shorts set</li><li>Mesh-panel windbreaker</li><li>Track set &amp; tank + bike-shorts</li></ul>
+            <h4 style="margin-top:16px">Construction — neck · cut · sleeve · trims · hem</h4>
+            <ul><li><b>Neck:</b> crew / stand collar / hood</li><li><b>Cut &amp; fit:</b> tailored-relaxed, active, breathable</li><li><b>Sleeve:</b> short / raglan / sleeveless</li><li><b>Trims:</b> mesh panels, colour-block, zips, drawcords, multi-pocket</li><li><b>Hem:</b> elastic / banded hem</li></ul>
+          </div>
+        </div>
+        <div class="pack">
+          <h4>Prompt pack — 4 garments + mood board</h4>
+          <div class="prompt"><span class="ptag">① Garment 1</span> Game on. A child, around 7, mid-run on a sunny court. They wear a colour-block sporty tee and shorts, crew neck, mesh side panels; quick-dry knit; cobalt with coral and lime panels (Pantone 18-4051 TCX). Bright sunny court, crisp daylight, motion; 35mm, photorealistic, active and bold.</div>
+          <div class="prompt"><span class="ptag">② Garment 2</span> Sprint. A child, around 8, running on a track. They wear a mesh-panel windbreaker, hood, zip front; lightweight nylon and mesh; lime (Pantone 14-0452 TCX). Bright sunny track, fun motion; 35mm, photorealistic, sporty and energetic.</div>
+          <div class="prompt"><span class="ptag">③ Garment 3</span> Warm-up. A child, around 6, stretching, cheerful. They wear a track set, stand collar, zip front, contrast side stripe; smooth tricot; coral (Pantone 16-1546 TCX). Bright sporty setting, crisp daylight; 35mm, photorealistic, energetic.</div>
+          <div class="prompt"><span class="ptag">④ Garment 4</span> Splash pad fun. A child, around 5, playing in water spray. They wear a tank top and bike-shorts set; quick-dry jersey; sky blue with yellow trim (Pantone 14-4318 TCX). Bright sunny splash pad, water droplets; 35mm, photorealistic, joyful and active.</div>
+          <div class="prompt mood"><span class="ptag">⑤ Mood board</span> Design moodboard, flat-lay collage, no people: sporty mesh &amp; quick-dry knit swatches, colour-block panels, zips &amp; drawcords, a whistle, a striped sweatband, a sport-graphic print, Pantone chips in cobalt, coral, lime and sky; bright crisp daylight, clean court surface, top-down.</div>
+        </div>
+        <div class="refs">Sources: <a href="https://mmsclothing.com/sporty-t-shirt-trends-for-kids-spring-2027-silhouettes/" target="_blank" rel="noopener">MMS — Spring 2027 sporty kids tees</a> · <a href="https://www.modacable.com/prodotto/ss-27-kidswear-fashion-trends/" target="_blank" rel="noopener">Modacable SS27 kidswear</a></div>
+      </div>
+    </div>
+
+    <!-- THEME 4 — DREAMY WASH -->
+    <div class="theme">
+      <div class="thead">
+        <div><div class="tname">04 · Dreamy Wash</div>
+          <div class="swatchrow"><span class="mini" style="background:#C7A8DE"></span><span class="mini" style="background:#F4B98E"></span><span class="mini" style="background:#7BB5D9"></span><span class="mini" style="background:#F0B7C4"></span></div></div>
+        <div class="tag">Building · Rising</div>
+      </div>
+      <div class="tbody">
+        <div class="rh">Designs — generated on Slayteq</div>
+        <div class="look look4">
+          <figure class="card"><div class="imgwrap"><img src="https://assets.geniemode.com/geniemode-assets/geniemode-ai/225b02d4-90f5-446d-9102-5824f8b5de4a/1782646190022.jpeg?format=webp" alt="Tie-dye tee dress on child"></div>
+            <figcaption><div class="cap-t"><span class="dot" style="background:#C7A8DE"></span>Garment 1 · Tie-dye tee dress</div><div class="cap-d">Cotton jersey · soft lilac · Pantone 15-3620 TCX</div></figcaption></figure>
+          <figure class="card"><div class="imgwrap"><img src="https://assets.geniemode.com/geniemode-assets/geniemode-ai/28d4e5ee-2feb-46a3-9ee2-aa9030c8a218/1782646252173.jpeg?format=webp" alt="Paisley set on child"></div>
+            <figcaption><div class="cap-t"><span class="dot" style="background:#F4B98E"></span>Garment 2 · Paisley blouse set</div><div class="cap-d">Lightweight cotton · peach · Pantone 13-1023 TCX</div></figcaption></figure>
+          <figure class="card"><div class="imgwrap"><img src="https://assets.geniemode.com/geniemode-assets/geniemode-ai/2a75ba52-65d8-43de-81e7-61f589560528/1782646316076.jpeg?format=webp" alt="Ombré hoodie on child"></div>
+            <figcaption><div class="cap-t"><span class="dot" style="background:#7BB5D9"></span>Garment 3 · Ombré-gradient hoodie</div><div class="cap-d">Soft fleece · sky→lilac · Pantone 14-4318 TCX</div></figcaption></figure>
+          <figure class="card"><div class="imgwrap"><img src="https://assets.geniemode.com/geniemode-assets/geniemode-ai/43c28ce1-a57f-412a-9e6f-e7a1f71dc3ed/1782646376482.jpeg?format=webp" alt="Watercolor sundress on child"></div>
+            <figcaption><div class="cap-t"><span class="dot" style="background:#F0B7C4"></span>Garment 4 · Watercolor sundress</div><div class="cap-d">Cotton voile · soft pink · Pantone 13-2807 TCX</div></figcaption></figure>
+        </div>
+        <div class="moodrow">
+          <figure class="card"><div class="imgwrap"><img src="https://assets.geniemode.com/geniemode-assets/geniemode-ai/879f48b3-15d3-4427-88a2-897928ead5f4/1782646445548.jpeg?format=webp" alt="Dreamy Wash mood board"></div>
+            <figcaption><div class="cap-t"><span class="ptag" style="margin:0;background:var(--brand)">Mood board</span></div><div class="cap-d">References, materials &amp; trims — tie-dye &amp; watercolour swatches, paisley fabric, ombré samples, ruffle &amp; tie-strap trims, pearly buttons · Pantone lilac / peach / sky / soft pink</div></figcaption></figure>
+        </div>
+        <p class="why">The soft, artistic end — blurred soft-focus prints, reimagined paisley and ombré washes in dreamy pastels. Nostalgic and gentle, it adds an expressive, fashion-forward edge to the season's brights.</p>
+        <div class="grid">
+          <div class="attr">
+            <h4>Color story</h4>
+            <div class="colors"><div class="col"><span class="dot" style="background:#C7A8DE"></span>Soft Lilac&nbsp;<span class="pan">· 15-3620</span></div><div class="col"><span class="dot" style="background:#F4B98E"></span>Peach Fuzz&nbsp;<span class="pan">· 13-1023</span></div><div class="col"><span class="dot" style="background:#7BB5D9"></span>Sky Blue&nbsp;<span class="pan">· 14-4318</span></div><div class="col"><span class="dot" style="background:#F0B7C4"></span>Soft Pink&nbsp;<span class="pan">· 13-2807</span></div></div>
+            <h4 style="margin-top:16px">Fabrics</h4>
+            <ul><li>Soft cotton jersey</li><li>Printed cotton voile</li><li>Brushed fleece (ombré)</li></ul>
+          </div>
+          <div class="attr">
+            <h4>Silhouettes</h4>
+            <ul><li>Tie-dye tee dress</li><li>Paisley blouse &amp; shorts set</li><li>Ombré hoodie &amp; watercolor sundress</li></ul>
+            <h4 style="margin-top:16px">Construction — neck · cut · sleeve · trims · hem</h4>
+            <ul><li><b>Neck:</b> round / hood / tie-strap</li><li><b>Cut &amp; fit:</b> relaxed, soft, easy</li><li><b>Sleeve:</b> short / long / sleeveless</li><li><b>Trims:</b> soft-focus prints, ombré, ruffle, pearly buttons</li><li><b>Hem:</b> ruffle / rolled hem</li></ul>
+          </div>
+        </div>
+        <div class="pack">
+          <h4>Prompt pack — 4 garments + mood board</h4>
+          <div class="prompt"><span class="ptag">① Garment 1</span> Daydream. A child, around 6, a gentle smile, soft dreamy light. They wear a soft-focus tie-dye tee dress, relaxed; cotton jersey; soft lilac blur (Pantone 15-3620 TCX). Hazy pastel light, soft bokeh; 50mm, photorealistic, dreamy and gentle.</div>
+          <div class="prompt"><span class="ptag">② Garment 2</span> Soft paisley. A child, around 7, calm and sweet. They wear a reimagined-paisley print blouse and shorts; lightweight cotton; peach with fluid paisley (Pantone 13-1023 TCX). Soft warm light, dreamy bokeh; 50mm, photorealistic, artistic and soft.</div>
+          <div class="prompt"><span class="ptag">③ Garment 3</span> Cloud nine. A child, around 5, content. They wear an ombré-gradient zip hoodie; soft fleece; sky-blue to lilac gradient (Pantone 14-4318 TCX). Hazy pastel light, soft bokeh; 50mm, photorealistic, dreamy.</div>
+          <div class="prompt"><span class="ptag">④ Garment 4</span> Watercolor garden. A child, around 6, sweet. They wear a watercolour-floral sundress, ruffle hem, tie straps; cotton voile; soft pink watercolour (Pantone 13-2807 TCX). Soft dreamy garden light, bokeh; 50mm, photorealistic, gentle and pretty.</div>
+          <div class="prompt mood"><span class="ptag">⑤ Mood board</span> Design moodboard, flat-lay collage, no people: soft-focus tie-dye &amp; watercolour swatches, reimagined-paisley fabric, ombré samples, ruffle &amp; tie-strap trims, pearly buttons, a dreamy pastel watercolour, soft feathers, Pantone chips in soft lilac, peach, sky and soft pink; soft hazy daylight, pale dreamy surface, top-down.</div>
+        </div>
+        <div class="refs">Sources: <a href="https://www.thedesignagent.com/blog-posts/ss27-trend-forecast" target="_blank" rel="noopener">The Pattern Cloud — SS27 (blurred prints, paisley)</a> · <a href="https://www.wgsn.com/en/blog/s-s-27-key-colours-have-landed" target="_blank" rel="noopener">WGSN S/S 27 colours</a></div>
+      </div>
+    </div>
+
+  </section>
+
+  <section>
+    <div class="sec-h">Sources &amp; methodology</div>
+    <div class="srcbox">
+      <h4>Trend-signal sources</h4>
+      <ul>
+        <li><a href="https://www.modacable.com/prodotto/ss-27-kidswear-fashion-trends/" target="_blank" rel="noopener">Modacable — SS27 kidswear fashion trends</a></li>
+        <li><a href="https://www.thedesignagent.com/blog-posts/ss27-trend-forecast" target="_blank" rel="noopener">The Pattern Cloud — SS27 print &amp; pattern (gingham, paisley, soft-focus)</a></li>
+        <li><a href="https://mmsclothing.com/sporty-t-shirt-trends-for-kids-spring-2027-silhouettes/" target="_blank" rel="noopener">MMS — Sporty kids' tee silhouettes Spring 2027</a></li>
+        <li><a href="https://fashionunited.com/specials/spring-summer-2027-fashion-trends" target="_blank" rel="noopener">FashionUnited — Spring/Summer 2027 trends</a></li>
+        <li><a href="https://www.wgsn.com/en/blog/s-s-27-key-colours-have-landed" target="_blank" rel="noopener">WGSN — S/S 27 key colours</a></li>
+      </ul>
+      <h4>Colour / Pantone</h4>
+      <ul><li>Pantone TCX references are nearest indicative matches for direction; confirm against physical Pantone TCX chips before lab-dip / bulk approval.</li></ul>
+      <h4>Imagery</h4>
+      <ul><li>All garment and mood-board images are AI designs generated on Slayteq from the prompt packs above — art-directed, on-model, story-driven. Slayteq collection: <a href="https://slayteq.ai/collections/6397" target="_blank" rel="noopener">view all designs</a>.</li></ul>
+    </div>
+  </section>
+
+  <div class="note"><b>Imagery note:</b> every garment and mood board shown is an AI design generated on Slayteq from the prompt packs in this report. Child imagery is wholesome, age-appropriate kidswear catalogue styling. Click any image to enlarge.</div>
+
+  <footer>
+    <b>Trend DNA</b> — generated by Geniemode's trend engine · worked example, SS27 Kids Wear · June 2026.<br>
+    Tracked in Jira: <a href="https://geniemode.atlassian.net/browse/GM-5328" target="_blank" rel="noopener">GM-5328</a> · Slayteq collection: <a href="https://slayteq.ai/collections/6397" target="_blank" rel="noopener">view all designs</a>.
+  </footer>
+
+</div>
+
+<div id="lightbox" aria-hidden="true">
+  <img id="lightbox-img" alt="Enlarged design">
+  <div id="lightbox-close" title="Close">&times;</div>
+</div>
+<style>
+  #lightbox{display:none;position:fixed;inset:0;background:rgba(22,20,18,.93);z-index:9999;align-items:center;justify-content:center;cursor:zoom-out;padding:28px}
+  #lightbox.open{display:flex}
+  #lightbox img{max-width:95vw;max-height:92vh;object-fit:contain;border-radius:6px;box-shadow:0 16px 70px rgba(0,0,0,.6)}
+  #lightbox-close{position:fixed;top:18px;right:26px;color:#fff;font-size:40px;line-height:1;cursor:pointer;opacity:.8;font-family:Arial,sans-serif}
+  #lightbox-close:hover{opacity:1}
+</style>
+<script>
+(function(){
+  var lb=document.getElementById('lightbox'),li=document.getElementById('lightbox-img');
+  function close(){lb.classList.remove('open');li.src='';}
+  document.addEventListener('click',function(e){
+    var img=e.target.closest('figure.card img');
+    if(img&&!lb.classList.contains('open')){li.src=img.src;lb.classList.add('open');return;}
+    if(lb.classList.contains('open')){close();}
+  });
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')close();});
+})();
+</script>
+</body>
+</html>
