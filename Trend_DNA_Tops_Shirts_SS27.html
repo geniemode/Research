@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trend DNA — Tops &amp; Shirts SS27</title>
+<style>
+  :root{
+    --ink:#1c1b1a; --muted:#6c6760; --line:#e7e2da; --bg:#faf8f4; --card:#ffffff;
+    --brand:#7a3b2e; --accent:#1e8e8a;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.5}
+  .wrap{max-width:1480px;margin:0 auto;padding:0 40px 80px}
+  header{padding:64px 0 32px;border-bottom:3px solid var(--ink)}
+  .kicker{font-size:12px;letter-spacing:.28em;text-transform:uppercase;color:var(--brand);font-weight:700}
+  h1{font-size:62px;line-height:.98;letter-spacing:-.02em;margin:14px 0 8px;font-weight:800}
+  .sub{font-size:20px;color:var(--muted);max-width:680px}
+  .meta{margin-top:22px;display:flex;flex-wrap:wrap;gap:10px}
+  .chip{font-size:12px;font-weight:600;background:#fff;border:1px solid var(--line);border-radius:999px;padding:6px 13px;color:var(--muted)}
+  .chip b{color:var(--ink)}
+  section{margin-top:54px}
+  .sec-h{font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);font-weight:700;margin-bottom:16px;display:flex;align-items:center;gap:12px}
+  .sec-h::after{content:"";flex:1;height:1px;background:var(--line)}
+  .overview{font-size:21px;line-height:1.5;max-width:820px}
+  .overview b{color:var(--brand)}
+  .palette{display:grid;grid-template-columns:repeat(5,1fr);gap:0;border-radius:14px;overflow:hidden;border:1px solid var(--line);margin-top:6px}
+  .sw{height:130px;position:relative;display:flex;align-items:flex-end;padding:12px}
+  .sw span{font-size:11px;font-weight:700;background:rgba(255,255,255,.88);padding:4px 8px;border-radius:5px;color:#222;line-height:1.3}
+  .sw span b{display:block;font-size:10px;font-weight:700;color:#555;letter-spacing:.02em}
+  .col .pan{color:var(--muted);font-weight:600}
+  @media(max-width:760px){.palette{grid-template-columns:repeat(2,1fr)}.sw{height:96px}}
+  .theme{background:var(--card);border:1px solid var(--line);border-radius:18px;overflow:hidden;margin-top:26px;box-shadow:0 1px 0 rgba(0,0,0,.02)}
+  .thead{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:18px 24px;border-bottom:1px solid var(--line)}
+  .thead .tname{font-size:26px;font-weight:800;letter-spacing:-.01em}
+  .thead .swatchrow{display:flex;gap:6px;margin-top:6px}
+  .thead .mini{width:26px;height:14px;border-radius:4px;border:1px solid rgba(0,0,0,.1)}
+  .tag{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;background:#1c1b1a;color:#fff;padding:6px 12px;border-radius:999px;white-space:nowrap}
+  .tbody{padding:22px 24px 26px}
+  /* Lookbook grid */
+  .look{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:22px}
+  @media(max-width:760px){.look{grid-template-columns:1fr 1fr}}
+  @media(max-width:480px){.look{grid-template-columns:1fr}}
+  .look4{grid-template-columns:repeat(4,1fr)}
+  @media(max-width:900px){.look4{grid-template-columns:1fr 1fr}}
+  @media(max-width:520px){.look4{grid-template-columns:1fr}}
+  .look4 figure.card .imgwrap{height:360px}
+  .moodrow{margin:2px 0 24px}
+  .moodrow figure.card{margin:0}
+  .moodrow{max-width:1100px;margin:2px auto 24px}
+  .moodrow figure.card .imgwrap{height:auto!important;background:#f1ece4}
+  .moodrow figure.card .imgwrap img{width:100%;height:auto!important;display:block;object-fit:contain;position:static}
+  .moodrow figcaption{display:flex;align-items:center;gap:12px}
+  .moodrow figcaption .cap-d{font-size:13.5px}
+  figure.card{border:1px solid var(--line);border-radius:12px;overflow:hidden;background:#fff;margin:0}
+  figure.card .imgwrap{position:relative;height:250px;overflow:hidden}
+  figure.card img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .4s ease}
+  figure.card:hover img{transform:scale(1.04)}
+  figure.card .credit{position:absolute;top:8px;right:8px;font-size:9.5px;color:rgba(255,255,255,.9);background:rgba(0,0,0,.34);padding:2px 7px;border-radius:999px;text-decoration:none}
+  figcaption{padding:11px 13px}
+  figcaption .cap-t{font-size:13px;font-weight:700;display:flex;align-items:center;gap:7px}
+  figcaption .cap-t .dot{width:13px;height:13px;border-radius:50%;border:1px solid rgba(0,0,0,.12)}
+  figcaption .cap-d{font-size:11.5px;color:var(--muted);margin-top:3px}
+  .why{font-size:15.5px;color:#3a3631;max-width:820px;margin-bottom:20px}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+  @media(max-width:760px){.grid{grid-template-columns:1fr}}
+  .attr h4{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-bottom:8px}
+  .attr ul{list-style:none;font-size:14.5px}
+  .attr li{padding:3px 0;border-bottom:1px dashed var(--line)}
+  .attr li:last-child{border:none}
+  .colors{display:flex;gap:8px;flex-wrap:wrap;margin-top:4px}
+  .col{display:flex;align-items:center;gap:7px;font-size:12px;font-weight:600;background:#faf8f4;border:1px solid var(--line);border-radius:999px;padding:4px 11px 4px 5px}
+  .dot{width:18px;height:18px;border-radius:50%;border:1px solid rgba(0,0,0,.12)}
+  .pack{margin-top:22px;background:#f6f2ec;border:1px solid var(--line);border-radius:12px;padding:16px 18px}
+  .pack h4{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--brand);margin-bottom:10px}
+  .prompt{font-size:13px;font-family:"SF Mono",ui-monospace,Menlo,monospace;background:#fff;border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:7px;padding:10px 12px;margin-bottom:8px;color:#2c2a27;line-height:1.45}
+  .ptag{display:inline-block;font-family:-apple-system,Helvetica,Arial,sans-serif;font-size:10px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:#fff;background:var(--accent);border-radius:5px;padding:2px 7px;margin-right:6px;vertical-align:1px}
+  .prompt.mood{border-left-color:var(--brand);background:#fbf6f1}
+  .prompt.mood .ptag{background:var(--brand)}
+  .look4 figure.card figcaption::after,.moodrow figure.card figcaption::after{content:"✦ Generated on Slayteq";display:block;margin-top:8px;font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);font-weight:700;opacity:.85}
+  .renders{margin-top:20px;border-top:1px dashed var(--line);padding-top:16px}
+  .renders .rh{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);font-weight:700;margin-bottom:12px}
+  .renders figure.card .imgwrap{height:300px}
+  .refs{margin-top:14px;font-size:13px;color:var(--muted)}
+  .refs a{color:var(--accent);text-decoration:none;border-bottom:1px solid #bfe0de}
+  .srcbox{background:#fff;border:1px solid var(--line);border-radius:14px;padding:22px 24px}
+  .srcbox h4{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--brand);margin:14px 0 8px}
+  .srcbox h4:first-child{margin-top:0}
+  .srcbox ul{list-style:none;font-size:14px}
+  .srcbox li{padding:5px 0;border-bottom:1px solid var(--line)}
+  .srcbox li:last-child{border:none}
+  .srcbox a{color:var(--accent);text-decoration:none}
+  footer{margin-top:46px;padding-top:24px;border-top:1px solid var(--line);font-size:13px;color:var(--muted)}
+  footer a{color:var(--accent)}
+  .note{background:#fff7ed;border:1px solid #f3d9b8;border-radius:10px;padding:12px 16px;font-size:13px;color:#7a5a2e;margin-top:20px}
+
+  /* Print — each theme on its own page, no awkward splits */
+  @media(max-width:680px){
+    .wrap{padding:0 16px 60px}
+    header{padding:40px 0 24px}
+    h1{font-size:38px}
+    .sub{font-size:16px}
+    .overview{font-size:17px}
+    section{margin-top:36px}
+    .thead{flex-wrap:wrap}
+    .thead .tname{font-size:22px}
+    .look4 figure.card .imgwrap{height:340px}
+    .prompt{font-size:12px;line-height:1.5}
+    .palette{grid-template-columns:1fr 1fr}
+    .srcbox{padding:16px}
+  }
+  @media print{
+    @page{size:A4;margin:12mm}
+    body{background:#fff;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+    .wrap{max-width:none;padding:0}
+    a{color:#1e8e8a;text-decoration:none}
+    header{padding:0 0 18px}
+    h1{font-size:42px}
+    section{margin-top:20px}
+    /* themes flow naturally and start on a fresh page; content is too tall to force one-per-page */
+    .theme{break-inside:auto;box-shadow:none;border:none}
+    .theme{break-before:page;page-break-before:always}
+    section .theme:first-of-type{break-before:auto;page-break-before:auto}
+    .thead{break-after:avoid;page-break-after:avoid}
+    .look{break-inside:avoid;page-break-inside:avoid}
+    .look4{grid-template-columns:repeat(4,1fr)}
+    .look4 figure.card .imgwrap{height:300px}
+    figure.card{break-inside:avoid;page-break-inside:avoid}
+    figure.card:hover img{transform:none}
+    .grid,.pack,.prompt,.refs{break-inside:avoid;page-break-inside:avoid}
+    /* mood board on its own page, scaled to fit one page */
+    .moodrow{break-before:page;page-break-before:always;break-inside:avoid;page-break-inside:avoid;max-width:none;text-align:center}
+    .moodrow figure.card .imgwrap img{max-height:235mm!important;width:auto!important;max-width:100%;margin:0 auto}
+    .sec-h{break-after:avoid;page-break-after:avoid}
+    .srcbox,.note{break-before:page;page-break-before:always;break-inside:avoid}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="kicker">Trend DNA · Geniemode</div>
+    <h1>Tops &amp; Shirts</h1>
+    <div class="sub">Spring / Summer 2027 — an auto-generated trend profile: color stories, lookbook references, silhouettes, prints, details, and ready-to-run prompt packs.</div>
+    <div class="meta">
+      <div class="chip">Category: <b>Tops &amp; Shirts</b></div>
+      <div class="chip">Season: <b>SS27</b></div>
+      <div class="chip">Segment: <b>Contemporary · unisex</b></div>
+      <div class="chip">Generated: <b>Jun 2026</b></div>
+      <div class="chip">Confidence: <b>Medium–High</b></div>
+    </div>
+  </header>
+
+  <section>
+    <div class="sec-h">Season read</div>
+    <p class="overview">SS27 holds two energies in tension: <b>warm, earthy depth</b> (terracotta, clay, moss, wine) against <b>cool, tech-forward brightness</b> (teal, cobalt, electric lavender). Across tops the move is toward <b>relaxed-but-structured</b> shapes — boxy, cropped, breathable — and what forecasters call "quiet maximalism": richness through texture, hand-finishing and layering rather than loud excess. Structural breathability (open-weave, seersucker, heavyweight linen) replaces flimsy sheerness.</p>
+  </section>
+
+  <section>
+    <div class="sec-h">Master palette · Pantone TCX</div>
+    <div class="palette">
+      <div class="sw" style="background:#C26B4A"><span>Terracotta Clay<b>16-1526 TCX</b></span></div>
+      <div class="sw" style="background:#D8C3A5"><span>Sand Beige<b>14-1116 TCX</b></span></div>
+      <div class="sw" style="background:#8A9A5B"><span>Moss / Sage<b>17-0625 TCX</b></span></div>
+      <div class="sw" style="background:#1E8E8A"><span>Transformative Teal<b>17-5029 TCX</b></span></div>
+      <div class="sw" style="background:#2A4FB0"><span>Cobalt Blue<b>18-4051 TCX</b></span></div>
+      <div class="sw" style="background:#B79CE0"><span>Electric Lavender<b>16-3815 TCX</b></span></div>
+      <div class="sw" style="background:#6E2235"><span>Wine / Burgundy<b>19-1627 TCX</b></span></div>
+      <div class="sw" style="background:#F2D479"><span>Butter Yellow<b>12-0721 TCX</b></span></div>
+      <div class="sw" style="background:#F4B98E"><span>Peach Fuzz<b>13-1023 TCX</b></span></div>
+      <div class="sw" style="background:#C56A2D"><span>Energy Orange<b>16-1364 TCX</b></span></div>
+    </div>
+    <p style="font-size:12px;color:var(--muted);margin-top:8px">Pantone values are nearest TCX references for direction — confirm against physical chips before lab-dip approval.</p>
+  </section>
+
+  <section>
+    <div class="sec-h">Macro themes · lookbook</div>
+
+    <!-- THEME 1 -->
+    <div class="theme">
+      <div class="thead">
+        <div>
+          <div class="tname">01 · Coastal Utility</div>
+          <div class="swatchrow"><span class="mini" style="background:#C26B4A"></span><span class="mini" style="background:#D8C3A5"></span><span class="mini" style="background:#8A9A5B"></span><span class="mini" style="background:#6B4A33"></span></div>
+        </div>
+        <div class="tag">Safe bet · Peak</div>
+      </div>
+      <div class="tbody">
+        <div class="rh" style="font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);font-weight:700;margin-bottom:12px">Designs — generated on Slayteq</div>
+        <div class="look look4">
+          <figure class="card">
+            <div class="imgwrap"><img src="https://assets.geniemode.com/geniemode-assets/geniemode-ai/a67065b7-4df2-4739-a554-b196f287627a/1782634945795.jpeg?format=webp" alt="Camp-collar shirt"></div>
+            <figcaption><div class="cap-t"><span class="dot" style="background:#C26B4A"></span>Garment 1 · Camp-collar shirt</div><div class="cap-d">Garment-dyed slubbed linen · terracotta · Pantone 16-1526 TCX</div></figcaption>
+          </figure>
+          <figure class="card">
+            <div class="imgwrap"><img src="https://assets.geniemode.com/geniemode-assets/geniemode-ai/c7eb8424-48e9-4563-9f1f-5761f3098e29/1782636804851.jpeg?format=webp" alt="Utility overshirt"></div>
+            <figcaption><div class="cap-t"><span class="dot" style="background:#D8C3A5"></span>Garment 2 · Utility overshirt</div><div class="cap-d">Open-weave heavy cotton · sand · Pantone 14-1116 TCX</div></figcaption>
+          </figure>
+          <figure class="card">
+            <div class="imgwrap"><img src="https://assets.geniemode.com/geniemode-assets/geniemode-ai/ad1de108-09b5-4f37-a43e-6722be4cd3fd/1782636921103.jpeg?format=webp" alt="Seersucker camp shirt"></div>
+            <figcaption><div class="cap-t"><span class="dot" style="background:#6B4A33"></span>Garment 3 · Seersucker camp shirt</div><div class="cap-d">Textured cotton seersucker · coffee/sand · Pantone 19-1116 TCX</div></figcaption>
+          </figure>
+          <figure class="card">
+            <div class="imgwrap"><img src="https://assets.geniemode.com/geniemode-assets/geniemode-ai/f19cf359-7ff4-4f3c-a502-26d574884c88/1782636994447.jpeg?format=webp" alt="Utility popover"></div>
+            <figcaption><div class="cap-t"><span class="dot" style="background:#8A9A5B"></span>Garment 4 · Utility popover</div><div class="cap-d">Washed heavy linen-cotton · moss · Pantone 17-0625 TCX</div></figcaption>
+          </figure>
+        </div>
+        <div class="moodrow">
+          <figure class="card">
+            <div class="imgwrap"><img src="https://assets.geniemode.com/geniemode-assets/geniemode-ai/73ce4549-aca9-4c04-abdc-311add0d3ce1/1782636037537.jpeg?format=webp" alt="Coastal Utility mood board"></div>
+            <figcaption><div class="cap-t"><span class="ptag" style="margin:0;background:var(--brand)">Mood board</span></div><div class="cap-d">References, materials &amp; trims — driftwood, rope, clay, linen &amp; seersucker swatches, corozo buttons · Pantone terracotta / sand / moss</div></figcaption>
+          </figure>
+        </div>
+        <p class="why">The dependable core of the season. Camp-collar and overshirt silhouettes in chroma-muted earth tones, built for "structural breathability" — reads as resort but functions as everyday workwear. Broadest commercial application across menswear and womenswear.</p>
+        <div class="grid">
+          <div class="attr">
+            <h4>Color story</h4>
+            <div class="colors"><div class="col"><span class="dot" style="background:#C26B4A"></span>Terracotta&nbsp;<span class="pan">· 16-1526</span></div><div class="col"><span class="dot" style="background:#D8C3A5"></span>Sand&nbsp;<span class="pan">· 14-1116</span></div><div class="col"><span class="dot" style="background:#8A9A5B"></span>Moss&nbsp;<span class="pan">· 17-0625</span></div><div class="col"><span class="dot" style="background:#6B4A33"></span>Coffee&nbsp;<span class="pan">· 19-1116</span></div></div>
+            <h4 style="margin-top:16px">Fabrics</h4>
+            <ul><li>Heavyweight &amp; garment-dyed linen</li><li>Open-weave heavy cotton</li><li>Textured seersucker</li></ul>
+          </div>
+          <div class="attr">
+            <h4>Silhouettes</h4>
+            <ul><li>Boxy, cropped camp-collar shirt</li><li>Relaxed utility overshirt</li><li>Coordinated shirt-and-short sets</li></ul>
+            <h4 style="margin-top:16px">Construction — collar · cut · sleeve · trims · hem</h4>
+            <ul><li><b>Collar:</b> open one-piece camp (revere) collar, soft roll</li><li><b>Cut &amp; fit:</b> boxy, dropped shoulder, slightly cropped, straight side</li><li><b>Sleeve:</b> short set-in with turn-back; long single-button cuff on overshirt</li><li><b>Trims:</b> full button placket, tonal corozo buttons, chest patch pocket, bartacks</li><li><b>Hem/print:</b> straight twin-needle hem; woodgrain &amp; tonal utility motifs</li></ul>
+          </div>
+        </div>
+        <div class="pack">
+          <h4>Prompt pack — 4 garments + mood board</h4>
+          <div class="prompt"><span class="ptag">① Garment 1</span> Oversized camp-collar short-sleeve shirt, boxy cropped body, dropped shoulder, single chest patch pocket, curved hem; garment-dyed heavyweight slubbed linen, soft matte hand, visible weave; tonal corozo buttons, topstitched seams, bartacks; washed terracotta (Pantone 16-1526 TCX). Invisible ghost-mannequin product shot, garment only, no person, on a warm-sand seamless background; even soft box lighting, subtle floor shadow; straight-on, 50mm, high-detail e-commerce photography.</div>
+          <div class="prompt"><span class="ptag">② Garment 2</span> Relaxed utility overshirt, full button-through placket, two chest flap pockets, shirt collar, straight hem; open-weave heavy cotton; woodgrain horn buttons, contrast tonal topstitch; sand beige (Pantone 14-1116 TCX). Invisible ghost-mannequin product shot, garment only, no person, on a warm-sand seamless background; even soft box lighting, subtle floor shadow; straight-on, 50mm, high-detail e-commerce photography.</div>
+          <div class="prompt"><span class="ptag">③ Garment 3</span> Short-sleeve seersucker camp shirt, boxy fit, one-piece revere collar, curved hem; textured cotton seersucker, light crinkle; matte coconut buttons, twin-needle hem; coffee with sand stripe (Pantone 19-1116 TCX). Invisible ghost-mannequin product shot, garment only, no person, on a warm-sand seamless background; even soft box lighting; straight-on, 50mm, high-detail e-commerce photography.</div>
+          <div class="prompt"><span class="ptag">④ Garment 4</span> Sleeveless utility popover, half-placket, large bellows chest pocket, stand collar; washed heavy linen-cotton; antique-finish snaps, bartacks; moss green (Pantone 17-0625 TCX). Invisible ghost-mannequin product shot, garment only, no person, on a warm-sand seamless background; even soft box lighting; straight-on, 50mm, high-detail e-commerce photography.</div>
+          <div class="prompt mood"><span class="ptag">⑤ Mood board</span> Design moodboard, flat-lay collage grid mixing references and trims: weathered driftwood and sun-bleached rope, a terracotta clay pot, smooth coastal pebbles, raw linen and seersucker fabric swatches, a strip of garment-dyed slubbed linen, tonal corozo buttons and topstitch trim samples, a torn page of a minimalist sun-bleached coastal landscape painting, dried beach grasses, Pantone chips in terracotta 16-1526, sand 14-1116 and moss 17-0625; warm natural daylight, neutral oat-linen surface, top-down editorial moodboard photography.</div>
+        </div>
+        <div class="refs">Sources: <a href="https://www.mrporter.com/en-us/mens/clothing/casual-shirts/camp-collar-shirts" target="_blank" rel="noopener">Mr Porter camp-collar</a> · <a href="https://www.taylorstitch.com/blogs/archive/styling-a-camp-collar-shirt" target="_blank" rel="noopener">Taylor Stitch styling</a></div>
+      </div>
+    </div>
+
+    <!-- THEME 2 -->
+    <div class="theme">
+      <div class="thead">
+        <div>
+          <div class="tname">02 · Tech Tide</div>
+          <div class="swatchrow"><span class="mini" style="background:#1E8E8A"></span><span class="mini" style="background:#2A4FB0"></span><span class="mini" style="background:#9FD9F2"></span><span class="mini" style="background:#B79CE0"></span></div>
+        </div>
+        <div class="tag">Directional · Rising</div>
+      </div>
+      <div class="tbody">
+        <div class="rh" style="font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);font-weight:700;margin-bottom:12px">Designs — generated on Slayteq</div>
+        <div class="look look4">
+          <figure class="card">
+            <div class="imgwrap"><img src="https://assets.geniemode.com/geniemode-assets/geniemode-ai/32832c5f-9bf8-4ef3-9622-6f0aa47d27f6/1782635571551.jpeg?format=webp" alt="Quarter-zip sport polo"></div>
+            <figcaption><div class="cap-t"><span class="dot" style="background:#1E8E8A"></span>Garment 1 · Quarter-zip sport polo</div><div class="cap-d">Recycled technical jersey · teal + cobalt · Pantone 17-5029 TCX</div></figcaption>
+          </figure>
+          <figure class="card">
+            <div class="imgwrap"><img src="https://assets.geniemode.com/geniemode-assets/geniemode-ai/5e82213f-5489-4629-b4ec-6620c7365157/1782637511729.jpeg?format=webp" alt="Base-layer crew tee"></div>
+            <figcaption><div class="cap-t"><span class="dot" style="background:#2A4FB0"></span>Garment 2 · Base-layer crew tee</div><div class="cap-d">Four-way-stretch jersey · cobalt · Pantone 18-4051 TCX</div></figcaption>
+          </figure>
+          <figure class="card">
+            <div class="imgwrap"><img src="https://assets.geniemode.com/geniemode-assets/geniemode-ai/2deb4979-ca44-4df8-b572-6fd59ce6dd6e/1782637605888.jpeg?format=webp" alt="Jelly-mesh overshirt"></div>
+            <figcaption><div class="cap-t"><span class="dot" style="background:#9FD9F2"></span>Garment 3 · Jelly-mesh overshirt</div><div class="cap-d">Translucent mesh · icy-blue→lavender · Pantone 12-4609 TCX</div></figcaption>
+          </figure>
+          <figure class="card">
+            <div class="imgwrap"><img src="https://assets.geniemode.com/geniemode-assets/geniemode-ai/9519495c-3fcd-4a87-bcc0-7e7ff4a9ffa7/1782637670311.jpeg?format=webp" alt="Colour-block sport shirt"></div>
+            <figcaption><div class="cap-t"><span class="dot" style="background:#B79CE0"></span>Garment 4 · Colour-block shirt</div><div class="cap-d">Satin-touch poly · teal/cobalt/lavender · Pantone 17-5029 TCX</div></figcaption>
+          </figure>
+        </div>
+        <div class="moodrow">
+          <figure class="card">
+            <div class="imgwrap"><img src="https://assets.geniemode.com/geniemode-assets/geniemode-ai/dea37e92-43a5-4368-81a4-64287bb70cee/1782636104587.jpeg?format=webp" alt="Tech Tide mood board"></div>
+            <figcaption><div class="cap-t"><span class="ptag" style="margin:0;background:var(--brand)">Mood board</span></div><div class="cap-d">References, materials &amp; trims — chrome, holographic film, technical mesh &amp; satin swatches, reflective zip pulls · Pantone teal / cobalt / lavender</div></figcaption>
+          </figure>
+        </div>
+        <p class="why">The cool counter-current. "Transformative Teal" searches are up ~349% — a market-wide pull toward colors bridging nature and a tech future. Sporty-sophisticated tops with racing stripes, color-blocking and "jelly"/sheer transparency. Higher risk, strong newness — a directional bet for forward doors.</p>
+        <div class="grid">
+          <div class="attr">
+            <h4>Color story</h4>
+            <div class="colors"><div class="col"><span class="dot" style="background:#1E8E8A"></span>Teal&nbsp;<span class="pan">· 17-5029</span></div><div class="col"><span class="dot" style="background:#2A4FB0"></span>Cobalt&nbsp;<span class="pan">· 18-4051</span></div><div class="col"><span class="dot" style="background:#9FD9F2"></span>Icy Blue&nbsp;<span class="pan">· 12-4609</span></div><div class="col"><span class="dot" style="background:#B79CE0"></span>E. Lavender&nbsp;<span class="pan">· 16-3815</span></div></div>
+            <h4 style="margin-top:16px">Fabrics</h4>
+            <ul><li>Technical jersey &amp; satin</li><li>Sheer "jelly" / translucent mesh</li><li>Metallic / holographic finishes</li></ul>
+          </div>
+          <div class="attr">
+            <h4>Silhouettes</h4>
+            <ul><li>Sleek zip-neck &amp; sport polo</li><li>Fitted base-layer tee</li><li>Layered sheer overshirt</li></ul>
+            <h4 style="margin-top:16px">Construction — collar · cut · sleeve · trims · hem</h4>
+            <ul><li><b>Collar:</b> funnel stand collar with quarter-zip</li><li><b>Cut &amp; fit:</b> slim athletic, articulated side panels</li><li><b>Sleeve:</b> raglan, bonded or laser-cut cuff</li><li><b>Trims:</b> reflective zip pull, bonded flatlock seams, metallic eyelet vent</li><li><b>Hem/print:</b> laser-cut clean hem; racing stripes &amp; color-block panels</li></ul>
+          </div>
+        </div>
+        <div class="pack">
+          <h4>Prompt pack — 4 garments + mood board</h4>
+          <div class="prompt"><span class="ptag">① Garment 1</span> Sleek quarter-zip sport polo, slim athletic fit, stand collar, raglan sleeve; recycled technical jersey, four-way stretch, smooth matte face; bonded flatlock seams, reflective tonal zip pull, laser-cut hem; transformative teal with cobalt shoulder stripe (Pantone 17-5029 TCX). Invisible ghost-mannequin product shot, garment only, no person, on a cool light-grey seamless background; crisp even key with subtle rim; straight-on, 85mm, high-detail e-commerce photography.</div>
+          <div class="prompt"><span class="ptag">② Garment 2</span> Fitted base-layer crew tee, second-skin fit, bonded crew neck, raglan sleeve; smooth four-way-stretch technical jersey; laser-cut hem, tonal heat-transfer chest mark; cobalt blue (Pantone 18-4051 TCX). Invisible ghost-mannequin product shot, garment only, no person, on a cool light-grey seamless background; crisp even key with subtle rim; straight-on, 85mm, high-detail e-commerce photography.</div>
+          <div class="prompt"><span class="ptag">③ Garment 3</span> Sheer jelly-mesh overshirt, boxy open silhouette, camp collar, short sleeve; translucent liquid mesh / organza; tonal taped seams, snap closures, raw-cut edge; icy-blue to electric-lavender gradient (Pantone 12-4609 / 16-3815 TCX). Invisible ghost-mannequin product shot, garment only, no person, on a cool light-grey seamless background; crisp even key with subtle rim; straight-on, 85mm, high-detail e-commerce photography.</div>
+          <div class="prompt"><span class="ptag">④ Garment 4</span> Colour-blocked short-sleeve sport shirt, relaxed fit, panelled front, concealed placket, stand collar; fluid satin-touch poly; bonded panel seams, metallic eyelet vent; teal + cobalt + lavender panels (Pantone 17-5029 TCX). Invisible ghost-mannequin product shot, garment only, no person, on a cool light-grey seamless background; crisp even key with subtle rim; straight-on, 85mm, high-detail e-commerce photography.</div>
+          <div class="prompt mood"><span class="ptag">⑤ Mood board</span> Design moodboard, flat-lay collage grid mixing references and trims: glossy resin and chrome objects, rippled water and holographic film, technical mesh and satin-jersey swatches, bonded-seam and reflective zip-pull trim samples, a torn page of an abstract op-art cyber-gradient artwork, frosted acrylic shards, Pantone chips in transformative teal 17-5029, cobalt 18-4051, icy blue 12-4609 and electric lavender 16-3815; cool crisp studio light, light-grey surface, top-down editorial moodboard photography.</div>
+        </div>
+        <div class="refs">Sources: <a href="https://trendalytics.co/insights/color-forecast-2027-ss27-fw27-trends" target="_blank" rel="noopener">Trendalytics (Teal +349%)</a> · <a href="https://www.wgsn.com/en/blog/s-s-27-key-colours-have-landed" target="_blank" rel="noopener">WGSN S/S 27 key colours</a></div>
+      </div>
+    </div>
+
+    <!-- THEME 3 -->
+    <div class="theme">
+      <div class="thead">
+        <div>
+          <div class="tname">03 · Quiet Maximal</div>
+          <div class="swatchrow"><span class="mini" style="background:#6E2235"></span><span class="mini" style="background:#B68A2E"></span><span class="mini" style="background:#7A4A6B"></span><span class="mini" style="background:#C56A2D"></span></div>
+        </div>
+        <div class="tag">Building · Rising</div>
+      </div>
+      <div class="tbody">
+        <div class="rh" style="font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);font-weight:700;margin-bottom:12px">Designs — generated on Slayteq</div>
+        <div class="look look4">
+          <figure class="card">
+            <div class="imgwrap"><img src="https://assets.geniemode.com/geniemode-assets/geniemode-ai/0e5ebc84-4704-425b-97b1-1dce39cddee7/1782637822127.jpeg?format=webp" alt="Ruffle-front blouse"></div>
+            <figcaption><div class="cap-t"><span class="dot" style="background:#6E2235"></span>Garment 1 · Ruffle-front blouse</div><div class="cap-d">Silk crepe-de-chine · wine · Pantone 19-1627 TCX</div></figcaption>
+          </figure>
+          <figure class="card">
+            <div class="imgwrap"><img src="https://assets.geniemode.com/geniemode-assets/geniemode-ai/b3a8cd97-6184-43cd-b41c-cd8a1990b7e6/1782637876122.jpeg?format=webp" alt="Tie-neck blouse"></div>
+            <figcaption><div class="cap-t"><span class="dot" style="background:#B68A2E"></span>Garment 2 · Tie-neck blouse</div><div class="cap-d">Embossed-floral silk satin · mustard · Pantone 15-0954 TCX</div></figcaption>
+          </figure>
+          <figure class="card">
+            <div class="imgwrap"><img src="https://assets.geniemode.com/geniemode-assets/geniemode-ai/0f948a5d-e1d4-450b-bb0c-cba8639cd9cd/1782637942293.jpeg?format=webp" alt="Sheer embroidered overshirt"></div>
+            <figcaption><div class="cap-t"><span class="dot" style="background:#7A4A6B"></span>Garment 3 · Sheer overshirt</div><div class="cap-d">Embroidered tulle over slip · plum · Pantone 18-3013 TCX</div></figcaption>
+          </figure>
+          <figure class="card">
+            <div class="imgwrap"><img src="https://assets.geniemode.com/geniemode-assets/geniemode-ai/16e55636-1189-43f8-9171-f1e6000c689a/1782638021484.jpeg?format=webp" alt="Cowl-neck top"></div>
+            <figcaption><div class="cap-t"><span class="dot" style="background:#C56A2D"></span>Garment 4 · Cowl-neck top</div><div class="cap-d">Liquid satin · energy orange · Pantone 16-1364 TCX</div></figcaption>
+          </figure>
+        </div>
+        <div class="moodrow">
+          <figure class="card">
+            <div class="imgwrap"><img src="https://assets.geniemode.com/geniemode-assets/geniemode-ai/39d95bf4-7b9a-4c69-b499-cb0387052c89/1782638128241.jpeg?format=webp" alt="Quiet Maximal mood board"></div>
+            <figcaption><div class="cap-t"><span class="ptag" style="margin:0;background:var(--brand)">Mood board</span></div><div class="cap-d">References, materials &amp; trims — antique brass, oxblood velvet, dahlias, silk &amp; tulle swatches, covered buttons · Pantone wine / mustard / plum</div></figcaption>
+          </figure>
+        </div>
+        <p class="why">Maximalism reinterpreted as layered nuance, not excess. Wine and burgundy act as "the new neutral," paired with mustard and plum. Femininity returns through ruffles, plunging necklines and smart layering — richness delivered via embroidery and embossed florals rather than loud graphics.</p>
+        <div class="grid">
+          <div class="attr">
+            <h4>Color story</h4>
+            <div class="colors"><div class="col"><span class="dot" style="background:#6E2235"></span>Wine&nbsp;<span class="pan">· 19-1627</span></div><div class="col"><span class="dot" style="background:#B68A2E"></span>Mustard&nbsp;<span class="pan">· 15-0954</span></div><div class="col"><span class="dot" style="background:#7A4A6B"></span>Plum&nbsp;<span class="pan">· 18-3013</span></div><div class="col"><span class="dot" style="background:#C56A2D"></span>Energy Orange&nbsp;<span class="pan">· 16-1364</span></div></div>
+            <h4 style="margin-top:16px">Fabrics</h4>
+            <ul><li>Silk &amp; satin</li><li>Sheer tulle &amp; lace</li><li>Embroidered cotton voile</li></ul>
+          </div>
+          <div class="attr">
+            <h4>Silhouettes</h4>
+            <ul><li>Ruffle-front blouse</li><li>Plunge-neck draped top</li><li>Layered sheer-over-slip</li></ul>
+            <h4 style="margin-top:16px">Construction — neck · cut · sleeve · trims · hem</h4>
+            <ul><li><b>Neckline:</b> plunging V, optional tie-neck</li><li><b>Cut &amp; fit:</b> fitted bodice with blouson volume</li><li><b>Sleeve:</b> long blouson, gathered single-button cuff</li><li><b>Trims:</b> cascading self-fabric ruffle, covered buttons</li><li><b>Hem/print:</b> rolled hem, French seams; embossed/embroidered florals, watercolor</li></ul>
+          </div>
+        </div>
+        <div class="pack">
+          <h4>Prompt pack — 4 garments + mood board</h4>
+          <div class="prompt"><span class="ptag">① Garment 1</span> Ruffle-front blouse, fitted bodice, plunging V-neckline, long blouson sleeve with gathered cuff; matte silk crepe-de-chine, fluid drape; cascading self-fabric ruffle, covered buttons, rolled hem, embossed tonal floral; deep wine burgundy (Pantone 19-1627 TCX). Invisible ghost-mannequin product shot, garment only, no person, on a soft oxblood seamless background; even soft key with gentle silk highlight; straight-on, 85mm, high-detail e-commerce photography.</div>
+          <div class="prompt"><span class="ptag">② Garment 2</span> Tie-neck pussy-bow blouse, relaxed fit, long sleeve, gathered cuff; embossed-floral silk satin; covered buttons, rolled hem, self-tie neck bow; mustard (Pantone 15-0954 TCX). Invisible ghost-mannequin product shot, garment only, no person, on a soft oxblood seamless background; even soft key with gentle silk highlight; straight-on, 85mm, high-detail e-commerce photography.</div>
+          <div class="prompt"><span class="ptag">③ Garment 3</span> Sheer embroidered overshirt with built-in slip, open front, fluid body; embroidered tulle over satin-touch slip; scalloped embroidered edge, French seams, picot hem; plum (Pantone 18-3013 TCX). Invisible ghost-mannequin product shot, garment only, no person, on a soft oxblood seamless background; even soft key; straight-on, 85mm, high-detail e-commerce photography.</div>
+          <div class="prompt"><span class="ptag">④ Garment 4</span> Draped cowl-neck top, bias body, short kimono sleeve, low draped back; liquid satin; hand-rolled edges, French seams; energy-orange watercolour (Pantone 16-1364 TCX). Invisible ghost-mannequin product shot, garment only, no person, on a soft oxblood seamless background; even soft key with gentle satin highlight; straight-on, 85mm, high-detail e-commerce photography.</div>
+          <div class="prompt mood"><span class="ptag">⑤ Mood board</span> Design moodboard, flat-lay collage grid mixing references and trims: antique brass and oxblood velvet, dried burgundy dahlias, silk crepe-de-chine and tulle swatches, covered-button and self-fabric ruffle trim samples, embroidery and embossed-floral fabric pieces, a torn page of a moody Dutch still-life painting, a scrap of vintage lace, Pantone chips in wine 19-1627, mustard 15-0954 and plum 18-3013; warm moody low light, deep oxblood surface, top-down editorial moodboard photography.</div>
+        </div>
+        <div class="refs">Sources: <a href="https://fashionunited.com/specials/spring-summer-2027-fashion-trends" target="_blank" rel="noopener">FashionUnited SS27 (maximalism)</a> · <a href="https://www.qartsolutions.com/post/ss27-color-trends-guide" target="_blank" rel="noopener">QART SS27 colors (wine-as-neutral)</a></div>
+      </div>
+    </div>
+
+    <!-- THEME 4 -->
+    <div class="theme">
+      <div class="thead">
+        <div>
+          <div class="tname">04 · Sunbaked Craft</div>
+          <div class="swatchrow"><span class="mini" style="background:#F2D479"></span><span class="mini" style="background:#F4B98E"></span><span class="mini" style="background:#C7A8DE"></span><span class="mini" style="background:#A7B57A"></span></div>
+        </div>
+        <div class="tag">Building · Rising</div>
+      </div>
+      <div class="tbody">
+        <div class="rh" style="font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);font-weight:700;margin-bottom:12px">Designs — generated on Slayteq</div>
+        <div class="look look4">
+          <figure class="card">
+            <div class="imgwrap"><img src="https://assets.geniemode.com/geniemode-assets/geniemode-ai/421ddc6a-6456-4270-a5c2-e6ac1d227243/1782638325718.jpeg?format=webp" alt="Embroidered boxy tee"></div>
+            <figcaption><div class="cap-t"><span class="dot" style="background:#F2D479"></span>Garment 1 · Embroidered boxy tee</div><div class="cap-d">Cotton-modal jersey · butter · Pantone 12-0721 TCX</div></figcaption>
+          </figure>
+          <figure class="card">
+            <div class="imgwrap"><img src="https://assets.geniemode.com/geniemode-assets/geniemode-ai/f00507d8-598b-4bbf-bc39-80fc6b4dfac2/1782638406373.jpeg?format=webp" alt="Pointelle-knit polo"></div>
+            <figcaption><div class="cap-t"><span class="dot" style="background:#F4B98E"></span>Garment 2 · Pointelle polo</div><div class="cap-d">Openwork cotton knit · peach fuzz · Pantone 13-1023 TCX</div></figcaption>
+          </figure>
+          <figure class="card">
+            <div class="imgwrap"><img src="https://assets.geniemode.com/geniemode-assets/geniemode-ai/1c91a9bc-1880-465c-838e-18691f87a47a/1782638459422.jpeg?format=webp" alt="French-terry popover"></div>
+            <figcaption><div class="cap-t"><span class="dot" style="background:#C7A8DE"></span>Garment 3 · French-terry popover</div><div class="cap-d">French terry · soft lilac · Pantone 15-3620 TCX</div></figcaption>
+          </figure>
+          <figure class="card">
+            <div class="imgwrap"><img src="https://assets.geniemode.com/geniemode-assets/geniemode-ai/d8887774-ddfb-4226-a279-c0c192cef7fa/1782638510370.jpeg?format=webp" alt="Crochet-trim blouse"></div>
+            <figcaption><div class="cap-t"><span class="dot" style="background:#A7B57A"></span>Garment 4 · Crochet-trim blouse</div><div class="cap-d">Cotton voile + crochet · soft sage · Pantone 16-0421 TCX</div></figcaption>
+          </figure>
+        </div>
+        <div class="moodrow">
+          <figure class="card">
+            <div class="imgwrap"><img src="https://assets.geniemode.com/geniemode-assets/geniemode-ai/cb3ee6c5-be80-4763-88be-2d9d63f796a1/1782638596187.jpeg?format=webp" alt="Sunbaked Craft mood board"></div>
+            <figcaption><div class="cap-t"><span class="ptag" style="margin:0;background:var(--brand)">Mood board</span></div><div class="cap-d">References, materials &amp; trims — pale ceramics, raffia, wildflowers, knit swatches, picot &amp; embroidery trims · Pantone butter / peach fuzz / lilac / sage</div></figcaption>
+          </figure>
+        </div>
+        <p class="why">The soft, light-infused end of the palette — butter yellow, peach fuzz, soft lilac and sage. Craftsmanship-led: relaxed, breathable everyday tops elevated with embroidery, openwork and hand-finishing. Approachable newness with broad pastel commercial appeal.</p>
+        <div class="grid">
+          <div class="attr">
+            <h4>Color story</h4>
+            <div class="colors"><div class="col"><span class="dot" style="background:#F2D479"></span>Butter&nbsp;<span class="pan">· 12-0721</span></div><div class="col"><span class="dot" style="background:#F4B98E"></span>Peach Fuzz&nbsp;<span class="pan">· 13-1023</span></div><div class="col"><span class="dot" style="background:#C7A8DE"></span>Soft Lilac&nbsp;<span class="pan">· 15-3620</span></div><div class="col"><span class="dot" style="background:#A7B57A"></span>Soft Sage&nbsp;<span class="pan">· 16-0421</span></div></div>
+            <h4 style="margin-top:16px">Fabrics</h4>
+            <ul><li>French terry &amp; loop knit</li><li>Cotton-modal blends</li><li>Open / pointelle knits</li></ul>
+          </div>
+          <div class="attr">
+            <h4>Silhouettes</h4>
+            <ul><li>Relaxed crew &amp; boxy tee</li><li>Soft knit polo</li><li>Embroidered popover</li></ul>
+            <h4 style="margin-top:16px">Construction — neck · cut · sleeve · trims · hem</h4>
+            <ul><li><b>Neckline:</b> ribbed crew, self-binding; or pointelle polo placket</li><li><b>Cut &amp; fit:</b> relaxed boxy, drop shoulder, slightly cropped</li><li><b>Sleeve:</b> short sleeve, ribbed or rolled cuff</li><li><b>Trims:</b> chest hand-embroidery, corozo polo buttons, openwork eyelet yoke</li><li><b>Hem/print:</b> twin-needle hem, scalloped picot edge; tonal pastel washes</li></ul>
+          </div>
+        </div>
+        <div class="pack">
+          <h4>Prompt pack — 4 garments + mood board</h4>
+          <div class="prompt"><span class="ptag">① Garment 1</span> Relaxed boxy tee, slightly cropped, ribbed crew neck, drop shoulder; soft cotton-modal jersey, lightly brushed hand; tonal chest hand-embroidery, twin-needle hems, self-binding neck; butter yellow (Pantone 12-0721 TCX). Invisible ghost-mannequin product shot, garment only, no person, on a warm off-white seamless background; even soft box lighting, subtle shadow; straight-on, 50mm, high-detail e-commerce photography.</div>
+          <div class="prompt"><span class="ptag">② Garment 2</span> Open pointelle-knit polo, relaxed fit, three-button placket, short sleeve; breathable pointelle openwork cotton knit; scalloped picot edge at collar and cuff, tonal corozo buttons; peach fuzz (Pantone 13-1023 TCX). Invisible ghost-mannequin product shot, garment only, no person, on a warm off-white seamless background; even soft box lighting; straight-on, 50mm, high-detail e-commerce photography.</div>
+          <div class="prompt"><span class="ptag">③ Garment 3</span> Embroidered French-terry popover, half-placket, soft gathered yoke, relaxed body; lightweight French terry; openwork eyelet yoke, tonal embroidery, woven inner placket tape; soft lilac garment wash (Pantone 15-3620 TCX). Invisible ghost-mannequin product shot, garment only, no person, on a warm off-white seamless background; even soft box lighting; straight-on, 50mm, high-detail e-commerce photography.</div>
+          <div class="prompt"><span class="ptag">④ Garment 4</span> Crochet-trim cap-sleeve blouse, relaxed body, V-neck; cotton voile with crochet-lace inserts; picot edges, shell buttons; soft sage (Pantone 16-0421 TCX). Invisible ghost-mannequin product shot, garment only, no person, on a warm off-white seamless background; even soft box lighting; straight-on, 50mm, high-detail e-commerce photography.</div>
+          <div class="prompt mood"><span class="ptag">⑤ Mood board</span> Design moodboard, flat-lay collage grid mixing references and trims: hand-thrown pale ceramics and woven raffia, pressed wildflowers, cotton-modal and pointelle-knit swatches, hand-embroidery and scalloped picot trim samples, a torn page of a soft watercolor still-life, sun-dried citrus slices, Pantone chips in butter 12-0721, peach fuzz 13-1023, soft lilac 15-3620 and soft sage 16-0421; soft warm daylight, raw cotton surface, top-down editorial moodboard photography.</div>
+        </div>
+        <div class="refs">Sources: <a href="https://plumager.com/blogs/plumager-print-design/print-trend-forecast-spring-summer-2027" target="_blank" rel="noopener">Plumager SS27 print forecast</a> · <a href="https://www.thedesignagent.com/blog-posts/ss27-trend-forecast" target="_blank" rel="noopener">The Design Agent SS27</a></div>
+      </div>
+    </div>
+
+  </section>
+
+  <section>
+    <div class="sec-h">Sources &amp; methodology</div>
+    <div class="srcbox">
+      <h4>Trend-signal sources</h4>
+      <ul>
+        <li><a href="https://fashionunited.com/specials/spring-summer-2027-fashion-trends" target="_blank" rel="noopener">FashionUnited — Spring/Summer 2027 fashion trends</a></li>
+        <li><a href="https://trendalytics.co/insights/color-forecast-2027-ss27-fw27-trends" target="_blank" rel="noopener">Trendalytics — Data-Driven Color Forecast 2027 (SS27/FW27)</a></li>
+        <li><a href="https://www.qartsolutions.com/post/ss27-color-trends-guide" target="_blank" rel="noopener">QART Solutions — SS27 Color Trends Guide</a></li>
+        <li><a href="https://www.wgsn.com/en/blog/s-s-27-key-colours-have-landed" target="_blank" rel="noopener">WGSN — The S/S 27 Key Colours have landed</a></li>
+        <li><a href="https://www.thedesignagent.com/blog-posts/ss27-trend-forecast" target="_blank" rel="noopener">The Design Agent — SS27 Print &amp; Pattern directions</a></li>
+        <li><a href="https://plumager.com/blogs/plumager-print-design/print-trend-forecast-spring-summer-2027" target="_blank" rel="noopener">Plumager — Print Trend Forecast SS27</a></li>
+      </ul>
+      <h4>Silhouette / product validation</h4>
+      <ul>
+        <li><a href="https://www.mrporter.com/en-us/mens/clothing/casual-shirts/camp-collar-shirts" target="_blank" rel="noopener">Mr Porter — Camp-collar shirts</a></li>
+        <li><a href="https://www.taylorstitch.com/blogs/archive/styling-a-camp-collar-shirt" target="_blank" rel="noopener">Taylor Stitch — Styling a camp-collar shirt</a></li>
+      </ul>
+      <h4>Lookbook imagery (Pexels — free license, no attribution required)</h4>
+      <ul>
+        <li>Coastal Utility: <a href="https://www.pexels.com/photo/portrait-of-man-wearing-white-shirt-on-a-beach-19119914/" target="_blank" rel="noopener">img 1</a>, <a href="https://www.pexels.com/photo/a-young-man-with-short-hair-and-a-white-shirt-27603739/" target="_blank" rel="noopener">img 2</a>, <a href="https://www.pexels.com/photo/man-in-white-shirt-17472051/" target="_blank" rel="noopener">img 3</a></li>
+        <li>Tech Tide: <a href="https://www.pexels.com/photo/woman-in-teal-tank-top-and-black-pants-9901665/" target="_blank" rel="noopener">img 1</a>, <a href="https://www.pexels.com/photo/woman-in-blue-long-sleeve-blouse-near-the-money-on-table-7680366/" target="_blank" rel="noopener">img 2</a>, <a href="https://www.pexels.com/photo/modern-women-s-sportswear-studio-photoshoot-28774867/" target="_blank" rel="noopener">img 3</a></li>
+        <li>Quiet Maximal: <a href="https://www.pexels.com/photo/smiling-woman-in-burgundy-crop-top-and-skirt-26653372/" target="_blank" rel="noopener">img 1</a>, <a href="https://www.pexels.com/photo/woman-in-yellow-mustard-sleeveless-top-and-shorts-8789352/" target="_blank" rel="noopener">img 2</a>, <a href="https://www.pexels.com/photo/woman-in-black-silk-dress-11976317/" target="_blank" rel="noopener">img 3</a></li>
+        <li>Sunbaked Craft: <a href="https://www.pexels.com/photo/young-woman-in-pastel-sweater-outdoors-30160191/" target="_blank" rel="noopener">img 1</a>, <a href="https://www.pexels.com/photo/a-portrait-of-a-woman-wearing-a-yellow-top-13417556/" target="_blank" rel="noopener">img 2</a>, <a href="https://www.pexels.com/photo/woman-wearing-green-knitted-sweater-smiling-5488459/" target="_blank" rel="noopener">img 3</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <div class="note"><b>Imagery note:</b> lookbook photos here are free-license Pexels references used to convey silhouette and color mood (no model release verified). For production customer- and supplier-facing exports, these slots are populated with rights-cleared Getty runway/retail imagery; the prompt packs feed the image-gen pipeline to render concept product shots on demand.</div>
+
+  <footer>
+    <b>Trend DNA</b> — generated by Geniemode's trend engine · worked example, SS27 Tops &amp; Shirts · June 2026.<br>
+    Tracked in Jira: <a href="https://geniemode.atlassian.net/browse/GM-5328" target="_blank" rel="noopener">GM-5328</a> · Slayteq collection: <a href="https://slayteq.ai/collections/6397" target="_blank" rel="noopener">view all designs</a>.
+  </footer>
+
+</div>
+</body>
+</html>
