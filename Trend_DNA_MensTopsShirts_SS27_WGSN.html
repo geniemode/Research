@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trend DNA — Men's Tops &amp; Shirts SS27 (WGSN-sourced · designer/merch edition)</title>
+<style>
+  :root{--ink:#1c1b1a;--muted:#6c6760;--line:#e7e2da;--bg:#faf8f4;--card:#ffffff;--brand:#3a5a40;--accent:#2f6f8f}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.5}
+  .wrap{max-width:1480px;margin:0 auto;padding:0 40px 90px}
+  header{padding:64px 0 32px;border-bottom:3px solid var(--ink)}
+  .kicker{font-size:12px;letter-spacing:.28em;text-transform:uppercase;color:var(--brand);font-weight:700}
+  h1{font-size:62px;line-height:.98;letter-spacing:-.02em;margin:14px 0 8px;font-weight:800}
+  .sub{font-size:20px;color:var(--muted);max-width:760px}
+  .meta{margin-top:22px;display:flex;flex-wrap:wrap;gap:10px}
+  .chip{font-size:12px;font-weight:600;background:#fff;border:1px solid var(--line);border-radius:999px;padding:6px 13px;color:var(--muted)}
+  .chip b{color:var(--ink)}
+  section{margin-top:54px}
+  .sec-h{font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);font-weight:700;margin-bottom:16px;display:flex;align-items:center;gap:12px}
+  .sec-h::after{content:"";flex:1;height:1px;background:var(--line)}
+  .overview{font-size:21px;line-height:1.5;max-width:880px}
+  .overview b{color:var(--brand)}
+  .palette{display:grid;grid-template-columns:repeat(5,1fr);gap:0;border-radius:14px;overflow:hidden;border:1px solid var(--line);margin-top:6px}
+  .sw{height:138px;position:relative;display:flex;align-items:flex-end;padding:12px}
+  .sw span{font-size:11px;font-weight:700;background:rgba(255,255,255,.88);padding:4px 8px;border-radius:5px;color:#222;line-height:1.3}
+  .sw span b{display:block;font-size:10px;font-weight:700;color:#555;letter-spacing:.02em}
+  @media(max-width:760px){.palette{grid-template-columns:repeat(2,1fr)}.sw{height:104px}}
+  .data{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:6px}
+  @media(max-width:760px){.data{grid-template-columns:1fr}}
+  .chartcard{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;display:flex;flex-direction:column}
+  .chartcard img{max-width:100%;max-height:430px;width:auto;height:auto;display:block;margin:0 auto;cursor:zoom-in}
+  .chartcard .cap{padding:12px 16px;font-size:13px;color:var(--muted)}
+  .chartcard .cap b{color:var(--ink)}
+  .readout{margin-top:18px;background:#fff;border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:10px;padding:16px 18px;font-size:15px;max-width:1120px}
+  .readout b{color:var(--accent)}
+  .theme{background:var(--card);border:1px solid var(--line);border-radius:18px;overflow:hidden;margin-top:26px;box-shadow:0 1px 0 rgba(0,0,0,.02)}
+  .thead{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:18px 24px;border-bottom:1px solid var(--line);flex-wrap:wrap}
+  .thead .tname{font-size:26px;font-weight:800;letter-spacing:-.01em}
+  .thead .swatchrow{display:flex;gap:6px;margin-top:6px}
+  .thead .mini{width:26px;height:14px;border-radius:4px;border:1px solid rgba(0,0,0,.1)}
+  .thead .tags{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+  .tag{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;background:#1c1b1a;color:#fff;padding:6px 12px;border-radius:999px;white-space:nowrap}
+  .tier{font-size:11px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;background:#eef4f3;color:#2f6f8f;border:1px solid #cfe6e0;padding:6px 12px;border-radius:999px;white-space:nowrap}
+  .tbody{padding:24px 26px 30px}
+  .rh{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);font-weight:700;margin:22px 0 12px}
+  .rh:first-child{margin-top:0}
+  .gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(208px,1fr));gap:12px;margin-bottom:6px}
+  figure.card{border:1px solid var(--line);border-radius:12px;overflow:hidden;background:#fff;margin:0}
+  figure.card .imgwrap{position:relative;height:360px;overflow:hidden;background:#f1ece4;display:flex;align-items:center;justify-content:center}
+  figure.card img{width:100%;height:100%;object-fit:contain;display:block;transition:transform .4s ease;cursor:zoom-in}
+  figure.card:hover img{transform:scale(1.02)}
+  figure.card .credit{position:absolute;top:8px;right:8px;font-size:9px;color:rgba(255,255,255,.92);background:rgba(0,0,0,.42);padding:3px 8px;border-radius:999px;letter-spacing:.04em}
+  figcaption{padding:10px 12px}
+  figcaption .cap-t{font-size:12.5px;font-weight:700;display:flex;align-items:center;gap:7px}
+  figcaption .cap-t .dot{width:12px;height:12px;border-radius:50%;border:1px solid rgba(0,0,0,.12);flex:none}
+  figcaption .cap-d{font-size:11px;color:var(--muted);margin-top:3px}
+  .moodboard{border:1px solid var(--line);border-radius:14px;overflow:hidden;margin-bottom:6px;background:var(--mbg,#f6f3ef)}
+  .mb-emotion{padding:14px 18px;font-size:18px;font-weight:800;color:var(--mfg,#1c1b1a);border-bottom:1px solid var(--line);background:var(--mband,#efe9e2)}
+  .mb-emotion .mb-label{display:inline-block;font-size:10px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:#fff;background:var(--mdot,#3a5a40);border-radius:5px;padding:2px 8px;margin-right:10px;vertical-align:2px}
+  .mb-grid{display:grid;grid-template-columns:1.5fr 1fr;gap:0}
+  @media(max-width:760px){.mb-grid{grid-template-columns:1fr}}
+  .mb-collage{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;padding:14px}
+  .mb-collage img{width:100%;height:150px;object-fit:contain;background:#fff;border:1px solid var(--line);border-radius:7px;display:block;cursor:zoom-in}
+  .mb-side{padding:16px 18px;border-left:1px solid var(--line)}
+  @media(max-width:760px){.mb-side{border-left:none;border-top:1px solid var(--line)}}
+  .mb-side .mb-dir{font-size:14px;color:#3a3631;margin-bottom:12px}
+  .mb-side .mb-dir b{color:var(--mdot,#3a5a40)}
+  .mb-chips{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px}
+  .mb-chip{width:30px;height:30px;border-radius:6px;border:1px solid rgba(0,0,0,.12)}
+  .mb-tags{display:flex;gap:6px;flex-wrap:wrap}
+  .mb-tag{font-size:11px;font-weight:600;background:#fff;border:1px solid var(--line);border-radius:999px;padding:3px 10px;color:#3a3631}
+  .analysis{margin:4px 0 6px;display:grid;grid-template-columns:1fr 1fr;gap:18px}
+  @media(max-width:760px){.analysis{grid-template-columns:1fr}}
+  .la{background:#f4f8f8;border:1px solid var(--line);border-radius:10px;padding:14px 16px}
+  .la h5{font-size:13px;font-weight:800;margin-bottom:7px;color:var(--ink)}
+  .la p{font-size:13px;color:#3a3631;line-height:1.55}
+  .la p+p{margin-top:7px}
+  .la .cite{margin-top:9px;font-size:11.5px;color:var(--muted)}
+  .la .cite a{color:var(--accent);text-decoration:none;border-bottom:1px solid #bfdfe0}
+  .riskflag{display:inline-block;font-size:10px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:#9a5a00;background:#ffe9c7;border-radius:5px;padding:1px 7px;margin-left:4px}
+  .why{font-size:15.5px;color:#3a3631;max-width:880px;margin:14px 0 6px}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+  @media(max-width:760px){.grid{grid-template-columns:1fr}}
+  .attr h4{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-bottom:8px}
+  .attr ul{list-style:none;font-size:14.5px}
+  .attr li{padding:3px 0;border-bottom:1px dashed var(--line)}
+  .attr li:last-child{border:none}
+  .colors{display:flex;gap:8px;flex-wrap:wrap;margin-top:4px}
+  .col{display:flex;align-items:center;gap:7px;font-size:12px;font-weight:600;background:#faf8f4;border:1px solid var(--line);border-radius:999px;padding:4px 11px 4px 5px}
+  .col .pan{color:var(--muted);font-weight:600}
+  .dot{width:18px;height:18px;border-radius:50%;border:1px solid rgba(0,0,0,.12)}
+  .spec{border:1px solid var(--line);border-radius:11px;overflow:hidden;margin-bottom:12px;background:#fff}
+  .spec-h{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;padding:11px 15px;background:#f7f9f8;border-bottom:1px solid var(--line)}
+  .spec-h .sn{font-size:14.5px;font-weight:800}
+  .sh-left{display:flex;align-items:center;gap:12px;min-width:0}
+  .spec-thumb{width:46px;height:58px;object-fit:cover;object-position:top center;border-radius:6px;border:1px solid var(--line);cursor:zoom-in;flex:none;background:#f1ece4}
+  .badges{display:flex;gap:6px;flex-wrap:wrap}
+  .b-tier,.b-mrp,.b-fob,.b-cert{font-size:10.5px;font-weight:700;border-radius:5px;padding:3px 8px;letter-spacing:.02em}
+  .b-tier{background:#1c1b1a;color:#fff}
+  .b-mrp{background:#eaf3ea;color:#3f7d3f;border:1px solid #cfe5cf}
+  .b-fob{background:#eef2fb;color:#3a5bd0;border:1px solid #d3ddf6}
+  .b-cert{background:#f3eefb;color:#6b46c1;border:1px solid #e0d4f5}
+  .spec-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0}
+  @media(max-width:860px){.spec-grid{grid-template-columns:1fr 1fr}}
+  @media(max-width:520px){.spec-grid{grid-template-columns:1fr}}
+  .spec-grid>div{padding:11px 15px;border-right:1px solid var(--line)}
+  .spec-grid>div:last-child{border-right:none}
+  @media(max-width:860px){.spec-grid>div{border-bottom:1px solid var(--line)}.spec-grid>div:nth-child(2){border-right:none}}
+  .spec-grid h6{font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:5px;font-weight:700}
+  .spec-grid p{font-size:13px;color:#2c2a27;line-height:1.5}
+  .spec-grid .em{font-weight:700}
+  .pack{margin-top:16px;background:#f1f4f1;border:1px solid var(--line);border-radius:12px;padding:16px 18px}
+  .pack h4{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--brand);margin-bottom:10px}
+  .prompt{position:relative;font-size:13px;font-family:"SF Mono",ui-monospace,Menlo,monospace;background:#fff;border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:7px;padding:10px 70px 10px 12px;margin-bottom:8px;color:#2c2a27;line-height:1.45}
+  .copy-btn{position:absolute;top:7px;right:7px;font-family:-apple-system,Helvetica,Arial,sans-serif;font-size:10.5px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--accent);background:#eef4f3;border:1px solid #cfe6e0;border-radius:6px;padding:4px 9px;cursor:pointer;transition:all .15s}
+  .copy-btn:hover{background:var(--accent);color:#fff;border-color:var(--accent)}
+  .copy-btn.done{background:#eaf3ea;color:#3f7d3f;border-color:#cfe5cf}
+  @media print{.copy-btn{display:none}}
+  .ptag{display:inline-block;font-family:-apple-system,Helvetica,Arial,sans-serif;font-size:10px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:#fff;background:var(--accent);border-radius:5px;padding:2px 7px;margin-right:6px;vertical-align:1px}
+  .prompt.mood{border-left-color:var(--brand);background:#f6f8f6}
+  .prompt.mood .ptag{background:var(--brand)}
+  .refs{margin-top:14px;font-size:13px;color:var(--muted)}
+  .refs b{color:var(--ink)}
+  .tablewrap{overflow-x:auto;border-radius:10px;border:1px solid var(--line)}
+  table.src{width:100%;border-collapse:collapse;font-size:13px;background:#fff;min-width:720px}
+  table.src th{text-align:left;background:#f1f0ea;font-size:10.5px;letter-spacing:.04em;text-transform:uppercase;color:var(--muted);padding:9px 11px;border-bottom:1px solid var(--line);white-space:nowrap}
+  table.src td{padding:9px 11px;border-bottom:1px solid var(--line);vertical-align:top}
+  table.src tr:last-child td{border-bottom:none}
+  table.src td b{color:var(--ink)}
+  .csw{display:inline-block;width:24px;height:24px;border-radius:6px;border:1px solid rgba(0,0,0,.18);vertical-align:middle;margin-right:11px;box-shadow:inset 0 0 0 1px rgba(255,255,255,.25)}
+  .tabnote{font-size:12px;color:var(--muted);margin-top:8px}
+  .srcbox{background:#fff;border:1px solid var(--line);border-radius:14px;padding:22px 24px}
+  .srcbox h4{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--brand);margin:14px 0 8px}
+  .srcbox h4:first-child{margin-top:0}
+  .srcbox ul{list-style:none;font-size:14px}
+  .srcbox li{padding:5px 0;border-bottom:1px solid var(--line)}
+  .srcbox li:last-child{border:none}
+  .srcbox b{color:var(--ink)}
+  .srcbox a{color:var(--accent);text-decoration:none}
+  footer{margin-top:46px;padding-top:24px;border-top:1px solid var(--line);font-size:13px;color:var(--muted)}
+  .note{background:#fff7ed;border:1px solid #f3d9b8;border-radius:10px;padding:12px 16px;font-size:13px;color:#7a5a2e;margin-top:20px}
+  @media(max-width:680px){
+    .wrap{padding:0 16px 60px}header{padding:40px 0 24px}h1{font-size:38px}.sub{font-size:16px}
+    .overview{font-size:17px}section{margin-top:36px}.thead .tname{font-size:22px}
+    figure.card .imgwrap{height:300px}.prompt{font-size:12px;line-height:1.5}.palette{grid-template-columns:1fr 1fr}.srcbox{padding:16px}
+  }
+  @media print{
+    @page{size:A4;margin:11mm}
+    body{background:#fff;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+    .wrap{max-width:none;padding:0}header{padding:0 0 18px}h1{font-size:40px}section{margin-top:18px}
+    .theme{break-inside:auto;box-shadow:none;border:none;break-before:page;page-break-before:always}
+    section .theme:first-of-type{break-before:auto;page-break-before:auto}
+    .thead,.sec-h,.rh{break-after:avoid;page-break-after:avoid}
+    figure.card,.la,.spec,.pack,.prompt,.refs,.chartcard,.moodboard,.tablewrap{break-inside:avoid;page-break-inside:avoid}
+    figure.card:hover img{transform:none}
+    .note,.srcbox{break-before:page;page-break-before:always;break-inside:avoid}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="kicker">Trend DNA · Geniemode × WGSN · Designer / Merchandiser edition</div>
+    <h1>Men's Tops &amp; Shirts</h1>
+    <div class="sub">Spring / Summer 2027 — a WGSN-sourced, web-researched trend study built for design <i>and</i> sourcing: market signal, colour, lookbook, emotional mood boards, per-look fabric &amp; trim specs with GSM &amp; price, consolidated sourcing tables, and ready-to-run prompt packs.</div>
+    <div class="meta">
+      <div class="chip">Category: <b>Men's Tops &amp; Shirts</b></div>
+      <div class="chip">Season: <b>SS27</b></div>
+      <div class="chip">Segment: <b>Men's contemporary</b></div>
+      <div class="chip">Source: <b>WGSN Pulse + web research</b></div>
+      <div class="chip">Generated: <b>Jun 2026</b></div>
+      <div class="chip">Confidence: <b>High · WGSN-backed</b></div>
+    </div>
+  </header>
+
+  <section>
+    <div class="sec-h">Season read</div>
+    <p class="overview">WGSN frames SS27 men's tops &amp; shirts around <b>versatility, comfort and wardrobe longevity</b> — breathable fabrics, relaxed silhouettes and elevated essentials that move casual↔smart-casual. The structural shifts: <b>linen &amp; linen blends rising over standard cotton</b>, <b>boxy/layered fits</b>, and a swing from checks toward <b>expressive graphic tees</b> (still-life, fruit &amp; floral) and <b>romantic-vintage</b> detail. Core shirts/tees sit in WGSN's <b>Protect</b> stage — perennial bestsellers needing continuous, subtle innovation rather than reinvention.</p>
+  </section>
+
+  <section>
+    <div class="sec-h">Market signal · WGSN TrendCurve forecast</div>
+    <div class="data">
+      <div class="chartcard">
+        <img src="WGSN_MensTopsShirts_SS27_captures/WGSN_MensTopsShirts_SS27_chart_UK.png" alt="UK men's woven tops forecast by style 2023–2027">
+        <div class="cap"><b>UK men's woven tops</b> — % mix by style, 2023–2027 (forecast band from 2026). Source: WGSN TrendCurve Forecast S/S 27.</div>
+      </div>
+      <div class="chartcard">
+        <img src="WGSN_MensTopsShirts_SS27_captures/WGSN_MensTopsShirts_SS27_chart_US.png" alt="US men's woven tops forecast by style 2023–2027">
+        <div class="cap"><b>US men's woven tops</b> — % mix by style, 2023–2027 (forecast band from 2026). Source: WGSN TrendCurve Forecast S/S 27.</div>
+      </div>
+    </div>
+    <p class="readout"><b>Read:</b> The total shirts category stays dominant and stable (~70–88% of the mix), but <b>standard cotton shirts are gently declining</b> while <b>linen, resort and camp-collar shirts rise</b> from a lower base — the data behind "linen overtaking cotton." Checks are softening (UK markdowns −2.5ppt S/S25 vs S/S24), opening space for retro florals. Net: protect the core, re-mix it toward <b>linen / camp-collar / resort</b> and expressive prints.</p>
+  </section>
+
+  <section>
+    <div class="sec-h">Master palette · Pantone TCX (indicative)</div>
+    <div class="palette">
+      <div class="sw" style="background:#E8DCC8"><span>Ecru Linen<b>12-0910 TCX</b></span></div>
+      <div class="sw" style="background:#A9C7DE"><span>Sky Blue<b>14-4214 TCX</b></span></div>
+      <div class="sw" style="background:#C7D49B"><span>Sun-faded Sage<b>14-0210 TCX</b></span></div>
+      <div class="sw" style="background:#F2D479"><span>Butter Yellow<b>12-0721 TCX</b></span></div>
+      <div class="sw" style="background:#3F5C7A"><span>Washed Indigo<b>18-4029 TCX</b></span></div>
+      <div class="sw" style="background:#C26B4E"><span>Terracotta Clay<b>17-1340 TCX</b></span></div>
+      <div class="sw" style="background:#F1ECE3"><span>Chalk White<b>11-0601 TCX</b></span></div>
+      <div class="sw" style="background:#9A8A5A"><span>Olive Khaki<b>16-0840 TCX</b></span></div>
+      <div class="sw" style="background:#2E4E9E"><span>Botanical Blue<b>19-4053 TCX</b></span></div>
+      <div class="sw" style="background:#E08A70"><span>Faded Coral<b>16-1539 TCX</b></span></div>
+    </div>
+    <p style="font-size:12px;color:var(--muted);margin-top:8px">Menswear runs more natural/muted than womenswear — sun-drenched naturals, sky &amp; washed indigo, with pops of butter, terracotta and botanical blue from print. Nearest indicative TCX; confirm against chips. Full sourcing tables at foot.</p>
+  </section>
+
+  <section>
+    <div class="sec-h">Macro themes · WGSN lookbook · mood · spec</div>
+
+    <!-- THEME 1 -->
+    <div class="theme" style="--mbg:#eef3f6;--mband:#e0eaf0;--mdot:#2f6f8f;--mfg:#234b5e">
+      <div class="thead">
+        <div><div class="tname">01 · Elevated Linen &amp; Camp-Collar</div>
+          <div class="swatchrow"><span class="mini" style="background:#A9C7DE"></span><span class="mini" style="background:#E8DCC8"></span><span class="mini" style="background:#F1ECE3"></span><span class="mini" style="background:#9A8A5A"></span></div></div>
+        <div class="tags"><span class="tier">Price tier · Core–Mid</span><span class="tag">Protect · Rising (data-led)</span></div>
+      </div>
+      <div class="tbody">
+        <div class="rh">WGSN references</div>
+        <div class="gallery">
+          <figure class="card"><div class="imgwrap"><img src="WGSN_MensTopsShirts_SS27_captures/WGSN_MensTopsShirts_SS27_ref_01.jpg" alt="Linen layering shirt"><span class="credit">WGSN · retail</span></div><figcaption><div class="cap-t"><span class="dot" style="background:#A9C7DE"></span>Linen layering shirt</div><div class="cap-d">Relaxed sky-linen button-up worn open over a knit tee · coastal</div></figcaption></figure>
+          <figure class="card"><div class="imgwrap"><img src="WGSN_MensTopsShirts_SS27_captures/WGSN_MensTopsShirts_SS27_ref_02.jpg" alt="Refined poplin shirt"><span class="credit">WGSN · catwalk</span></div><figcaption><div class="cap-t"><span class="dot" style="background:#F1ECE3"></span>Refined button-up</div><div class="cap-d">Crisp white poplin shirt, smart-casual tailoring</div></figcaption></figure>
+        </div>
+
+        <div class="rh">Mood board · emotional direction</div>
+        <div class="moodboard">
+          <div class="mb-emotion"><span class="mb-label">Emotion</span>Easy · sun-warmed · quietly refined</div>
+          <div class="mb-grid">
+            <div class="mb-collage">
+              <img src="WGSN_MensTopsShirts_SS27_captures/WGSN_MensTopsShirts_SS27_ref_01.jpg" alt="">
+              <img src="WGSN_MensTopsShirts_SS27_captures/WGSN_MensTopsShirts_SS27_ref_02.jpg" alt="">
+              <img src="WGSN_MensTopsShirts_SS27_captures/WGSN_MensTopsShirts_SS27_chart_UK.png" alt="">
+              <img src="WGSN_MensTopsShirts_SS27_captures/WGSN_MensTopsShirts_SS27_ref_30.jpg" alt="">
+              <img src="WGSN_MensTopsShirts_SS27_captures/WGSN_MensTopsShirts_SS27_ref_25.jpg" alt="">
+              <img src="WGSN_MensTopsShirts_SS27_captures/WGSN_MensTopsShirts_SS27_ref_33.jpg" alt="">
+            </div>
+            <div class="mb-side">
+              <div class="mb-dir">Creative direction: <b>Mediterranean ease, dressed up a notch</b> — the shirt does the work, the fabric breathes. Relaxed collars, tonal buttons, sun-bleached naturals; quiet luxury you can sweat in.</div>
+              <div class="mb-chips"><span class="mb-chip" style="background:#A9C7DE"></span><span class="mb-chip" style="background:#E8DCC8"></span><span class="mb-chip" style="background:#F1ECE3"></span><span class="mb-chip" style="background:#9A8A5A"></span></div>
+              <div class="mb-tags"><span class="mb-tag">linen slub</span><span class="mb-tag">camp collar</span><span class="mb-tag">tonal buttons</span><span class="mb-tag">boxy ease</span><span class="mb-tag">coastal</span><span class="mb-tag">breathable</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="rh">Look analysis · web-sourced</div>
+        <div class="analysis">
+          <div class="la"><h5>Linen, evolved — blends over pure swap</h5><p>WGSN reads linen as overtaking standard cotton; the open web nuances it: rather than a clean swap, 2026–27 leans to <b>cotton-linen blends, lightweight poplin and technical weaves</b> that breathe but don't read sloppy — boxier silhouettes, relaxed collars, less-predictable colour.</p><p>Practical implication: back <b>cotton-linen</b> for hand + durability + cost, reserve 100% linen for hero/elevated.</p><div class="cite">Sources: <a href="https://www.pirloni.com/blogs/news/mens-shirt-trends-2026" target="_blank" rel="noopener">Pirloni — men's shirt trends 2026</a> · <a href="https://www.oasisshirts.com/summer-style-2026-top-linen-shirt-fashion-trends-to-reflect-in-your-inventory/" target="_blank" rel="noopener">Oasis — linen inventory trends</a></div></div>
+          <div class="la"><h5>Camp collar — structured &amp; year-round</h5><p>The <b>structured camp collar</b> is a defining 2026 menswear move: internal interfacing for a crisp upright roll, "chroma-muting" desaturated prints replacing loud tourist styling — resort recontextualised as a year-round, work-appropriate pillar (Todd Snyder, Luca Faloni, Orlebar Brown).</p><p>So: relaxed fit, but invest in <b>collar architecture</b> and heritage textiles, not flimsy rayon.</p><div class="cite">Sources: <a href="https://www.yiume.com/pages/faq-camp-collar-shirts-style-trends-2026" target="_blank" rel="noopener">Yiume — camp collar 2026</a> · <a href="https://www.yiume.com/pages/faq-best-mens-resort-wear-brands-2026" target="_blank" rel="noopener">Yiume — men's resort 2026</a></div></div>
+        </div>
+
+        <p class="why">The data-backed core: total shirts dominate the mix, and within them <b>linen, resort and camp-collar are the growth share</b> while plain cotton softens. Protect the bestseller, re-mix the fabric and collar story, and let breathable naturals carry colour and texture newness.</p>
+        <div class="grid">
+          <div class="attr"><h4>Color story</h4><div class="colors"><div class="col"><span class="dot" style="background:#A9C7DE"></span>Sky Blue&nbsp;<span class="pan">· 14-4214</span></div><div class="col"><span class="dot" style="background:#E8DCC8"></span>Ecru Linen&nbsp;<span class="pan">· 12-0910</span></div><div class="col"><span class="dot" style="background:#F1ECE3"></span>Chalk&nbsp;<span class="pan">· 11-0601</span></div></div><h4 style="margin-top:16px">Fabrics (overview)</h4><ul><li>Cotton-linen blend &amp; 100% linen</li><li>Lightweight cotton poplin</li><li>Seersucker / dobby for camp texture</li></ul></div>
+          <div class="attr"><h4>Silhouettes</h4><ul><li>Relaxed long-sleeve button-up</li><li>Structured camp-collar short-sleeve</li><li>Boxy resort shirt</li></ul><h4 style="margin-top:16px">Construction</h4><ul><li><b>Collar:</b> relaxed point or structured camp (interfaced)</li><li><b>Fit:</b> boxy/relaxed, cuffed sleeve option</li><li><b>Detail:</b> tonal/corozo buttons, single chest pocket, micro-tuck/jacquard</li></ul></div>
+        </div>
+
+        <div class="rh">Per-look spec · fabric · trim · price</div>
+        <div class="spec">
+          <div class="spec-h"><div class="sh-left"><img class="spec-thumb" src="WGSN_MensTopsShirts_SS27_captures/WGSN_MensTopsShirts_SS27_ref_01.jpg" alt="L1"><span class="sn">L1 · Linen layering shirt</span></div><span class="badges"><span class="b-tier">Core–Mid</span><span class="b-mrp">MRP ₹2,499–3,499</span><span class="b-fob">FOB ~$10–14</span><span class="b-cert">OEKO-TEX · Eu Flax opt</span></span></div>
+          <div class="spec-grid">
+            <div><h6>Silhouette</h6><p>Relaxed LS button-up, point collar, single chest pocket; worn open over a tee.</p></div>
+            <div><h6>Fabric</h6><p><span class="em">Cotton-linen</span> 55/45, <span class="em">120–150 gsm</span> (airy slub). Hero alt: 100% linen 140–160 gsm.</p></div>
+            <div><h6>Trims</h6><p>Corozo/tonal buttons; tonal topstitch; pearl-finish optional; woven label.</p></div>
+            <div><h6>Colour</h6><p>Sky Blue 14-4214; Ecru 12-0910.</p></div>
+          </div>
+        </div>
+        <div class="spec">
+          <div class="spec-h"><div class="sh-left"><img class="spec-thumb" src="WGSN_MensTopsShirts_SS27_captures/WGSN_MensTopsShirts_SS27_ref_02.jpg" alt="L2"><span class="sn">L2 · Structured camp-collar shirt</span></div><span class="badges"><span class="b-tier">Core</span><span class="b-mrp">MRP ₹1,999–2,799</span><span class="b-fob">FOB ~$8–12</span><span class="b-cert">BCI · OEKO-TEX</span></span></div>
+          <div class="spec-grid">
+            <div><h6>Silhouette</h6><p>Short-sleeve camp collar, boxy body, straight hem; or crisp poplin button-up.</p></div>
+            <div><h6>Fabric</h6><p><span class="em">Cotton poplin</span> 110–130 gsm / cotton-linen; seersucker/dobby option for texture.</p></div>
+            <div><h6>Trims</h6><p>Structured collar interfacing; corozo buttons; tonal stitch; chest pocket.</p></div>
+            <div><h6>Colour</h6><p>Chalk 11-0601; Sky 14-4214; desaturated print.</p></div>
+          </div>
+        </div>
+
+        <div class="pack">
+          <h4>Prompt pack — ready to run on Slayteq</h4>
+          <div class="prompt"><span class="ptag">① Garment</span> A male model, late-20s, relaxed, leaning on a sun-warmed plaster column by the sea; relaxed linen long-sleeve button-up worn open over a fine black knit tee; airy cotton-linen slub; sky blue (Pantone 14-4214 TCX); soft Mediterranean daylight; 50mm, photorealistic, easy and refined.</div>
+          <div class="prompt"><span class="ptag">② Garment</span> A male model, mid-20s, on a shaded terrace; structured camp-collar short-sleeve shirt, boxy fit, crisp upright collar; cotton poplin with subtle dobby; ecru (Pantone 12-0910 TCX); warm resort light; 50mm, photorealistic, quietly tailored.</div>
+          <div class="prompt mood"><span class="ptag">③ Mood board</span> Flat-lay collage: cotton-linen slub &amp; seersucker swatches, corozo button cards, relaxed collar &amp; camp-collar interfacing samples, dried grasses, a sun-bleached postcard, Pantone chips 14-4214 / 12-0910 / 11-0601; warm natural daylight, oatmeal-linen surface, top-down editorial.</div>
+        </div>
+        <div class="refs">Sources: <b>WGSN</b> Core Item Update Men's Shirts &amp; Wovens S/S 27 · Key Items Men's Shirts &amp; Woven S/S 27 · TrendCurve Forecast S/S 27.</div>
+      </div>
+    </div>
+
+    <!-- THEME 2 -->
+    <div class="theme" style="--mbg:#f2f1ec;--mband:#e8e5da;--mdot:#7a6a4a;--mfg:#463c28">
+      <div class="thead">
+        <div><div class="tname">02 · Layered Utility Overshirt</div>
+          <div class="swatchrow"><span class="mini" style="background:#E8DCC8"></span><span class="mini" style="background:#9A8A5A"></span><span class="mini" style="background:#C7D49B"></span><span class="mini" style="background:#3F5C7A"></span></div></div>
+        <div class="tags"><span class="tier">Price tier · Core → Elevated</span><span class="tag">Protect · Building</span></div>
+      </div>
+      <div class="tbody">
+        <div class="rh">WGSN references</div>
+        <div class="gallery">
+          <figure class="card"><div class="imgwrap"><img src="WGSN_MensTopsShirts_SS27_captures/WGSN_MensTopsShirts_SS27_ref_30.jpg" alt="Linen overshirt / shirt-jacket"><span class="credit">WGSN · catwalk</span></div><figcaption><div class="cap-t"><span class="dot" style="background:#E8DCC8"></span>Linen overshirt / shirt-jacket</div><div class="cap-d">Boxy ecru overshirt, twin patch pockets, over a cable-knit</div></figcaption></figure>
+          <figure class="card"><div class="imgwrap"><img src="WGSN_MensTopsShirts_SS27_captures/WGSN_MensTopsShirts_SS27_ref_25.jpg" alt="Pigment-washed layering tee"><span class="credit">WGSN · street</span></div><figcaption><div class="cap-t"><span class="dot" style="background:#C7D49B"></span>Pigment-washed tee</div><div class="cap-d">Sun-faded sage crew, garment-dyed layering base</div></figcaption></figure>
+        </div>
+
+        <div class="rh">Mood board · emotional direction</div>
+        <div class="moodboard">
+          <div class="mb-emotion"><span class="mb-label">Emotion</span>Grounded · useful · transseasonal</div>
+          <div class="mb-grid">
+            <div class="mb-collage">
+              <img src="WGSN_MensTopsShirts_SS27_captures/WGSN_MensTopsShirts_SS27_ref_30.jpg" alt="">
+              <img src="WGSN_MensTopsShirts_SS27_captures/WGSN_MensTopsShirts_SS27_ref_25.jpg" alt="">
+              <img src="WGSN_MensTopsShirts_SS27_captures/WGSN_MensTopsShirts_SS27_ref_01.jpg" alt="">
+              <img src="WGSN_MensTopsShirts_SS27_captures/WGSN_MensTopsShirts_SS27_ref_33.jpg" alt="">
+              <img src="WGSN_MensTopsShirts_SS27_captures/WGSN_MensTopsShirts_SS27_ref_10.jpg" alt="">
+              <img src="WGSN_MensTopsShirts_SS27_captures/WGSN_MensTopsShirts_SS27_ref_31.jpg" alt="">
+            </div>
+            <div class="mb-side">
+              <div class="mb-dir">Creative direction: <b>the most useful thing he owns</b> — an open-front layer that earns its place every day. Workwear honesty (patch pockets, felled seams), medium weight, pigment-washed bases underneath. Quiet, lived-in, dependable.</div>
+              <div class="mb-chips"><span class="mb-chip" style="background:#E8DCC8"></span><span class="mb-chip" style="background:#9A8A5A"></span><span class="mb-chip" style="background:#C7D49B"></span><span class="mb-chip" style="background:#3F5C7A"></span></div>
+              <div class="mb-tags"><span class="mb-tag">overshirt</span><span class="mb-tag">patch pockets</span><span class="mb-tag">pigment dye</span><span class="mb-tag">medium weight</span><span class="mb-tag">workwear</span><span class="mb-tag">layering</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="rh">Look analysis · web-sourced</div>
+        <div class="analysis">
+          <div class="la"><h5>Overshirt — the transitional MVP</h5><p>The overshirt/shirt-jacket is called "perhaps the most useful garment in the modern man's transitional wardrobe" — standalone on mild days, mid-layer when cold, or an open-front layer adding interest. Best SS26–27 fabrics: <b>brushed cotton, lightweight flannel, textured linen blends</b>; chore-jacket cut for pocket utility.</p><p>Anchor layering stories here; medium weight is the sweet spot for transseasonal sell-through.</p><div class="cite">Sources: <a href="https://www.apetogentleman.com/best-lightweight-spring-jackets/" target="_blank" rel="noopener">Ape to Gentleman — spring layers</a> · <a href="https://www.ldnfashion.com/features/best-chore-jackets-for-men/" target="_blank" rel="noopener">LDN — chore jackets 2026</a></div></div>
+          <div class="la"><h5>Pigment-washed tee as the base layer</h5><p>WGSN calls out <b>pigment dyes and subtle textures</b> on elevated essentials; the lived-in, garment-dyed tee is the natural layering partner under the overshirt — soft hand, faded depth, mix-and-match colour for modular dressing.</p><p>2026 menswear overall reads "layered and personal, casual but put-together" — exactly this pairing.</p><div class="cite">Sources: <a href="https://lindsayswordwrites.substack.com/p/mens-style-in-2026-the-10-trends" target="_blank" rel="noopener">Men's style 2026 — 10 trends</a> · <a href="https://www.percivalclo.com/blogs/style-guides/guide-to-2026-menswear-trends" target="_blank" rel="noopener">Percival — 2026 menswear</a></div></div>
+        </div>
+
+        <p class="why">WGSN puts overshirts in Protect with a clear action: anchor layering with <b>medium-weight</b> styles. Pair with pigment-washed tees for full-look, modular selling — the "Modern Summer Escape" capsule logic.</p>
+        <div class="grid">
+          <div class="attr"><h4>Color story</h4><div class="colors"><div class="col"><span class="dot" style="background:#E8DCC8"></span>Ecru&nbsp;<span class="pan">· 12-0910</span></div><div class="col"><span class="dot" style="background:#9A8A5A"></span>Olive Khaki&nbsp;<span class="pan">· 16-0840</span></div><div class="col"><span class="dot" style="background:#C7D49B"></span>Sun-faded Sage&nbsp;<span class="pan">· 14-0210</span></div></div><h4 style="margin-top:16px">Fabrics (overview)</h4><ul><li>Cotton-linen canvas (overshirt)</li><li>Brushed cotton / lightweight flannel</li><li>Garment-pigment-dyed jersey (tee)</li></ul></div>
+          <div class="attr"><h4>Silhouettes</h4><ul><li>Boxy overshirt / shirt-jacket</li><li>Chore-cut utility overshirt</li><li>Relaxed garment-dyed crew tee</li></ul><h4 style="margin-top:16px">Construction</h4><ul><li><b>Body:</b> straight, slightly cropped, open-front</li><li><b>Detail:</b> twin patch pockets, felled seams, corozo buttons</li><li><b>Finish:</b> garment dye / enzyme wash on tee</li></ul></div>
+        </div>
+
+        <div class="rh">Per-look spec · fabric · trim · price</div>
+        <div class="spec">
+          <div class="spec-h"><div class="sh-left"><img class="spec-thumb" src="WGSN_MensTopsShirts_SS27_captures/WGSN_MensTopsShirts_SS27_ref_30.jpg" alt="L1"><span class="sn">L1 · Linen overshirt / shirt-jacket</span></div><span class="badges"><span class="b-tier">Elevated</span><span class="b-mrp">MRP ₹3,999–5,499</span><span class="b-fob">FOB ~$16–22</span><span class="b-cert">OEKO-TEX</span></span></div>
+          <div class="spec-grid">
+            <div><h6>Silhouette</h6><p>Boxy open-front overshirt, point collar, twin patch pockets, straight hem; layer over knit/tee.</p></div>
+            <div><h6>Fabric</h6><p><span class="em">Cotton-linen canvas</span>, <span class="em">200–260 gsm</span> (medium weight). Alt: brushed cotton.</p></div>
+            <div><h6>Trims</h6><p>Corozo buttons; twin patch + interior pockets; felled seams; woven label.</p></div>
+            <div><h6>Colour</h6><p>Ecru 12-0910; Olive 16-0840.</p></div>
+          </div>
+        </div>
+        <div class="spec">
+          <div class="spec-h"><div class="sh-left"><img class="spec-thumb" src="WGSN_MensTopsShirts_SS27_captures/WGSN_MensTopsShirts_SS27_ref_25.jpg" alt="L2"><span class="sn">L2 · Pigment-washed layering tee</span></div><span class="badges"><span class="b-tier">Core</span><span class="b-mrp">MRP ₹1,299–1,799</span><span class="b-fob">FOB ~$5–8</span><span class="b-cert">BCI</span></span></div>
+          <div class="spec-grid">
+            <div><h6>Silhouette</h6><p>Relaxed crew, slightly boxy, mid-weight; layering base or standalone.</p></div>
+            <div><h6>Fabric</h6><p><span class="em">Single jersey</span>, 100% cotton, <span class="em">200–220 gsm</span>, garment pigment dye.</p></div>
+            <div><h6>Trims</h6><p>Ribbed collar; twin-needle hem; garment dye/enzyme wash; woven label.</p></div>
+            <div><h6>Colour</h6><p>Sun-faded Sage 14-0210; washed indigo; terracotta.</p></div>
+          </div>
+        </div>
+
+        <div class="pack">
+          <h4>Prompt pack — ready to run on Slayteq</h4>
+          <div class="prompt"><span class="ptag">① Garment</span> A male model, late-20s, studio daylight; boxy ecru linen overshirt with twin patch pockets, worn open over a cream cable-knit and pleated chinos; cotton-linen canvas, medium weight; ecru (Pantone 12-0910 TCX); soft neutral light; 50mm, photorealistic, grounded and useful.</div>
+          <div class="prompt"><span class="ptag">② Garment</span> A male model, mid-20s, leaning in a doorway; relaxed garment-dyed crew tee with lived-in fade; mid-weight cotton jersey, pigment-dyed; sun-faded sage (Pantone 14-0210 TCX); natural street light; 50mm, photorealistic, soft and worn-in.</div>
+          <div class="prompt mood"><span class="ptag">③ Mood board</span> Flat-lay collage: cotton-linen canvas &amp; brushed-cotton swatches, corozo buttons, patch-pocket &amp; felled-seam samples, a pigment-dye colour-fade card, a vintage work glove, Pantone chips 12-0910 / 16-0840 / 14-0210; soft daylight, raw-canvas surface, top-down editorial.</div>
+        </div>
+        <div class="refs">Sources: <b>WGSN</b> Restorative Comfort (shirt jacket in action) · Mega Capsule Men's S/S27 Modern Summer Escape · Buying Director's Briefing Men's Apparel Spring 27.</div>
+      </div>
+    </div>
+
+    <!-- THEME 3 -->
+    <div class="theme" style="--mbg:#fbf6ec;--mband:#f4ead6;--mdot:#c08a2e;--mfg:#6e4e16">
+      <div class="thead">
+        <div><div class="tname">03 · Play-Power Graphic Tee</div>
+          <div class="swatchrow"><span class="mini" style="background:#F1ECE3"></span><span class="mini" style="background:#F2D479"></span><span class="mini" style="background:#E08A70"></span><span class="mini" style="background:#C7D49B"></span></div></div>
+        <div class="tags"><span class="tier">Price tier · Core (opening price)</span><span class="tag">Protect · Expand</span></div>
+      </div>
+      <div class="tbody">
+        <div class="rh">WGSN references</div>
+        <div class="gallery">
+          <figure class="card"><div class="imgwrap"><img src="WGSN_MensTopsShirts_SS27_captures/WGSN_MensTopsShirts_SS27_ref_04.jpg" alt="Still-life floral graphic tee"><span class="credit">WGSN · retail</span></div><figcaption><div class="cap-t"><span class="dot" style="background:#F2D479"></span>Still-life floral tee</div><div class="cap-d">"Summer bright" daisy bouquet print on relaxed white crew</div></figcaption></figure>
+          <figure class="card"><div class="imgwrap"><img src="WGSN_MensTopsShirts_SS27_captures/WGSN_MensTopsShirts_SS27_ref_08.jpg" alt="Citrus graphic tee flatlay"><span class="credit">WGSN · retail</span></div><figcaption><div class="cap-t"><span class="dot" style="background:#E08A70"></span>Citrus graphic tee</div><div class="cap-d">"SATUR" red citrus line-art on cream crew · resort flatlay</div></figcaption></figure>
+          <figure class="card"><div class="imgwrap"><img src="WGSN_MensTopsShirts_SS27_captures/WGSN_MensTopsShirts_SS27_ref_09.jpg" alt="Botanical back-print tee"><span class="credit">WGSN · retail</span></div><figcaption><div class="cap-t"><span class="dot" style="background:#2E4E9E"></span>Botanical back-print tee</div><div class="cap-d">Blue chrysanthemum etching back print</div></figcaption></figure>
+          <figure class="card"><div class="imgwrap"><img src="WGSN_MensTopsShirts_SS27_captures/WGSN_MensTopsShirts_SS27_ref_06.jpg" alt="Back-print resort graphic tee"><span class="credit">WGSN · retail</span></div><figcaption><div class="cap-t"><span class="dot" style="background:#E08A70"></span>Back-print resort tee</div><div class="cap-d">Sun/palm back placement graphic, relaxed fit</div></figcaption></figure>
+        </div>
+
+        <div class="rh">Mood board · emotional direction</div>
+        <div class="moodboard">
+          <div class="mb-emotion"><span class="mb-label">Emotion</span>Playful · sun-drunk · expressive</div>
+          <div class="mb-grid">
+            <div class="mb-collage">
+              <img src="WGSN_MensTopsShirts_SS27_captures/WGSN_MensTopsShirts_SS27_ref_04.jpg" alt="">
+              <img src="WGSN_MensTopsShirts_SS27_captures/WGSN_MensTopsShirts_SS27_ref_08.jpg" alt="">
+              <img src="WGSN_MensTopsShirts_SS27_captures/WGSN_MensTopsShirts_SS27_ref_09.jpg" alt="">
+              <img src="WGSN_MensTopsShirts_SS27_captures/WGSN_MensTopsShirts_SS27_ref_06.jpg" alt="">
+              <img src="WGSN_MensTopsShirts_SS27_captures/WGSN_MensTopsShirts_SS27_ref_08.jpg" alt="">
+              <img src="WGSN_MensTopsShirts_SS27_captures/WGSN_MensTopsShirts_SS27_ref_09.jpg" alt="">
+            </div>
+            <div class="mb-side">
+              <div class="mb-dir">Creative direction: <b>holiday optimism, printed loud-but-tasteful</b> — still-life bouquets, fruit and sun motifs, sun-faded colour, relaxed boxy bodies. The expressive, vacation-ready essential that drives add-on volume.</div>
+              <div class="mb-chips"><span class="mb-chip" style="background:#F1ECE3"></span><span class="mb-chip" style="background:#F2D479"></span><span class="mb-chip" style="background:#E08A70"></span><span class="mb-chip" style="background:#C7D49B"></span></div>
+              <div class="mb-tags"><span class="mb-tag">still-life print</span><span class="mb-tag">fruit/floral</span><span class="mb-tag">sun-faded</span><span class="mb-tag">boxy crew</span><span class="mb-tag">back placement</span><span class="mb-tag">vacation</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="rh">Look analysis · web-sourced</div>
+        <div class="analysis">
+          <div class="la"><h5>Still-life &amp; botanical prints lead 2026 men's tees</h5><p>2026 graphic-tee trends centre on <b>photorealistic botanical and still-life floral</b> art — "Anthropologie-style" cottage botanicals, watercolour florals and botanical surrealism are top performers. Retail confirms it: mass players already sell a "Retro Botanical Floral Vase Graphic Tee."</p><p>Exactly the WGSN call: still-life, fruit &amp; floral motifs, sun-drenched colour, relaxed fits.</p><div class="cite">Sources: <a href="https://www.printful.com/blog/design-trends" target="_blank" rel="noopener">Printful — 2026 design trends</a> · <a href="https://www.target.com/p/bioworld-walnut-39th-men-s-retro-botanical-floral-vase-graphic-tee-100-cotton-short-sleeve-crew-neck-t-shirt-medium/-/A-1011414606" target="_blank" rel="noopener">Target — retro botanical vase tee (retail proof)</a></div></div>
+          <div class="la"><h5>Protect &amp; expand — the volume engine</h5><p>WGSN keeps tees in Protect — perennial bestsellers — and flags graphic tees to "expand expressive, bold graphics." With checks softening, the print budget moves to <b>retro florals &amp; still-life</b>. Keep bodies relaxed/boxy and colour sun-faded for the vacation read.</p><p>Opening-price hero with high add-on attach rate; rotate prints fast, keep blanks core.</p><div class="cite">Sources: <a href="https://dtfil.com/blogs/blogs/the-rise-of-bold-artwork-graphic-t-shirt-trends-dominating-in-2026" target="_blank" rel="noopener">DTFIL — bold graphic tees 2026</a> · WGSN Empowered Play / Restorative Comfort</div></div>
+        </div>
+
+        <p class="why">The expressive engine of the category — still-life bouquets, fruit and sun motifs on relaxed, sun-faded bodies. Protect the blank, expand the print story; this is where newness and add-on volume live.</p>
+        <div class="grid">
+          <div class="attr"><h4>Color story</h4><div class="colors"><div class="col"><span class="dot" style="background:#F1ECE3"></span>Chalk&nbsp;<span class="pan">· 11-0601</span></div><div class="col"><span class="dot" style="background:#F2D479"></span>Butter&nbsp;<span class="pan">· 12-0721</span></div><div class="col"><span class="dot" style="background:#E08A70"></span>Faded Coral&nbsp;<span class="pan">· 16-1539</span></div></div><h4 style="margin-top:16px">Fabrics (overview)</h4><ul><li>Single jersey 180–210 gsm</li><li>Heavyweight boxy jersey 210–240 gsm</li><li>Slub/textured jersey for hand</li></ul></div>
+          <div class="attr"><h4>Silhouettes</h4><ul><li>Relaxed / boxy crew tee</li><li>Front placement still-life</li><li>Large back-placement resort graphic</li></ul><h4 style="margin-top:16px">Construction</h4><ul><li><b>Neck:</b> ribbed crew, twin-needle</li><li><b>Print:</b> screen / DTG placement, soft-hand inks</li><li><b>Finish:</b> sun-fade / pigment wash option</li></ul></div>
+        </div>
+
+        <div class="rh">Per-look spec · fabric · trim · price</div>
+        <div class="spec">
+          <div class="spec-h"><div class="sh-left"><img class="spec-thumb" src="WGSN_MensTopsShirts_SS27_captures/WGSN_MensTopsShirts_SS27_ref_04.jpg" alt="L1"><span class="sn">L1 · Still-life floral graphic tee</span></div><span class="badges"><span class="b-tier">Core</span><span class="b-mrp">MRP ₹1,199–1,799</span><span class="b-fob">FOB ~$5–8</span><span class="b-cert">BCI · OEKO-TEX</span></span></div>
+          <div class="spec-grid">
+            <div><h6>Silhouette</h6><p>Relaxed crew, regular-boxy body, short sleeve; front placement bouquet + text.</p></div>
+            <div><h6>Fabric</h6><p><span class="em">Single jersey</span>, 100% cotton, <span class="em">180–200 gsm</span>.</p></div>
+            <div><h6>Trims</h6><p>Screen/DTG placement print (soft-hand); ribbed collar; twin-needle hem.</p></div>
+            <div><h6>Colour</h6><p>Chalk 11-0601 ground; butter/coral print.</p></div>
+          </div>
+        </div>
+        <div class="spec">
+          <div class="spec-h"><div class="sh-left"><img class="spec-thumb" src="WGSN_MensTopsShirts_SS27_captures/WGSN_MensTopsShirts_SS27_ref_09.jpg" alt="L2"><span class="sn">L2 · Botanical print tee</span></div><span class="badges"><span class="b-tier">Core</span><span class="b-mrp">MRP ₹1,199–1,799</span><span class="b-fob">FOB ~$5–8</span><span class="b-cert">BCI</span></span></div>
+          <div class="spec-grid">
+            <div><h6>Silhouette</h6><p>Boxy crew, slightly heavier hand; botanical line-art placement print.</p></div>
+            <div><h6>Fabric</h6><p><span class="em">Heavyweight jersey</span> 210–240 gsm, slub option.</p></div>
+            <div><h6>Trims</h6><p>Screen print; ribbed neck w/ taping; woven hem label.</p></div>
+            <div><h6>Colour</h6><p>Ecru 12-0910 ground; tonal print.</p></div>
+          </div>
+        </div>
+        <div class="spec">
+          <div class="spec-h"><div class="sh-left"><img class="spec-thumb" src="WGSN_MensTopsShirts_SS27_captures/WGSN_MensTopsShirts_SS27_ref_06.jpg" alt="L3"><span class="sn">L3 · Back-print resort tee</span></div><span class="badges"><span class="b-tier">Core</span><span class="b-mrp">MRP ₹1,299–1,899</span><span class="b-fob">FOB ~$5–9</span><span class="b-cert">BCI · OEKO-TEX</span></span></div>
+          <div class="spec-grid">
+            <div><h6>Silhouette</h6><p>Relaxed crew, large back placement graphic, small front hit.</p></div>
+            <div><h6>Fabric</h6><p><span class="em">Single jersey</span> 190–210 gsm; sun-fade wash.</p></div>
+            <div><h6>Trims</h6><p>Back screen print; pigment/sun-fade finish; ribbed collar.</p></div>
+            <div><h6>Colour</h6><p>Off-white ground; faded coral 16-1539 / sage print.</p></div>
+          </div>
+        </div>
+
+        <div class="pack">
+          <h4>Prompt pack — ready to run on Slayteq</h4>
+          <div class="prompt"><span class="ptag">① Garment</span> A male model, early-20s, straw hat, under a parasol in a sunlit garden; relaxed white crew tee with a painterly still-life daisy bouquet front print and small script; soft cotton jersey; chalk white (Pantone 11-0601 TCX) with butter/coral print; warm summer light; 50mm, photorealistic, playful and sun-drunk.</div>
+          <div class="prompt"><span class="ptag">② Garment</span> A male model, mid-20s, seen from the back on a bright street; relaxed tee with a large botanical/sun back-placement graphic; mid-weight jersey, sun-faded; off-white with faded coral (Pantone 16-1539 TCX); crisp daylight; 50mm, photorealistic, expressive resort.</div>
+          <div class="prompt mood"><span class="ptag">③ Mood board</span> Flat-lay collage: still-life bouquet &amp; fruit print swatches, screen-print ink chips (soft-hand), jersey weight cards (180/210/240gsm), a pressed flower, a vintage seed packet, Pantone chips 11-0601 / 12-0721 / 16-1539; bright airy daylight, white paper surface, top-down editorial.</div>
+        </div>
+        <div class="refs">Sources: <b>WGSN</b> Restorative Comfort (graphic tee in action) · Empowered Play · Age of Longevity (the T-shirt in action).</div>
+      </div>
+    </div>
+
+    <!-- THEME 4 -->
+    <div class="theme" style="--mbg:#eef1f7;--mband:#dee4f0;--mdot:#2e4e9e;--mfg:#1f3470">
+      <div class="thead">
+        <div><div class="tname">04 · Romantic Vintage</div>
+          <div class="swatchrow"><span class="mini" style="background:#F1ECE3"></span><span class="mini" style="background:#2E4E9E"></span><span class="mini" style="background:#A9C7DE"></span><span class="mini" style="background:#C26B4E"></span></div></div>
+        <div class="tags"><span class="tier">Price tier · Mid</span><span class="tag">Test · Emerging</span></div>
+      </div>
+      <div class="tbody">
+        <div class="rh">WGSN references</div>
+        <div class="gallery">
+          <figure class="card"><div class="imgwrap"><img src="WGSN_MensTopsShirts_SS27_captures/WGSN_MensTopsShirts_SS27_ref_09.jpg" alt="Botanical line-art back-print tee"><span class="credit">WGSN · retail</span></div><figcaption><div class="cap-t"><span class="dot" style="background:#2E4E9E"></span>Botanical line-art tee</div><div class="cap-d">Blue chrysanthemum etching back print on textured white tee</div></figcaption></figure>
+        </div>
+
+        <div class="rh">Mood board · emotional direction</div>
+        <div class="moodboard">
+          <div class="mb-emotion"><span class="mb-label">Emotion</span>Nostalgic · crafted · poetic</div>
+          <div class="mb-grid">
+            <div class="mb-collage">
+              <img src="WGSN_MensTopsShirts_SS27_captures/WGSN_MensTopsShirts_SS27_ref_09.jpg" alt="">
+              <img src="WGSN_MensTopsShirts_SS27_captures/WGSN_MensTopsShirts_SS27_ref_08.jpg" alt="">
+              <img src="WGSN_MensTopsShirts_SS27_captures/WGSN_MensTopsShirts_SS27_ref_02.jpg" alt="">
+              <img src="WGSN_MensTopsShirts_SS27_captures/WGSN_MensTopsShirts_SS27_ref_30.jpg" alt="">
+              <img src="WGSN_MensTopsShirts_SS27_captures/WGSN_MensTopsShirts_SS27_ref_09.jpg" alt="">
+              <img src="WGSN_MensTopsShirts_SS27_captures/WGSN_MensTopsShirts_SS27_ref_01.jpg" alt="">
+            </div>
+            <div class="mb-side">
+              <div class="mb-dir">Creative direction: <b>old-world romance, lightly worn</b> — botanical etchings, retro florals, openwork and poet-shirt ease, washed finishes. The Gen-Z storytelling piece: craft and authenticity over logo.</div>
+              <div class="mb-chips"><span class="mb-chip" style="background:#F1ECE3"></span><span class="mb-chip" style="background:#2E4E9E"></span><span class="mb-chip" style="background:#A9C7DE"></span><span class="mb-chip" style="background:#C26B4E"></span></div>
+              <div class="mb-tags"><span class="mb-tag">botanical etching</span><span class="mb-tag">retro floral</span><span class="mb-tag">openwork</span><span class="mb-tag">poet shirt</span><span class="mb-tag">washed</span><span class="mb-tag">craft</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="rh">Look analysis · web-sourced</div>
+        <div class="analysis">
+          <div class="la"><h5>Gothic / botanical etching — the storytelling print</h5><p>Beyond bright bouquets, a darker thread performs: <b>gothic botanical illustration</b> — detailed scientific-style plant etchings, Victorian typography — strong on men's apparel in 2026. This is the romantic-vintage register: tonal line-art back prints, heritage feel, craft over logo.</p><p>WGSN's Buyers' Briefing "Romantic Vintage" + Test items (retro florals, openwork, poet) line up exactly.</p><div class="cite">Sources: <a href="https://live.ink/10-t-shirt-design-styles-popular-in-2026" target="_blank" rel="noopener">live.ink — botanical/gothic illustration</a> · <a href="https://www.tapstitch.com/blog/post/trending-shirt-designs" target="_blank" rel="noopener">Tapstitch — 2026 shirt designs</a></div></div>
+          <div class="la"><h5>Test, don't bet the line <span class="riskflag">test</span></h5><p>WGSN places romantic vintage / washed shirts in <b>Test</b> — trial poet styles, openwork and retro florals for occasion &amp; festival dressing rather than core volume. Keep buys shallow, lean on storytelling and washes, read sell-through before scaling.</p><p>Natural home: elevated tee back-prints + a small poet/openwork shirt capsule.</p><div class="cite">Sources: <a href="https://www.percivalclo.com/blogs/style-guides/guide-to-2026-menswear-trends" target="_blank" rel="noopener">Percival — 2026 menswear</a> · WGSN Buyers' Briefing Men's CMD Spring 2027 (Romantic Vintage)</div></div>
+        </div>
+
+        <p class="why">The directional, Gen-Z storytelling bet — botanical etchings, retro florals, openwork and poet-shirt ease in washed finishes. Test in occasion/festival; harvest the print learnings back into the core tee program.</p>
+        <div class="grid">
+          <div class="attr"><h4>Color story</h4><div class="colors"><div class="col"><span class="dot" style="background:#F1ECE3"></span>Chalk&nbsp;<span class="pan">· 11-0601</span></div><div class="col"><span class="dot" style="background:#2E4E9E"></span>Botanical Blue&nbsp;<span class="pan">· 19-4053</span></div><div class="col"><span class="dot" style="background:#C26B4E"></span>Terracotta&nbsp;<span class="pan">· 17-1340</span></div></div><h4 style="margin-top:16px">Fabrics (overview)</h4><ul><li>Textured / jacquard cotton jersey</li><li>Openwork / pointelle knit &amp; lace-trim</li><li>Washed lightweight poplin (poet shirt)</li></ul></div>
+          <div class="attr"><h4>Silhouettes</h4><ul><li>Botanical back-print tee</li><li>Poet shirt (full sleeve, soft collar)</li><li>Openwork / crochet-trim shirt</li></ul><h4 style="margin-top:16px">Construction</h4><ul><li><b>Print:</b> tonal line-art etching, back placement</li><li><b>Detail:</b> openwork panels, washed/distressed finish</li><li><b>Trims:</b> tonal buttons, woven heritage label</li></ul></div>
+        </div>
+
+        <div class="rh">Per-look spec · fabric · trim · price</div>
+        <div class="spec">
+          <div class="spec-h"><div class="sh-left"><img class="spec-thumb" src="WGSN_MensTopsShirts_SS27_captures/WGSN_MensTopsShirts_SS27_ref_09.jpg" alt="L1"><span class="sn">L1 · Botanical line-art back-print tee</span></div><span class="badges"><span class="b-tier">Mid</span><span class="b-mrp">MRP ₹1,799–2,499</span><span class="b-fob">FOB ~$7–11</span><span class="b-cert">OEKO-TEX</span></span></div>
+          <div class="spec-grid">
+            <div><h6>Silhouette</h6><p>Relaxed crew, textured body; tonal blue botanical etching back print + small front mark.</p></div>
+            <div><h6>Fabric</h6><p><span class="em">Textured / jacquard cotton jersey</span>, <span class="em">200–220 gsm</span> (premium hand).</p></div>
+            <div><h6>Trims</h6><p>Tonal back screen print (fine line); ribbed collar w/ taping; woven heritage label.</p></div>
+            <div><h6>Colour</h6><p>Chalk 11-0601 ground; Botanical Blue 19-4053 print.</p></div>
+          </div>
+        </div>
+        <div class="spec">
+          <div class="spec-h"><div class="sh-left"><img class="spec-thumb" src="WGSN_MensTopsShirts_SS27_captures/WGSN_MensTopsShirts_SS27_ref_02.jpg" alt="L2"><span class="sn">L2 · Washed poet / openwork shirt (test)</span></div><span class="badges"><span class="b-tier">Mid</span><span class="b-mrp">MRP ₹2,499–3,499</span><span class="b-fob">FOB ~$10–15</span><span class="b-cert">OEKO-TEX</span></span></div>
+          <div class="spec-grid">
+            <div><h6>Silhouette</h6><p>Soft poet shirt (full sleeve, relaxed collar) or openwork-panel short-sleeve; washed finish.</p></div>
+            <div><h6>Fabric</h6><p><span class="em">Washed lightweight poplin / cotton-linen</span> 110–140 gsm; openwork/pointelle panels.</p></div>
+            <div><h6>Trims</h6><p>Tonal/corozo buttons; openwork or crochet trim; garment wash; heritage label.</p></div>
+            <div><h6>Colour</h6><p>Chalk 11-0601; Sky 14-4214; Terracotta 17-1340.</p></div>
+          </div>
+        </div>
+
+        <div class="pack">
+          <h4>Prompt pack — ready to run on Slayteq</h4>
+          <div class="prompt"><span class="ptag">① Garment</span> A male model, mid-20s, seen from the back in soft daylight; relaxed textured white tee with a fine tonal-blue botanical etching (chrysanthemum) back print; premium jacquard jersey; chalk (Pantone 11-0601 TCX) with botanical blue (19-4053); gallery-soft light; 85mm, photorealistic, crafted and poetic.</div>
+          <div class="prompt"><span class="ptag">② Garment</span> A male model, late-20s, golden-hour terrace; washed poet shirt, full sleeve, relaxed soft collar, subtle openwork panel; washed cotton-linen; terracotta (Pantone 17-1340 TCX); warm nostalgic light; 50mm, photorealistic, romantic-vintage and lived-in.</div>
+          <div class="prompt mood"><span class="ptag">③ Mood board</span> Flat-lay collage: botanical etching prints, retro floral swatches, openwork/pointelle &amp; crochet-trim samples, a Victorian botanical book page, washed-poplin swatch, tonal buttons, Pantone chips 11-0601 / 19-4053 / 17-1340; warm soft daylight, aged-paper surface, top-down editorial.</div>
+        </div>
+        <div class="refs">Sources: <b>WGSN</b> Buyers' Briefing Men's CMD Spring 2027 (Romantic Vintage) · Key Items Men's Shirts &amp; Woven S/S 27 (poet/openwork test).</div>
+      </div>
+    </div>
+
+  </section>
+
+  <section>
+    <div class="sec-h">Adjacent &amp; styling notes</div>
+    <p class="why">Cross-category styling per WGSN: <b>full-look / capsule selling</b> with matching sets and modular tops; layer the trapeze of menswear — overshirt over graphic tee over washed crew — for transseasonal value. Checks are softening (UK markdowns −2.5ppt) so re-weight print open-to-buy from checks → <b>retro florals &amp; still-life</b>. Linen carries the elevated story; pigment-washed jersey carries the everyday.</p>
+  </section>
+
+  <section>
+    <div class="sec-h">Sourcing reference · Colours (Pantone TCX)</div>
+    <div class="tablewrap">
+      <table class="src">
+        <thead><tr><th>Swatch</th><th>Colour</th><th>Pantone TCX</th><th>Hex (nearest)</th><th>Used in</th></tr></thead>
+        <tbody>
+          <tr><td><span class="csw" style="background:#E8DCC8"></span></td><td><b>Ecru Linen</b></td><td>12-0910</td><td>#E8DCC8</td><td>Linen · Overshirt</td></tr>
+          <tr><td><span class="csw" style="background:#A9C7DE"></span></td><td><b>Sky Blue</b></td><td>14-4214</td><td>#A9C7DE</td><td>Linen · Vintage</td></tr>
+          <tr><td><span class="csw" style="background:#C7D49B"></span></td><td><b>Sun-faded Sage</b></td><td>14-0210</td><td>#C7D49B</td><td>Overshirt (tee)</td></tr>
+          <tr><td><span class="csw" style="background:#F2D479"></span></td><td><b>Butter Yellow</b></td><td>12-0721</td><td>#F2D479</td><td>Graphic Tee</td></tr>
+          <tr><td><span class="csw" style="background:#3F5C7A"></span></td><td><b>Washed Indigo</b></td><td>18-4029</td><td>#3F5C7A</td><td>Overshirt · base</td></tr>
+          <tr><td><span class="csw" style="background:#C26B4E"></span></td><td><b>Terracotta Clay</b></td><td>17-1340</td><td>#C26B4E</td><td>Vintage</td></tr>
+          <tr><td><span class="csw" style="background:#F1ECE3"></span></td><td><b>Chalk White</b></td><td>11-0601</td><td>#F1ECE3</td><td>All themes</td></tr>
+          <tr><td><span class="csw" style="background:#9A8A5A"></span></td><td><b>Olive Khaki</b></td><td>16-0840</td><td>#9A8A5A</td><td>Overshirt · Linen</td></tr>
+          <tr><td><span class="csw" style="background:#2E4E9E"></span></td><td><b>Botanical Blue</b></td><td>19-4053</td><td>#2E4E9E</td><td>Vintage print</td></tr>
+          <tr><td><span class="csw" style="background:#E08A70"></span></td><td><b>Faded Coral</b></td><td>16-1539</td><td>#E08A70</td><td>Graphic Tee</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="tabnote">Nearest indicative TCX references — confirm against physical chips before lab-dip / bulk.</p>
+  </section>
+
+  <section>
+    <div class="sec-h">Sourcing reference · Fabrics (composition · GSM · market)</div>
+    <div class="tablewrap">
+      <table class="src">
+        <thead><tr><th>Fabric</th><th>Composition</th><th>GSM</th><th>Hand / finish</th><th>Region / mill</th><th>MOQ · lead</th><th>Certs</th></tr></thead>
+        <tbody>
+          <tr><td><b>Cotton-linen shirting</b></td><td>55/45 cotton-linen</td><td>120–150</td><td>Airy slub, dry</td><td>Surat / Kannur (Kerala)</td><td>~600m · 35–45d</td><td>OEKO-TEX, Eu Flax opt</td></tr>
+          <tr><td><b>Pure linen shirting</b></td><td>100% linen</td><td>140–160</td><td>Crisp, breathable</td><td>Kannur / China yarn</td><td>~500m · 45d</td><td>European Flax (luxe)</td></tr>
+          <tr><td><b>Cotton poplin</b></td><td>100% cotton</td><td>110–130</td><td>Smooth, structured</td><td>Tirupur / Erode</td><td>~500m · 30d</td><td>BCI, OEKO-TEX</td></tr>
+          <tr><td><b>Seersucker / dobby</b></td><td>100% cotton</td><td>110–140</td><td>Self-texture (camp)</td><td>Surat / Erode</td><td>~500m · 35d</td><td>BCI</td></tr>
+          <tr><td><b>Cotton-linen canvas</b></td><td>cotton-linen</td><td>200–260</td><td>Medium, matte (overshirt)</td><td>Ludhiana / Surat</td><td>~500m · 40d</td><td>OEKO-TEX</td></tr>
+          <tr><td><b>Brushed cotton / flannel</b></td><td>100% cotton</td><td>160–200</td><td>Soft, brushed</td><td>Ludhiana</td><td>~500m · 40d</td><td>BCI</td></tr>
+          <tr><td><b>Single jersey (tee)</b></td><td>100% cotton</td><td>180–200</td><td>Soft, smooth</td><td>Tirupur</td><td>~500 pc · 30d</td><td>BCI, OEKO-TEX</td></tr>
+          <tr><td><b>Heavyweight jersey</b></td><td>100% cotton</td><td>210–240</td><td>Structured, boxy</td><td>Tirupur</td><td>~500 pc · 35d</td><td>BCI</td></tr>
+          <tr><td><b>Pigment-dye jersey</b></td><td>100% cotton</td><td>200–220</td><td>Faded, lived-in</td><td>Tirupur (garment dye)</td><td>~500 pc · 35d</td><td>BCI</td></tr>
+          <tr><td><b>Textured / jacquard jersey</b></td><td>100% cotton</td><td>200–220</td><td>Premium hand</td><td>Tirupur</td><td>~500 pc · 40d</td><td>OEKO-TEX</td></tr>
+          <tr><td><b>Openwork / pointelle knit</b></td><td>100% cotton</td><td>5–7 gauge</td><td>Open, crafted (test)</td><td>Tirupur (handwork)</td><td>300–500 pc · 45–60d</td><td>BCI</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="tabnote">GSM/MOQ/lead are indicative for costing — confirm with sourcing. India-first: Kannur/Kerala linen weaving, Surat shirting/blends, Tirupur knits/tees/pigment-dye, Ludhiana heavier wovens/overshirts; linen yarn often European flax / China.</p>
+  </section>
+
+  <section>
+    <div class="sec-h">Sourcing reference · Trims</div>
+    <div class="tablewrap">
+      <table class="src">
+        <thead><tr><th>Trim</th><th>Type / spec</th><th>Placement</th><th>Region / source</th><th>MOQ</th></tr></thead>
+        <tbody>
+          <tr><td><b>Corozo / tonal buttons</b></td><td>Corozo nut / matte resin</td><td>Front placket, cuff</td><td>Delhi / Bengaluru trims</td><td>gross</td></tr>
+          <tr><td><b>Camp-collar interfacing</b></td><td>Fusible, light structure</td><td>Collar</td><td>In-house / Surat</td><td>—</td></tr>
+          <tr><td><b>Placement print</b></td><td>Screen / DTG, soft-hand inks</td><td>Front / back (tee)</td><td>Tirupur print houses</td><td>200–300 pc</td></tr>
+          <tr><td><b>Fine-line tonal print</b></td><td>Screen, single-colour etching</td><td>Back placement</td><td>Tirupur</td><td>300 pc</td></tr>
+          <tr><td><b>Garment pigment dye / wash</b></td><td>Pigment / enzyme</td><td>Whole garment (tee)</td><td>Tirupur garment dye</td><td>~500 pc</td></tr>
+          <tr><td><b>Patch / chest pockets</b></td><td>Self-fabric, twin</td><td>Chest / hip (overshirt)</td><td>In-house</td><td>—</td></tr>
+          <tr><td><b>Openwork / crochet trim</b></td><td>Cotton, narrow (test)</td><td>Placket / panel</td><td>Tirupur handwork</td><td>300 pc</td></tr>
+          <tr><td><b>Twin-needle hem</b></td><td>Coverstitch</td><td>Hem / sleeve (tee)</td><td>Tirupur</td><td>—</td></tr>
+          <tr><td><b>Woven heritage label</b></td><td>Damask / woven</td><td>Neck / hem</td><td>Surat / Delhi</td><td>1000 pc</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="tabnote">Elevation levers for menswear: structured camp collars, corozo buttons, soft-hand &amp; fine-line prints, garment dye/wash, and (test) openwork — WGSN: subtle texture &amp; finish refresh the Protect core.</p>
+  </section>
+
+  <section>
+    <div class="sec-h">Sources &amp; methodology</div>
+    <div class="srcbox">
+      <h4>Primary source — WGSN Pulse</h4>
+      <ul>
+        <li>WGSN Pulse query: <b>"spring summer 2027 tops and shirts for men"</b> (Fashion Design access) — captured 30 Jun 2026.</li>
+        <li>Buying Director's Briefing Men's Apparel Spring 27 · Core Item Update Men's Shirts &amp; Wovens S/S 27 · Key Items Men's Shirts &amp; Woven S/S 27 · Buyers' Briefing Men's CMD Spring 2027 (Romantic Vintage) · Restorative Comfort · Empowered Play · Age of Longevity · Mega Capsule Men's S/S 27 Modern Summer Escape.</li>
+      </ul>
+      <h4>Data</h4>
+      <ul><li>WGSN TrendCurve Forecast S/S 27 — UK &amp; US men's woven tops. Charts in <b>WGSN_MensTopsShirts_SS27_captures/</b>. Signal: cotton shirts declining, linen/resort/camp-collar rising; UK checks markdowns −2.5ppt.</li></ul>
+      <h4>External trend sources — web research (Jun 2026)</h4>
+      <ul>
+        <li><b>Linen:</b> <a href="https://www.pirloni.com/blogs/news/mens-shirt-trends-2026" target="_blank" rel="noopener">Pirloni</a> · <a href="https://www.oasisshirts.com/summer-style-2026-top-linen-shirt-fashion-trends-to-reflect-in-your-inventory/" target="_blank" rel="noopener">Oasis Shirts</a></li>
+        <li><b>Camp collar / resort:</b> <a href="https://www.yiume.com/pages/faq-camp-collar-shirts-style-trends-2026" target="_blank" rel="noopener">Yiume — camp collar</a> · <a href="https://www.yiume.com/pages/faq-best-mens-resort-wear-brands-2026" target="_blank" rel="noopener">Yiume — resort</a></li>
+        <li><b>Overshirt / layering:</b> <a href="https://www.apetogentleman.com/best-lightweight-spring-jackets/" target="_blank" rel="noopener">Ape to Gentleman</a> · <a href="https://www.ldnfashion.com/features/best-chore-jackets-for-men/" target="_blank" rel="noopener">LDN chore jackets</a> · <a href="https://www.percivalclo.com/blogs/style-guides/guide-to-2026-menswear-trends" target="_blank" rel="noopener">Percival</a></li>
+        <li><b>Graphic tee / botanical:</b> <a href="https://www.printful.com/blog/design-trends" target="_blank" rel="noopener">Printful</a> · <a href="https://dtfil.com/blogs/blogs/the-rise-of-bold-artwork-graphic-t-shirt-trends-dominating-in-2026" target="_blank" rel="noopener">DTFIL</a> · <a href="https://live.ink/10-t-shirt-design-styles-popular-in-2026" target="_blank" rel="noopener">live.ink (botanical/gothic)</a> · <a href="https://www.target.com/p/bioworld-walnut-39th-men-s-retro-botanical-floral-vase-graphic-tee-100-cotton-short-sleeve-crew-neck-t-shirt-medium/-/A-1011414606" target="_blank" rel="noopener">Target (retail proof)</a></li>
+      </ul>
+      <h4>Imagery</h4>
+      <ul><li>Reference images are original WGSN assets from the Pulse "Images" tab (<b>WGSN_MensTopsShirts_SS27_captures/ref_01–33</b>) — used as trend reference, not final designs.</li></ul>
+    </div>
+  </section>
+
+  <div class="note"><b>Imagery &amp; numbers note:</b> the lookbook + mood boards use WGSN reference photography. Garment prompt packs are <b>text-only</b>, ready to run on Slayteq later. GSM, MOQ, lead-time, MRP (₹) and FOB ($) are <b>indicative design/merch direction</b> to confirm with sourcing — not firm quotes. Click any image or chart to enlarge.</div>
+
+  <footer>
+    <b>Trend DNA</b> — Men's Tops &amp; Shirts SS27, built from a WGSN Pulse study + web research by Geniemode's trend engine · June 2026.<br>
+    Capture pack: <b>~/Downloads/WGSN_MensTopsShirts_SS27_captures/</b> (33 reference designs, 2 TrendCurve charts, data.md).
+  </footer>
+
+</div>
+
+<div id="lightbox" aria-hidden="true">
+  <img id="lightbox-img" alt="Enlarged">
+  <div id="lightbox-close" title="Close">&times;</div>
+</div>
+<style>
+  #lightbox{display:none;position:fixed;inset:0;background:rgba(22,20,18,.93);z-index:9999;align-items:center;justify-content:center;cursor:zoom-out;padding:28px}
+  #lightbox.open{display:flex}
+  #lightbox img{max-width:95vw;max-height:92vh;object-fit:contain;border-radius:6px;box-shadow:0 16px 70px rgba(0,0,0,.6)}
+  #lightbox-close{position:fixed;top:18px;right:26px;color:#fff;font-size:40px;line-height:1;cursor:pointer;opacity:.8;font-family:Arial,sans-serif}
+  #lightbox-close:hover{opacity:1}
+</style>
+<script>
+(function(){
+  function promptText(p){var c=p.cloneNode(true);c.querySelectorAll('.ptag,.copy-btn').forEach(function(n){n.remove();});return c.innerText.trim();}
+  function copyText(t){var ok=false;try{var ta=document.createElement('textarea');ta.value=t;ta.style.position='fixed';ta.style.top='-9999px';document.body.appendChild(ta);ta.focus();ta.select();ok=document.execCommand('copy');ta.remove();}catch(e){}if(!ok&&navigator.clipboard){try{navigator.clipboard.writeText(t);ok=true;}catch(e2){}}return ok;}
+  document.querySelectorAll('.prompt').forEach(function(p){
+    var b=document.createElement('button');b.className='copy-btn';b.type='button';b.textContent='Copy';
+    b.addEventListener('click',function(ev){ev.stopPropagation();var ok=copyText(promptText(p));b.textContent=ok?'Copied!':'Press ⌘C';b.classList.add('done');setTimeout(function(){b.textContent='Copy';b.classList.remove('done');},1600);});
+    p.appendChild(b);
+  });
+  var lb=document.getElementById('lightbox'),li=document.getElementById('lightbox-img');
+  function close(){lb.classList.remove('open');li.src='';}
+  document.addEventListener('click',function(e){
+    if(e.target.closest('.copy-btn'))return;
+    var img=e.target.closest('figure.card img, .chartcard img, .mb-collage img, .spec-thumb');
+    if(img&&!lb.classList.contains('open')){li.src=img.src;lb.classList.add('open');return;}
+    if(lb.classList.contains('open')){close();}
+  });
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')close();});
+})();
+</script>
+</body>
+</html>
