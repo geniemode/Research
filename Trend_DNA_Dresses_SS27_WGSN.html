@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trend DNA — Dresses SS27 (WGSN-sourced · designer/merch edition)</title>
+<style>
+  :root{--ink:#1c1b1a;--muted:#6c6760;--line:#e7e2da;--bg:#faf8f4;--card:#ffffff;--brand:#7a3b2e;--accent:#1e6fb8}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.5}
+  .wrap{max-width:1480px;margin:0 auto;padding:0 40px 90px}
+  header{padding:64px 0 32px;border-bottom:3px solid var(--ink)}
+  .kicker{font-size:12px;letter-spacing:.28em;text-transform:uppercase;color:var(--brand);font-weight:700}
+  h1{font-size:62px;line-height:.98;letter-spacing:-.02em;margin:14px 0 8px;font-weight:800}
+  .sub{font-size:20px;color:var(--muted);max-width:760px}
+  .meta{margin-top:22px;display:flex;flex-wrap:wrap;gap:10px}
+  .chip{font-size:12px;font-weight:600;background:#fff;border:1px solid var(--line);border-radius:999px;padding:6px 13px;color:var(--muted)}
+  .chip b{color:var(--ink)}
+  section{margin-top:54px}
+  .sec-h{font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);font-weight:700;margin-bottom:16px;display:flex;align-items:center;gap:12px}
+  .sec-h::after{content:"";flex:1;height:1px;background:var(--line)}
+  .overview{font-size:21px;line-height:1.5;max-width:880px}
+  .overview b{color:var(--brand)}
+  .palette{display:grid;grid-template-columns:repeat(5,1fr);gap:0;border-radius:14px;overflow:hidden;border:1px solid var(--line);margin-top:6px}
+  .sw{height:138px;position:relative;display:flex;align-items:flex-end;padding:12px}
+  .sw span{font-size:11px;font-weight:700;background:rgba(255,255,255,.88);padding:4px 8px;border-radius:5px;color:#222;line-height:1.3}
+  .sw span b{display:block;font-size:10px;font-weight:700;color:#555;letter-spacing:.02em}
+  @media(max-width:760px){.palette{grid-template-columns:repeat(2,1fr)}.sw{height:104px}}
+  .data{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:6px}
+  @media(max-width:760px){.data{grid-template-columns:1fr}}
+  .chartcard{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+  .chartcard{display:flex;flex-direction:column}
+  .chartcard img{max-width:100%;max-height:430px;width:auto;height:auto;display:block;margin:0 auto;cursor:zoom-in}
+  .chartcard .cap{padding:12px 16px;font-size:13px;color:var(--muted)}
+  .chartcard .cap b{color:var(--ink)}
+  .readout{margin-top:18px;background:#fff;border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:10px;padding:16px 18px;font-size:15px;max-width:1120px}
+  .readout b{color:var(--accent)}
+  .theme{background:var(--card);border:1px solid var(--line);border-radius:18px;overflow:hidden;margin-top:26px;box-shadow:0 1px 0 rgba(0,0,0,.02)}
+  .thead{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:18px 24px;border-bottom:1px solid var(--line);flex-wrap:wrap}
+  .thead .tname{font-size:26px;font-weight:800;letter-spacing:-.01em}
+  .thead .swatchrow{display:flex;gap:6px;margin-top:6px}
+  .thead .mini{width:26px;height:14px;border-radius:4px;border:1px solid rgba(0,0,0,.1)}
+  .thead .tags{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+  .tag{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;background:#1c1b1a;color:#fff;padding:6px 12px;border-radius:999px;white-space:nowrap}
+  .tier{font-size:11px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;background:#eef4fa;color:#1e6fb8;border:1px solid #cfe2f3;padding:6px 12px;border-radius:999px;white-space:nowrap}
+  .tbody{padding:24px 26px 30px}
+  .rh{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);font-weight:700;margin:22px 0 12px}
+  .rh:first-child{margin-top:0}
+  .gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(208px,1fr));gap:12px;margin-bottom:6px}
+  figure.card{border:1px solid var(--line);border-radius:12px;overflow:hidden;background:#fff;margin:0}
+  figure.card .imgwrap{position:relative;height:360px;overflow:hidden;background:#f1ece4;display:flex;align-items:center;justify-content:center}
+  figure.card img{width:100%;height:100%;object-fit:contain;display:block;transition:transform .4s ease;cursor:zoom-in}
+  figure.card:hover img{transform:scale(1.02)}
+  figure.card .credit{position:absolute;top:8px;right:8px;font-size:9px;color:rgba(255,255,255,.92);background:rgba(0,0,0,.42);padding:3px 8px;border-radius:999px;letter-spacing:.04em}
+  figcaption{padding:10px 12px}
+  figcaption .cap-t{font-size:12.5px;font-weight:700;display:flex;align-items:center;gap:7px}
+  figcaption .cap-t .dot{width:12px;height:12px;border-radius:50%;border:1px solid rgba(0,0,0,.12);flex:none}
+  figcaption .cap-d{font-size:11px;color:var(--muted);margin-top:3px}
+  /* mood board */
+  .moodboard{border:1px solid var(--line);border-radius:14px;overflow:hidden;margin-bottom:6px;background:var(--mbg,#f6f3ef)}
+  .mb-emotion{padding:14px 18px;font-size:18px;font-weight:800;color:var(--mfg,#1c1b1a);border-bottom:1px solid var(--line);background:var(--mband,#efe9e2)}
+  .mb-emotion .mb-label{display:inline-block;font-size:10px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:#fff;background:var(--mdot,#7a3b2e);border-radius:5px;padding:2px 8px;margin-right:10px;vertical-align:2px}
+  .mb-grid{display:grid;grid-template-columns:1.5fr 1fr;gap:0}
+  @media(max-width:760px){.mb-grid{grid-template-columns:1fr}}
+  .mb-collage{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;padding:14px}
+  .mb-collage img{width:100%;height:150px;object-fit:contain;background:#fff;border:1px solid var(--line);border-radius:7px;display:block;cursor:zoom-in}
+  .mb-side{padding:16px 18px;border-left:1px solid var(--line)}
+  @media(max-width:760px){.mb-side{border-left:none;border-top:1px solid var(--line)}}
+  .mb-side .mb-dir{font-size:14px;color:#3a3631;margin-bottom:12px}
+  .mb-side .mb-dir b{color:var(--mdot,#7a3b2e)}
+  .mb-chips{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px}
+  .mb-chip{width:30px;height:30px;border-radius:6px;border:1px solid rgba(0,0,0,.12)}
+  .mb-tags{display:flex;gap:6px;flex-wrap:wrap}
+  .mb-tag{font-size:11px;font-weight:600;background:#fff;border:1px solid var(--line);border-radius:999px;padding:3px 10px;color:#3a3631}
+  /* analysis */
+  .analysis{margin:4px 0 6px;display:grid;grid-template-columns:1fr 1fr;gap:18px}
+  @media(max-width:760px){.analysis{grid-template-columns:1fr}}
+  .la{background:#f6f9fb;border:1px solid var(--line);border-radius:10px;padding:14px 16px}
+  .la h5{font-size:13px;font-weight:800;margin-bottom:7px;color:var(--ink)}
+  .la p{font-size:13px;color:#3a3631;line-height:1.55}
+  .la p+p{margin-top:7px}
+  .la .cite{margin-top:9px;font-size:11.5px;color:var(--muted)}
+  .la .cite a{color:var(--accent);text-decoration:none;border-bottom:1px solid #bfe0de}
+  .riskflag{display:inline-block;font-size:10px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:#9a5a00;background:#ffe9c7;border-radius:5px;padding:1px 7px;margin-left:4px}
+  .why{font-size:15.5px;color:#3a3631;max-width:880px;margin:14px 0 6px}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+  @media(max-width:760px){.grid{grid-template-columns:1fr}}
+  .attr h4{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-bottom:8px}
+  .attr ul{list-style:none;font-size:14.5px}
+  .attr li{padding:3px 0;border-bottom:1px dashed var(--line)}
+  .attr li:last-child{border:none}
+  .colors{display:flex;gap:8px;flex-wrap:wrap;margin-top:4px}
+  .col{display:flex;align-items:center;gap:7px;font-size:12px;font-weight:600;background:#faf8f4;border:1px solid var(--line);border-radius:999px;padding:4px 11px 4px 5px}
+  .col .pan{color:var(--muted);font-weight:600}
+  .dot{width:18px;height:18px;border-radius:50%;border:1px solid rgba(0,0,0,.12)}
+  /* per-look spec */
+  .spec{border:1px solid var(--line);border-radius:11px;overflow:hidden;margin-bottom:12px;background:#fff}
+  .spec-h{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;padding:11px 15px;background:#faf7f2;border-bottom:1px solid var(--line)}
+  .spec-h .sn{font-size:14.5px;font-weight:800}
+  .sh-left{display:flex;align-items:center;gap:12px;min-width:0}
+  .spec-thumb{width:46px;height:58px;object-fit:cover;object-position:top center;border-radius:6px;border:1px solid var(--line);cursor:zoom-in;flex:none;background:#f1ece4}
+  .badges{display:flex;gap:6px;flex-wrap:wrap}
+  .b-tier,.b-mrp,.b-fob,.b-cert{font-size:10.5px;font-weight:700;border-radius:5px;padding:3px 8px;letter-spacing:.02em}
+  .b-tier{background:#1c1b1a;color:#fff}
+  .b-mrp{background:#eaf3ea;color:#3f7d3f;border:1px solid #cfe5cf}
+  .b-fob{background:#eef2fb;color:#3a5bd0;border:1px solid #d3ddf6}
+  .b-cert{background:#f3eefb;color:#6b46c1;border:1px solid #e0d4f5}
+  .spec-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0}
+  @media(max-width:860px){.spec-grid{grid-template-columns:1fr 1fr}}
+  @media(max-width:520px){.spec-grid{grid-template-columns:1fr}}
+  .spec-grid>div{padding:11px 15px;border-right:1px solid var(--line);border-top:0}
+  .spec-grid>div:last-child{border-right:none}
+  @media(max-width:860px){.spec-grid>div{border-bottom:1px solid var(--line)}.spec-grid>div:nth-child(2){border-right:none}}
+  .spec-grid h6{font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:5px;font-weight:700}
+  .spec-grid p{font-size:13px;color:#2c2a27;line-height:1.5}
+  .spec-grid .em{font-weight:700}
+  /* prompt pack */
+  .pack{margin-top:16px;background:#f6f2ec;border:1px solid var(--line);border-radius:12px;padding:16px 18px}
+  .pack h4{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--brand);margin-bottom:10px}
+  .prompt{position:relative;font-size:13px;font-family:"SF Mono",ui-monospace,Menlo,monospace;background:#fff;border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:7px;padding:10px 70px 10px 12px;margin-bottom:8px;color:#2c2a27;line-height:1.45}
+  .copy-btn{position:absolute;top:7px;right:7px;font-family:-apple-system,Helvetica,Arial,sans-serif;font-size:10.5px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--accent);background:#eef4fa;border:1px solid #cfe2f3;border-radius:6px;padding:4px 9px;cursor:pointer;transition:all .15s}
+  .copy-btn:hover{background:var(--accent);color:#fff;border-color:var(--accent)}
+  .copy-btn.done{background:#eaf3ea;color:#3f7d3f;border-color:#cfe5cf}
+  @media print{.copy-btn{display:none}}
+  .ptag{display:inline-block;font-family:-apple-system,Helvetica,Arial,sans-serif;font-size:10px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:#fff;background:var(--accent);border-radius:5px;padding:2px 7px;margin-right:6px;vertical-align:1px}
+  .prompt.mood{border-left-color:var(--brand);background:#fbf6f1}
+  .prompt.mood .ptag{background:var(--brand)}
+  .refs{margin-top:14px;font-size:13px;color:var(--muted)}
+  .refs b{color:var(--ink)}
+  /* sourcing tables */
+  .tablewrap{overflow-x:auto;border-radius:10px;border:1px solid var(--line)}
+  table.src{width:100%;border-collapse:collapse;font-size:13px;background:#fff;min-width:720px}
+  table.src th{text-align:left;background:#f3efe8;font-size:10.5px;letter-spacing:.04em;text-transform:uppercase;color:var(--muted);padding:9px 11px;border-bottom:1px solid var(--line);white-space:nowrap}
+  table.src td{padding:9px 11px;border-bottom:1px solid var(--line);vertical-align:top}
+  table.src tr:last-child td{border-bottom:none}
+  table.src td b{color:var(--ink)}
+  .csw{display:inline-block;width:24px;height:24px;border-radius:6px;border:1px solid rgba(0,0,0,.18);vertical-align:middle;margin-right:11px;box-shadow:inset 0 0 0 1px rgba(255,255,255,.25)}
+  .tabnote{font-size:12px;color:var(--muted);margin-top:8px}
+  .srcbox{background:#fff;border:1px solid var(--line);border-radius:14px;padding:22px 24px}
+  .srcbox h4{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--brand);margin:14px 0 8px}
+  .srcbox h4:first-child{margin-top:0}
+  .srcbox ul{list-style:none;font-size:14px}
+  .srcbox li{padding:5px 0;border-bottom:1px solid var(--line)}
+  .srcbox li:last-child{border:none}
+  .srcbox b{color:var(--ink)}
+  .srcbox a{color:var(--accent);text-decoration:none}
+  footer{margin-top:46px;padding-top:24px;border-top:1px solid var(--line);font-size:13px;color:var(--muted)}
+  .note{background:#fff7ed;border:1px solid #f3d9b8;border-radius:10px;padding:12px 16px;font-size:13px;color:#7a5a2e;margin-top:20px}
+  @media(max-width:680px){
+    .wrap{padding:0 16px 60px}header{padding:40px 0 24px}h1{font-size:38px}.sub{font-size:16px}
+    .overview{font-size:17px}section{margin-top:36px}.thead .tname{font-size:22px}
+    figure.card .imgwrap{height:300px}.prompt{font-size:12px;line-height:1.5}.palette{grid-template-columns:1fr 1fr}.srcbox{padding:16px}
+  }
+  @media print{
+    @page{size:A4;margin:11mm}
+    body{background:#fff;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+    .wrap{max-width:none;padding:0}
+    header{padding:0 0 18px}h1{font-size:40px}section{margin-top:18px}
+    .theme{break-inside:auto;box-shadow:none;border:none;break-before:page;page-break-before:always}
+    section .theme:first-of-type{break-before:auto;page-break-before:auto}
+    .thead,.sec-h,.rh{break-after:avoid;page-break-after:avoid}
+    figure.card,.la,.spec,.pack,.prompt,.refs,.chartcard,.moodboard,.tablewrap{break-inside:avoid;page-break-inside:avoid}
+    figure.card:hover img{transform:none}
+    .note,.srcbox{break-before:page;page-break-before:always;break-inside:avoid}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="kicker">Trend DNA · Geniemode × WGSN · Designer / Merchandiser edition</div>
+    <h1>Dresses</h1>
+    <div class="sub">Spring / Summer 2027 — a WGSN-sourced, web-researched trend study built for design <i>and</i> sourcing: market signal, colour, lookbook, emotional mood boards, per-look fabric &amp; trim specs with GSM &amp; price, consolidated sourcing tables, and ready-to-run prompt packs.</div>
+    <div class="meta">
+      <div class="chip">Category: <b>Dresses</b></div>
+      <div class="chip">Season: <b>SS27</b></div>
+      <div class="chip">Segment: <b>Women's contemporary</b></div>
+      <div class="chip">Source: <b>WGSN Pulse + web research</b></div>
+      <div class="chip">Generated: <b>Jun 2026</b></div>
+      <div class="chip">Confidence: <b>High · WGSN-backed</b></div>
+    </div>
+  </header>
+
+  <section>
+    <div class="sec-h">Season read</div>
+    <p class="overview">WGSN frames SS27 dresses as the womenswear <b>growth engine</b> — the largest, most stable category, reset around <b>versatility, comfort and expressive design</b>. The structural move is away from body-conscious toward <b>soft architectural volume</b>: trapeze and drop-waist column rise as heatwaves push airflow up the priority list, while <b>bodycon declines</b>. Four directions carry the newness — soft-volume trapeze, eclectic-resort boho, pretty-feminine prairie, and a BaRock / dark-romance craft story — across a <b>sun-drenched, expressive</b> palette anchored by Luminous Blue (WGSN Colour of the Year), statement reds and Power Pastels.</p>
+  </section>
+
+  <section>
+    <div class="sec-h">Market signal · WGSN TrendCurve forecast</div>
+    <div class="data">
+      <div class="chartcard">
+        <img src="WGSN_Dresses_SS27_captures/WGSN_Dresses_SS27_chart_UK.png" alt="UK women's dresses forecast — % mix by style 2023–2027">
+        <div class="cap"><b>UK women's dresses</b> — % mix by style, 2023–2027 (forecast band from 2026). Source: WGSN TrendCurve Forecast Spring 2027.</div>
+      </div>
+      <div class="chartcard">
+        <img src="WGSN_Dresses_SS27_captures/WGSN_Dresses_SS27_chart_US.png" alt="US women's dresses forecast — % mix by style 2023–2027">
+        <div class="cap"><b>US women's dresses</b> — % mix by style, 2023–2027 (forecast band from 2026). Source: WGSN TrendCurve Forecast Spring 2027.</div>
+      </div>
+    </div>
+    <p class="readout"><b>Read:</b> Column dresses are the clear growth driver in both markets — rising to the top of the UK mix (~14–15%) and closing fast on bodycon in the US (~5%→~13%). <b>Bodycon is in structural decline</b>, sharply in the UK. Fit &amp; flare builds gently; prairie softens in the US. Catwalk/social proof: shirt styling +7.5ppt, #HalterNeck +2.4ppt, #SlipDress +1.4ppt (S/S 26 vs S/S 25). Net: invest in <b>volume and column</b>, transition out of bodycon.</p>
+  </section>
+
+  <section>
+    <div class="sec-h">Master palette · Pantone TCX (indicative)</div>
+    <div class="palette">
+      <div class="sw" style="background:#1F5FBF"><span>Luminous Blue · COTY<b>18-4148 TCX</b></span></div>
+      <div class="sw" style="background:#C8102E"><span>Statement Red<b>18-1664 TCX</b></span></div>
+      <div class="sw" style="background:#5E8C4E"><span>Meadow Green<b>17-0220 TCX</b></span></div>
+      <div class="sw" style="background:#F2D479"><span>Butter Yellow<b>12-0721 TCX</b></span></div>
+      <div class="sw" style="background:#C7A8DE"><span>Power Pastel Lilac<b>15-3620 TCX</b></span></div>
+      <div class="sw" style="background:#F4B98E"><span>Peach Fuzz<b>13-1023 TCX</b></span></div>
+      <div class="sw" style="background:#E6A93B"><span>Carambola<b>14-0951 TCX</b></span></div>
+      <div class="sw" style="background:#8A6A4F"><span>Earthy Brown<b>18-1027 TCX</b></span></div>
+      <div class="sw" style="background:#F2E9DC"><span>Whisper White<b>11-0507 TCX</b></span></div>
+      <div class="sw" style="background:#5A1E2A"><span>Oxblood<b>19-1521 TCX</b></span></div>
+    </div>
+    <p style="font-size:12px;color:var(--muted);margin-top:8px">Pantone values are nearest TCX references for direction — confirm against physical chips before lab-dip approval. Full colour/fabric/trim sourcing tables are at the foot of this report.</p>
+  </section>
+
+  <section>
+    <div class="sec-h">Macro themes · WGSN lookbook · mood · spec</div>
+
+    <!-- ============ THEME 1 ============ -->
+    <div class="theme" style="--mbg:#eef3fb;--mband:#dfeaf8;--mdot:#1e6fb8;--mfg:#15324f">
+      <div class="thead">
+        <div><div class="tname">01 · Soft Volume Trapeze</div>
+          <div class="swatchrow"><span class="mini" style="background:#1F5FBF"></span><span class="mini" style="background:#F2D479"></span><span class="mini" style="background:#C7A8DE"></span><span class="mini" style="background:#F4B98E"></span></div></div>
+        <div class="tags"><span class="tier">Price tier · Core–Mid</span><span class="tag">Invest · Rising (data-led)</span></div>
+      </div>
+      <div class="tbody">
+        <div class="rh">WGSN references</div>
+        <div class="gallery">
+          <figure class="card"><div class="imgwrap"><img src="WGSN_Dresses_SS27_captures/WGSN_Dresses_SS27_ref_03_key_fashion_item_the_trapeze_minidress.jpg" alt="Trapeze minidress"><span class="credit">WGSN · key item</span></div><figcaption><div class="cap-t"><span class="dot" style="background:#1F5FBF"></span>Trapeze minidress</div><div class="cap-d">V-neck folk-embroidered swing mini, contrast border</div></figcaption></figure>
+          <figure class="card"><div class="imgwrap"><img src="WGSN_Dresses_SS27_captures/WGSN_Dresses_SS27_ref_24.jpg" alt="Luminous blue draped pleated column"><span class="credit">WGSN · catwalk</span></div><figcaption><div class="cap-t"><span class="dot" style="background:#1F5FBF"></span>Draped pleated column</div><div class="cap-d">Asymmetric cowl drape, micro-pleat, high-low · Luminous Blue</div></figcaption></figure>
+          <figure class="card"><div class="imgwrap"><img src="WGSN_Dresses_SS27_captures/WGSN_Dresses_SS27_ref_10.jpg" alt="Soft-volume sheer maxi with metal belt"><span class="credit">WGSN · catwalk</span></div><figcaption><div class="cap-t"><span class="dot" style="background:#C7A8DE"></span>Soft-volume sheer maxi</div><div class="cap-d">Pintucked shirt-bodice, tiered maxi, ornate gold belt</div></figcaption></figure>
+          <figure class="card"><div class="imgwrap"><img src="WGSN_Dresses_SS27_captures/WGSN_Dresses_SS27_ref_18.jpg" alt="Coral ribbed knit swing mini"><span class="credit">WGSN · retail</span></div><figcaption><div class="cap-t"><span class="dot" style="background:#C8102E"></span>Ribbed-knit swing mini</div><div class="cap-d">Scoop neck, fine rib, lettuce ruffle hem · coral</div></figcaption></figure>
+        </div>
+
+        <div class="rh">Mood board · emotional direction</div>
+        <div class="moodboard">
+          <div class="mb-emotion"><span class="mb-label">Emotion</span>Liberated · sun-warmed · weightless</div>
+          <div class="mb-grid">
+            <div class="mb-collage">
+              <img src="WGSN_Dresses_SS27_captures/WGSN_Dresses_SS27_ref_03_key_fashion_item_the_trapeze_minidress.jpg" alt="">
+              <img src="WGSN_Dresses_SS27_captures/WGSN_Dresses_SS27_ref_24.jpg" alt="">
+              <img src="WGSN_Dresses_SS27_captures/WGSN_Dresses_SS27_ref_10.jpg" alt="">
+              <img src="WGSN_Dresses_SS27_captures/WGSN_Dresses_SS27_ref_18.jpg" alt="">
+              <img src="WGSN_Dresses_SS27_captures/WGSN_Dresses_SS27_chart_UK.png" alt="">
+              <img src="WGSN_Dresses_SS27_captures/WGSN_Dresses_SS27_ref_13.jpg" alt="">
+            </div>
+            <div class="mb-side">
+              <div class="mb-dir">Creative direction: the <b>relief of movement</b> as bodycon lets go — 60s-gamine ease, Mediterranean light, hand-craft folk. Fabric should <b>float and catch air</b>; let pleats and bias do the work, not the waist.</div>
+              <div class="mb-chips"><span class="mb-chip" style="background:#1F5FBF"></span><span class="mb-chip" style="background:#F2D479"></span><span class="mb-chip" style="background:#C7A8DE"></span><span class="mb-chip" style="background:#F4B98E"></span></div>
+              <div class="mb-tags"><span class="mb-tag">bias swing</span><span class="mb-tag">micro-pleat</span><span class="mb-tag">folk border</span><span class="mb-tag">airflow</span><span class="mb-tag">kinetic</span><span class="mb-tag">sun-bleached</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="rh">Look analysis · web-sourced</div>
+        <div class="analysis">
+          <div class="la"><h5>Trapeze minidress — the swing revival</h5><p>Created by YSL in 1958 as a break from Dior's cinched waist, the trapeze swings away from the body for an unencumbered feel — re-emerging now as bodycon recedes and airflow becomes a priority. Its reference is 1960s mod (floral, eyelet, shift).</p><p>The revival rides the 60s-gamine mood feeding boho (Jean Seberg, not Woodstock), so it reads "counterculture with a bit more class" and crosses into contemporary resort.</p><div class="cite">Sources: <a href="https://www.bridgetteraes.com/2023/04/17/trapeze-dresses-for-summer-how-to-wear-these-relaxed-warm-weather-styles/" target="_blank" rel="noopener">Bridgette Raes</a> · <a href="https://www.whowhatwear.com/fashion/trends/bohemian-fashion-trends-2026" target="_blank" rel="noopener">Who What Wear</a></div></div>
+          <div class="la"><h5>Draped pleated column — drop-waist &amp; elongation</h5><p>A standout Summer 2026 silhouette blending 1920s flapper ease with a modern elongated line, rendered broadly — bubble-hem minis, floor-sweeping shapes, crisp white maxis, smocked versions.</p><p>FW26–27 runways confirm it: Chanel belted drop-waist to stretch the torso, Ferragamo used georgette &amp; pleating for a long fluid line — the treatment seen in this Luminous-Blue column.</p><div class="cite">Sources: <a href="https://www.whowhatwear.com/fashion/dresses/summer-dress-trends-2026" target="_blank" rel="noopener">Who What Wear</a> · <a href="https://ruesophie.com/blogs/the-style-edit/drop-waist-dress-trend-guide" target="_blank" rel="noopener">Rue Sophie</a> · <a href="https://www.mystylebox.ca/blogs/fashion-beauty-blog/2026-2027-fall-and-winter-fashion-trends" target="_blank" rel="noopener">MyStyleBox</a></div></div>
+        </div>
+
+        <p class="why">The season's structural bet, and the one the data backs: as bodycon declines, the <b>trapeze mini and drop-waist column rise</b>. Architectural yet easy — sculptural shapes that maximise movement, sit across generations, and read as newness without losing commerciality.</p>
+        <div class="grid">
+          <div class="attr"><h4>Color story</h4><div class="colors"><div class="col"><span class="dot" style="background:#1F5FBF"></span>Luminous Blue&nbsp;<span class="pan">· 18-4148</span></div><div class="col"><span class="dot" style="background:#F2D479"></span>Butter&nbsp;<span class="pan">· 12-0721</span></div><div class="col"><span class="dot" style="background:#C7A8DE"></span>Power Lilac&nbsp;<span class="pan">· 15-3620</span></div></div><h4 style="margin-top:16px">Fabrics (overview)</h4><ul><li>Crisp cotton voile / poplin for body</li><li>Fluid pleated chiffon &amp; georgette</li><li>Fine cotton-elastane rib for knit minis</li></ul></div>
+          <div class="attr"><h4>Silhouettes</h4><ul><li>Trapeze / A-line swing mini</li><li>Drop-waist &amp; cowl-draped column</li><li>Soft-volume tiered maxi</li></ul><h4 style="margin-top:16px">Construction</h4><ul><li><b>Neck:</b> V or high cowl, fine binding</li><li><b>Fit:</b> shoulder-led volume, no waist seam</li><li><b>Hem:</b> swing A-line / asymmetric high-low / lettuce</li></ul></div>
+        </div>
+
+        <div class="rh">Per-look spec · fabric · trim · price</div>
+        <div class="spec">
+          <div class="spec-h"><div class="sh-left"><img class="spec-thumb" src="WGSN_Dresses_SS27_captures/WGSN_Dresses_SS27_ref_03_key_fashion_item_the_trapeze_minidress.jpg" alt="L1"><span class="sn">L1 · Trapeze minidress</span></div><span class="badges"><span class="b-tier">Core</span><span class="b-mrp">MRP ₹1,999–2,799</span><span class="b-fob">FOB ~$8–11</span><span class="b-cert">BCI · OEKO-TEX</span></span></div>
+          <div class="spec-grid">
+            <div><h6>Silhouette</h6><p>V-neck shoulder-led swing mini; no waist seam; contrast folk-embroidered border; sleeveless.</p></div>
+            <div><h6>Fabric</h6><p><span class="em">Cotton voile</span>, 100% cotton, <span class="em">90–110 gsm</span> (crisp, airy). Alt: cotton poplin 110–130 gsm.</p></div>
+            <div><h6>Trims</h6><p>Multi-needle schiffli placement embroidery (neck→hem); self bias binding 12mm; YKK invisible zip CB.</p></div>
+            <div><h6>Colour</h6><p>Luminous Blue 18-4148; Butter 12-0721.</p></div>
+          </div>
+        </div>
+        <div class="spec">
+          <div class="spec-h"><div class="sh-left"><img class="spec-thumb" src="WGSN_Dresses_SS27_captures/WGSN_Dresses_SS27_ref_24.jpg" alt="L2"><span class="sn">L2 · Draped pleated column</span></div><span class="badges"><span class="b-tier">Mid–Elevated</span><span class="b-mrp">MRP ₹3,499–4,999</span><span class="b-fob">FOB ~$14–18</span><span class="b-cert">GRS (rec. poly)</span></span></div>
+          <div class="spec-grid">
+            <div><h6>Silhouette</h6><p>High cowl drape; sunray micro-pleat column; asymmetric high-low hem; long sleeve option.</p></div>
+            <div><h6>Fabric</h6><p><span class="em">Poly chiffon</span> 40–60 gsm / <span class="em">georgette</span> 60–80 gsm, sunray-pleated.</p></div>
+            <div><h6>Trims</h6><p>Permanent sunray pleating (Surat pleaters); self bias binding; concealed zip.</p></div>
+            <div><h6>Colour</h6><p>Luminous Blue 18-4148 (COTY).</p></div>
+          </div>
+        </div>
+        <div class="spec">
+          <div class="spec-h"><div class="sh-left"><img class="spec-thumb" src="WGSN_Dresses_SS27_captures/WGSN_Dresses_SS27_ref_10.jpg" alt="L3"><span class="sn">L3 · Soft-volume sheer maxi</span></div><span class="badges"><span class="b-tier">Elevated</span><span class="b-mrp">MRP ₹4,999–6,999</span><span class="b-fob">FOB ~$18–24</span><span class="b-cert">OEKO-TEX</span></span></div>
+          <div class="spec-grid">
+            <div><h6>Silhouette</h6><p>Sheer pintucked shirt-bodice + gathered tiered maxi skirt; statement metal belt at waist.</p></div>
+            <div><h6>Fabric</h6><p><span class="em">Viscose / poly georgette</span> 60–80 gsm (sheer, fluid); pintuck panel.</p></div>
+            <div><h6>Trims</h6><p>Pintucks; ruffle cuff; <span class="em">metallic scroll belt</span> (zamak/brass); waist shirring.</p></div>
+            <div><h6>Colour</h6><p>Nimbus grey / Whisper White 11-0507.</p></div>
+          </div>
+        </div>
+        <div class="spec">
+          <div class="spec-h"><div class="sh-left"><img class="spec-thumb" src="WGSN_Dresses_SS27_captures/WGSN_Dresses_SS27_ref_18.jpg" alt="L4"><span class="sn">L4 · Ribbed-knit swing mini</span></div><span class="badges"><span class="b-tier">Core</span><span class="b-mrp">MRP ₹1,799–2,499</span><span class="b-fob">FOB ~$7–10</span><span class="b-cert">BCI</span></span></div>
+          <div class="spec-grid">
+            <div><h6>Silhouette</h6><p>Scoop neck; fine-rib A-line swing mini; lettuce/merrow ruffle hem; sleeveless.</p></div>
+            <div><h6>Fabric</h6><p><span class="em">Cotton-elastane rib</span> 180–220 gsm (soft stretch).</p></div>
+            <div><h6>Trims</h6><p>Lettuce/merrow edge; self-bind neck.</p></div>
+            <div><h6>Colour</h6><p>Statement Red / coral 18-1664.</p></div>
+          </div>
+        </div>
+
+        <div class="pack">
+          <h4>Prompt pack — ready to run on Slayteq</h4>
+          <div class="prompt"><span class="ptag">① Garment</span> Pure movement and light — a female model mid-step so the dress lifts; trapeze A-line swing mini, V-neck, contrast folk-embroidered border; crisp cotton voile; Luminous Blue (Pantone 18-4148 TCX); sun-drenched terrace, warm daylight, fabric in motion; 35mm, photorealistic.</div>
+          <div class="prompt"><span class="ptag">② Garment</span> Quiet architecture — cowl-draped sunray-pleated column, asymmetric high-low hem; fluid pleated chiffon; Luminous Blue (18-4148); golden-hour courtyard, warm ochre wall; 85mm, photorealistic, sculptural.</div>
+          <div class="prompt mood"><span class="ptag">③ Mood board</span> Flat-lay collage: pleated chiffon &amp; crisp voile swatches, folded paper-sculpture volume, contrast embroidered-border samples, fine binding/fagoting trims, Pantone chips 18-4148 / 12-0721 / 15-3620; bright airy daylight, off-white surface, top-down editorial.</div>
+        </div>
+        <div class="refs">Sources: <b>WGSN</b> Key Items Women's Dresses S/S 27 · TrendCurve Forecast Spring 2027 · Feed: Beautiful People #TrapezeDress.</div>
+      </div>
+    </div>
+
+    <!-- ============ THEME 2 ============ -->
+    <div class="theme" style="--mbg:#fbf1ea;--mband:#f6e3d6;--mdot:#c2502a;--mfg:#5a2415">
+      <div class="thead">
+        <div><div class="tname">02 · Eclectic Resort Boho</div>
+          <div class="swatchrow"><span class="mini" style="background:#C8102E"></span><span class="mini" style="background:#E6A93B"></span><span class="mini" style="background:#1F5FBF"></span><span class="mini" style="background:#8A6A4F"></span></div></div>
+        <div class="tags"><span class="tier">Price tier · Core (handwork → Elevated)</span><span class="tag">Invest · Building</span></div>
+      </div>
+      <div class="tbody">
+        <div class="rh">WGSN references</div>
+        <div class="gallery">
+          <figure class="card"><div class="imgwrap"><img src="WGSN_Dresses_SS27_captures/WGSN_Dresses_SS27_ref_02_key_fashion_item_the_boho_halter_dress.jpg" alt="Boho halter mixed-print"><span class="credit">WGSN · key item</span></div><figcaption><div class="cap-t"><span class="dot" style="background:#C8102E"></span>Boho halter / set</div><div class="cap-d">Mixed scarf-print panels, gathered halter, neckerchief</div></figcaption></figure>
+          <figure class="card"><div class="imgwrap"><img src="WGSN_Dresses_SS27_captures/WGSN_Dresses_SS27_ref_09_key_fashion_item_the_sarong_skirt_fash.jpg" alt="Sarong wrap"><span class="credit">WGSN · key item</span></div><figcaption><div class="cap-t"><span class="dot" style="background:#1F5FBF"></span>Sarong wrap / draped</div><div class="cap-d">Printed sarong tied at waist over sheer shirt</div></figcaption></figure>
+          <figure class="card"><div class="imgwrap"><img src="WGSN_Dresses_SS27_captures/WGSN_Dresses_SS27_ref_14.jpg" alt="Watercolour boho midi"><span class="credit">WGSN · retail</span></div><figcaption><div class="cap-t"><span class="dot" style="background:#8A6A4F"></span>Watercolour boho midi</div><div class="cap-d">Lace-up neck, self-tie waist, sheer billowy print</div></figcaption></figure>
+          <figure class="card"><div class="imgwrap"><img src="WGSN_Dresses_SS27_captures/WGSN_Dresses_SS27_ref_15.jpg" alt="Crochet chevron mini"><span class="credit">WGSN · retail</span></div><figcaption><div class="cap-t"><span class="dot" style="background:#5E8C4E"></span>Crochet chevron mini</div><div class="cap-d">Zigzag crochet, scalloped hem, short sleeve</div></figcaption></figure>
+          <figure class="card"><div class="imgwrap"><img src="WGSN_Dresses_SS27_captures/WGSN_Dresses_SS27_ref_16.jpg" alt="Crochet 3D-flower fringe mini"><span class="credit">WGSN · retail</span></div><figcaption><div class="cap-t"><span class="dot" style="background:#F2E9DC"></span>Crochet flower-fringe mini</div><div class="cap-d">Open-knit tank, 3D crochet flowers, fringed hem</div></figcaption></figure>
+        </div>
+
+        <div class="rh">Mood board · emotional direction</div>
+        <div class="moodboard">
+          <div class="mb-emotion"><span class="mb-label">Emotion</span>Free-spirited · sun-drunk · nomadic</div>
+          <div class="mb-grid">
+            <div class="mb-collage">
+              <img src="WGSN_Dresses_SS27_captures/WGSN_Dresses_SS27_ref_02_key_fashion_item_the_boho_halter_dress.jpg" alt="">
+              <img src="WGSN_Dresses_SS27_captures/WGSN_Dresses_SS27_ref_09_key_fashion_item_the_sarong_skirt_fash.jpg" alt="">
+              <img src="WGSN_Dresses_SS27_captures/WGSN_Dresses_SS27_ref_14.jpg" alt="">
+              <img src="WGSN_Dresses_SS27_captures/WGSN_Dresses_SS27_ref_15.jpg" alt="">
+              <img src="WGSN_Dresses_SS27_captures/WGSN_Dresses_SS27_ref_16.jpg" alt="">
+              <img src="WGSN_Dresses_SS27_captures/WGSN_Dresses_SS27_ref_05_commercial_newness_cargo_capri.jpg" alt="">
+            </div>
+            <div class="mb-side">
+              <div class="mb-dir">Creative direction: <b>joy with a bit of grit</b> — "more punk than pretty" (Zimmermann AW26). Souk colour-clash, scarf-print patchwork, hand-crochet and fringe; travel-worn, lived-in, individual.</div>
+              <div class="mb-chips"><span class="mb-chip" style="background:#C8102E"></span><span class="mb-chip" style="background:#E6A93B"></span><span class="mb-chip" style="background:#1F5FBF"></span><span class="mb-chip" style="background:#8A6A4F"></span></div>
+              <div class="mb-tags"><span class="mb-tag">mixed prints</span><span class="mb-tag">crochet</span><span class="mb-tag">fringe</span><span class="mb-tag">tassel</span><span class="mb-tag">bandana</span><span class="mb-tag">raffia</span><span class="mb-tag">sun-drenched</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="rh">Look analysis · web-sourced</div>
+        <div class="analysis">
+          <div class="la"><h5>Boho halter — the 2026 "Bold Boho" renaissance</h5><p>Boho's revival is a defining movement of 2026 — Bella Hadid in Chloé, plus Chloé, Zimmermann, Ulla Johnson. It has shifted to <b>"Bold Boho"</b>: punchy mixed prints, bandana motifs, gathered fabrics, lace — more punk than pretty.</p><p>This patchwork halter is textbook Bold Boho, and analysts expect the renaissance past 2026 — matching WGSN's call that boho runs into SS27 toward "Bohemian Archive."</p><div class="cite">Sources: <a href="https://www.whowhatwear.com/fashion/trends/bohemian-fashion-trends-2026" target="_blank" rel="noopener">Who What Wear</a> · <a href="https://www.marieclaire.co.uk/fashion/bold-boho-trend" target="_blank" rel="noopener">Marie Claire UK</a> · <a href="https://www.metromodefashion.com/post/boho-renaissance-why-fashion-s-free-spirited-70s-revival-is-defining-2026" target="_blank" rel="noopener">Metromode</a></div></div>
+          <div class="la"><h5>Sarong &amp; crochet — resort beyond the beach</h5><p>For 2026 the sarong sheds its beach-only reputation: luxe silk, oversized tropical prints, tied at the hip / wrapped as a halter dress / draped — styled into the city over shirts and trousers.</p><p>Crochet &amp; fringe are core to the boho-craft revival, giving the hand-made, artisanal feel the trend now demands (and a natural elevated price tier).</p><div class="cite">Sources: <a href="https://www.whowhatwear.com/fashion/shopping/pareo-sarong-wrap-scarf-skirt-trend-summer-2026" target="_blank" rel="noopener">Who What Wear — sarong 2026</a> · <a href="https://ruesophie.com/blogs/the-style-edit/boho-chic-revival-2026-fringe-crochet" target="_blank" rel="noopener">Rue Sophie — fringe &amp; crochet</a></div></div>
+        </div>
+
+        <p class="why">WGSN flags <b>boho as a key lifestyle trend to invest in</b>, continuing into SS27 and evolving toward "Bohemian Archive." Eclectic Resort delivers it as dresses — mixed/scarf prints, hybrid halter/slip, sarong draping, crochet craft — for breathable, beach-to-occasion versatility.</p>
+        <div class="grid">
+          <div class="attr"><h4>Color story</h4><div class="colors"><div class="col"><span class="dot" style="background:#C8102E"></span>Statement Red&nbsp;<span class="pan">· 18-1664</span></div><div class="col"><span class="dot" style="background:#E6A93B"></span>Carambola&nbsp;<span class="pan">· 14-0951</span></div><div class="col"><span class="dot" style="background:#8A6A4F"></span>Earthy Brown&nbsp;<span class="pan">· 18-1027</span></div></div><h4 style="margin-top:16px">Fabrics (overview)</h4><ul><li>Printed rayon challis / modal-viscose</li><li>Light viscose &amp; habotai for sarong drape</li><li>Cotton hand-crochet / open knit</li></ul></div>
+          <div class="attr"><h4>Silhouettes</h4><ul><li>Boho halter swing dress</li><li>Sarong wrap / tie dress</li><li>Crochet mini / watercolour midi</li></ul><h4 style="margin-top:16px">Construction</h4><ul><li><b>Neck:</b> gathered halter / lace-up / high tie</li><li><b>Fit:</b> spliced mixed-print, loose swing</li><li><b>Hem:</b> handkerchief / scalloped / fringed</li></ul></div>
+        </div>
+
+        <div class="rh">Per-look spec · fabric · trim · price</div>
+        <div class="spec">
+          <div class="spec-h"><div class="sh-left"><img class="spec-thumb" src="WGSN_Dresses_SS27_captures/WGSN_Dresses_SS27_ref_02_key_fashion_item_the_boho_halter_dress.jpg" alt="L1"><span class="sn">L1 · Boho halter, mixed-print</span></div><span class="badges"><span class="b-tier">Core</span><span class="b-mrp">MRP ₹2,299–2,999</span><span class="b-fob">FOB ~$9–12</span><span class="b-cert">EcoVero opt</span></span></div>
+          <div class="spec-grid">
+            <div><h6>Silhouette</h6><p>Gathered halter / high tie-neck; spliced scarf-print panels; loose swing; handkerchief hem.</p></div>
+            <div><h6>Fabric</h6><p><span class="em">Rayon challis</span>, 100% viscose, <span class="em">100–120 gsm</span> (fluid drape), digital + screen print.</p></div>
+            <div><h6>Trims</h6><p>Engineered scarf print (paisley + sun motif); tassel/fringe 60–80mm; covered button + rouleau.</p></div>
+            <div><h6>Colour</h6><p>Statement Red 18-1664; Carambola 14-0951; Luminous Blue 18-4148.</p></div>
+          </div>
+        </div>
+        <div class="spec">
+          <div class="spec-h"><div class="sh-left"><img class="spec-thumb" src="WGSN_Dresses_SS27_captures/WGSN_Dresses_SS27_ref_09_key_fashion_item_the_sarong_skirt_fash.jpg" alt="L2"><span class="sn">L2 · Sarong wrap dress</span></div><span class="badges"><span class="b-tier">Core–Mid</span><span class="b-mrp">MRP ₹2,499–3,499</span><span class="b-fob">FOB ~$10–14</span><span class="b-cert">OEKO-TEX</span></span></div>
+          <div class="spec-grid">
+            <div><h6>Silhouette</h6><p>Wrap-and-tie sarong skirt over a sheer oversized shirt; abstract placement print; ankle length.</p></div>
+            <div><h6>Fabric</h6><p><span class="em">Viscose / habotai</span> 90–110 gsm (sarong) + <span class="em">cotton chambray</span> 90–110 gsm (shirt).</p></div>
+            <div><h6>Trims</h6><p>Self-tie waist knot; rolled/baby hem; contrast placement print.</p></div>
+            <div><h6>Colour</h6><p>Luminous Blue 18-4148 + sunset abstract print.</p></div>
+          </div>
+        </div>
+        <div class="spec">
+          <div class="spec-h"><div class="sh-left"><img class="spec-thumb" src="WGSN_Dresses_SS27_captures/WGSN_Dresses_SS27_ref_14.jpg" alt="L3"><span class="sn">L3 · Watercolour boho midi</span></div><span class="badges"><span class="b-tier">Core</span><span class="b-mrp">MRP ₹2,299–2,999</span><span class="b-fob">FOB ~$9–12</span><span class="b-cert">GRS opt</span></span></div>
+          <div class="spec-grid">
+            <div><h6>Silhouette</h6><p>Lace-up V-neck; self-tie waist; billowy long sleeve; sheer A-line midi.</p></div>
+            <div><h6>Fabric</h6><p><span class="em">Poly/viscose georgette</span> 60–80 gsm, watercolour tie-dye print (sheer).</p></div>
+            <div><h6>Trims</h6><p>Rouleau lace-up + tips; self-tie belt; sheer lining (slip).</p></div>
+            <div><h6>Colour</h6><p>Olive / cream watercolour; Earthy Brown 18-1027.</p></div>
+          </div>
+        </div>
+        <div class="spec">
+          <div class="spec-h"><div class="sh-left"><img class="spec-thumb" src="WGSN_Dresses_SS27_captures/WGSN_Dresses_SS27_ref_15.jpg" alt="L4"><span class="sn">L4 · Crochet chevron mini</span></div><span class="badges"><span class="b-tier">Elevated · handwork</span><span class="b-mrp">MRP ₹3,499–4,499</span><span class="b-fob">FOB ~$15–20</span><span class="b-cert">BCI · handloom</span></span></div>
+          <div class="spec-grid">
+            <div><h6>Silhouette</h6><p>Zigzag chevron crochet; round neck; short sleeve; scalloped hem; relaxed mini (slip lining).</p></div>
+            <div><h6>Fabric</h6><p><span class="em">Cotton hand-crochet</span>, 100% cotton, 5–7 gauge (open, textured).</p></div>
+            <div><h6>Trims</h6><p>Hand-crochet scallop edge; tonal/colour-block stripes; jersey slip lining.</p></div>
+            <div><h6>Colour</h6><p>Meadow Green 17-0220 / cream colour-block.</p></div>
+          </div>
+        </div>
+        <div class="spec">
+          <div class="spec-h"><div class="sh-left"><img class="spec-thumb" src="WGSN_Dresses_SS27_captures/WGSN_Dresses_SS27_ref_16.jpg" alt="L5"><span class="sn">L5 · Crochet flower-fringe mini</span></div><span class="badges"><span class="b-tier">Elevated · handwork</span><span class="b-mrp">MRP ₹3,499–4,499</span><span class="b-fob">FOB ~$15–20</span><span class="b-cert">BCI</span></span></div>
+          <div class="spec-grid">
+            <div><h6>Silhouette</h6><p>Open-knit scoop tank mini; 3D crochet flowers; fringed hem; beach-to-bar cover.</p></div>
+            <div><h6>Fabric</h6><p><span class="em">Cotton open knit / pointelle</span>, 100% cotton, 5–7 gauge.</p></div>
+            <div><h6>Trims</h6><p>3D crochet flowers + wood beads; cotton fringe hem 80mm.</p></div>
+            <div><h6>Colour</h6><p>Whisper White 11-0507.</p></div>
+          </div>
+        </div>
+
+        <div class="pack">
+          <h4>Prompt pack — ready to run on Slayteq</h4>
+          <div class="prompt"><span class="ptag">① Garment</span> Golden resort ease — boho halter swing dress spliced from mixed scarf prints (paisley + sun motif), gathered halter; printed rayon; statement red &amp; carnelian (18-1664); adobe terrace with cactus, warm light; 50mm, photorealistic.</div>
+          <div class="prompt"><span class="ptag">② Garment</span> Hand-made warmth — chevron crochet mini, scalloped hem, short sleeve; cotton hand-crochet; Meadow Green &amp; cream (17-0220); sun-warmed plaster wall, raffia bag; 50mm, photorealistic, artisanal.</div>
+          <div class="prompt mood"><span class="ptag">③ Mood board</span> Flat-lay collage: mixed scarf-print &amp; paisley swatches, bandana, tassel/self-tie samples, woven raffia, 70s travel-poster page, sun motif, Pantone chips 18-1664 / 14-0951 / 18-4148 / 18-1027; warm sun-drenched daylight, terracotta surface, top-down editorial.</div>
+        </div>
+        <div class="refs">Sources: <b>WGSN</b> Designers' Briefing S/S 27 (Eclectic Resort) · Key Items Women's Dresses S/S 27 · Images feed (Bohemian Archive).</div>
+      </div>
+    </div>
+
+    <!-- ============ THEME 3 ============ -->
+    <div class="theme" style="--mbg:#f7f3ef;--mband:#efe7dc;--mdot:#8a6a4f;--mfg:#4a3a2a">
+      <div class="thead">
+        <div><div class="tname">03 · Prairie · Pretty Feminine</div>
+          <div class="swatchrow"><span class="mini" style="background:#F2E9DC"></span><span class="mini" style="background:#C7A8DE"></span><span class="mini" style="background:#F4B98E"></span><span class="mini" style="background:#5E8C4E"></span></div></div>
+        <div class="tags"><span class="tier">Price tier · Core (watch)</span><span class="tag">Expand · Peak</span></div>
+      </div>
+      <div class="tbody">
+        <div class="rh">WGSN references</div>
+        <div class="gallery">
+          <figure class="card"><div class="imgwrap"><img src="WGSN_Dresses_SS27_captures/WGSN_Dresses_SS27_ref_11.jpg" alt="Prairie tiered floral midi"><span class="credit">WGSN · catwalk</span></div><figcaption><div class="cap-t"><span class="dot" style="background:#5E8C4E"></span>Prairie tiered floral midi</div><div class="cap-d">Ruched sweetheart, puff sleeve, tiered ditsy floral</div></figcaption></figure>
+          <figure class="card"><div class="imgwrap"><img src="WGSN_Dresses_SS27_captures/WGSN_Dresses_SS27_ref_13.jpg" alt="Sheer floral drop-waist swing"><span class="credit">WGSN · retail</span></div><figcaption><div class="cap-t"><span class="dot" style="background:#C7A8DE"></span>Sheer floral drop-waist</div><div class="cap-d">Ruffle stand collar, balloon sleeve, gathered drop-waist</div></figcaption></figure>
+          <figure class="card"><div class="imgwrap"><img src="WGSN_Dresses_SS27_captures/WGSN_Dresses_SS27_ref_12.jpg" alt="White modest maxi"><span class="credit">WGSN · street</span></div><figcaption><div class="cap-t"><span class="dot" style="background:#F2E9DC"></span>Textured modest maxi</div><div class="cap-d">High neck, puff sleeve, tiered, waist sash</div></figcaption></figure>
+          <figure class="card"><div class="imgwrap"><img src="WGSN_Dresses_SS27_captures/WGSN_Dresses_SS27_ref_17.jpg" alt="Pink pointelle romantic mini"><span class="credit">WGSN · catwalk</span></div><figcaption><div class="cap-t"><span class="dot" style="background:#C7A8DE"></span>Pointelle romantic mini</div><div class="cap-d">Deep-V, ruffle shoulders, scalloped pointelle · rose</div></figcaption></figure>
+        </div>
+
+        <div class="rh">Mood board · emotional direction</div>
+        <div class="moodboard">
+          <div class="mb-emotion"><span class="mb-label">Emotion</span>Tender · nostalgic · sunlit</div>
+          <div class="mb-grid">
+            <div class="mb-collage">
+              <img src="WGSN_Dresses_SS27_captures/WGSN_Dresses_SS27_ref_11.jpg" alt="">
+              <img src="WGSN_Dresses_SS27_captures/WGSN_Dresses_SS27_ref_13.jpg" alt="">
+              <img src="WGSN_Dresses_SS27_captures/WGSN_Dresses_SS27_ref_12.jpg" alt="">
+              <img src="WGSN_Dresses_SS27_captures/WGSN_Dresses_SS27_ref_17.jpg" alt="">
+              <img src="WGSN_Dresses_SS27_captures/WGSN_Dresses_SS27_ref_22.jpg" alt="">
+              <img src="WGSN_Dresses_SS27_captures/WGSN_Dresses_SS27_ref_16.jpg" alt="">
+            </div>
+            <div class="mb-side">
+              <div class="mb-dir">Creative direction: <b>refined romance, not costume</b> — pressed-flower softness, hazy window light, the prairie matured into something a grown woman actually wears. Keep it delicate; resist kitsch.</div>
+              <div class="mb-chips"><span class="mb-chip" style="background:#F2E9DC"></span><span class="mb-chip" style="background:#C7A8DE"></span><span class="mb-chip" style="background:#F4B98E"></span><span class="mb-chip" style="background:#5E8C4E"></span></div>
+              <div class="mb-tags"><span class="mb-tag">ditsy floral</span><span class="mb-tag">sheer organza</span><span class="mb-tag">shirring</span><span class="mb-tag">picot</span><span class="mb-tag">covered buttons</span><span class="mb-tag">prairie</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="rh">Look analysis · web-sourced</div>
+        <div class="analysis">
+          <div class="la"><h5>Prairie tiered floral — refined, not costume <span class="riskflag">watch</span></h5><p>Cottagecore has matured in 2026: the midi prairie stays the cornerstone but reads "less costume-like, more refined" — high-neck, button-front, billowy sleeves, tiered skirts in lightweight cotton/linen, ditsy florals in dusty rose &amp; sage.</p><p><b>Counter-signal:</b> some retail data shows "prairie dress"/"puff-sleeve" searches down ~30% YoY as doll-like styling cedes to minimalism. Hence <b>Expand/peak</b>, not Invest — keep refined, grounded in garden-tone palette.</p><div class="cite">Sources: <a href="https://www.sewmamasew.com/25-summer-cottagecore-outfits-2026/" target="_blank" rel="noopener">Sew Mama Sew</a> · <a href="https://www.maurices.com/p/clothing/featured-collections/fashion-trends/N-15507" target="_blank" rel="noopener">Maurices</a> · <a href="https://www.accio.com/business/cottagecore-dress-trends-2026" target="_blank" rel="noopener">Accio (decline)</a></div></div>
+          <div class="la"><h5>Sheer floral drop-waist — the organza pivot</h5><p>Sheer dressing is now more refined and less revealing — layered over a slip. The SS27 direction pivots to <b>organza</b> for subtler translucency rather than fully see-through.</p><p>Jacquemus' Spring 2027 runway showed exactly this — airy organza dresses with a gently translucent effect — validating this sheer floral drop-waist as a forward, wearable read.</p><div class="cite">Sources: <a href="https://www.whowhatwear.com/fashion/runway/jacquemus-spring-summer-2027-runway" target="_blank" rel="noopener">Who What Wear — Jacquemus SS27</a> · <a href="https://www.marieclaire.com/fashion/spring-summer-2026-sheer-trend-outfits/" target="_blank" rel="noopener">Marie Claire — sheer</a></div></div>
+        </div>
+
+        <p class="why">The season's <b>safe, broad-appeal romantic story</b> — WGSN's #PrettyFeminine and Nostalgia threads (prairie, 1920s/1970s revival). Ditsy florals, sheers, lace and waist focus, executed light and airy for day-to-occasion; pairs with Restorative Comfort's "breezy beyond-the-beach" dress.</p>
+        <div class="grid">
+          <div class="attr"><h4>Color story</h4><div class="colors"><div class="col"><span class="dot" style="background:#F2E9DC"></span>Whisper White&nbsp;<span class="pan">· 11-0507</span></div><div class="col"><span class="dot" style="background:#C7A8DE"></span>Soft Lilac&nbsp;<span class="pan">· 15-3620</span></div><div class="col"><span class="dot" style="background:#F4B98E"></span>Peach Fuzz&nbsp;<span class="pan">· 13-1023</span></div></div><h4 style="margin-top:16px">Fabrics (overview)</h4><ul><li>Cotton voile &amp; lawn (ditsy print)</li><li>Sheer chiffon / organza overlay</li><li>Cotton pointelle / fine crochet</li></ul></div>
+          <div class="attr"><h4>Silhouettes</h4><ul><li>Tiered prairie midi</li><li>Sheer drop-waist swing</li><li>Modest maxi / pointelle mini</li></ul><h4 style="margin-top:16px">Construction</h4><ul><li><b>Neck:</b> ruched sweetheart / ruffle stand / deep-V</li><li><b>Fit:</b> ruched bodice, gathered tiers or drop waist</li><li><b>Hem:</b> tiered gathered / ruffle / scalloped</li></ul></div>
+        </div>
+
+        <div class="rh">Per-look spec · fabric · trim · price</div>
+        <div class="spec">
+          <div class="spec-h"><div class="sh-left"><img class="spec-thumb" src="WGSN_Dresses_SS27_captures/WGSN_Dresses_SS27_ref_11.jpg" alt="L1"><span class="sn">L1 · Prairie tiered floral midi</span></div><span class="badges"><span class="b-tier">Core</span><span class="b-mrp">MRP ₹2,199–2,999</span><span class="b-fob">FOB ~$9–12</span><span class="b-cert">BCI · OEKO-TEX</span></span></div>
+          <div class="spec-grid">
+            <div><h6>Silhouette</h6><p>Ruched sweetheart neck; puff sleeve; tiered ditsy-floral skirt; midi.</p></div>
+            <div><h6>Fabric</h6><p><span class="em">Cotton voile / lawn</span>, 100% cotton, <span class="em">80–110 gsm</span>, ditsy floral print.</p></div>
+            <div><h6>Trims</h6><p>Shirring (bodice); covered buttons; picot edge; CB zip.</p></div>
+            <div><h6>Colour</h6><p>Blue floral on cream; Whisper White 11-0507.</p></div>
+          </div>
+        </div>
+        <div class="spec">
+          <div class="spec-h"><div class="sh-left"><img class="spec-thumb" src="WGSN_Dresses_SS27_captures/WGSN_Dresses_SS27_ref_13.jpg" alt="L2"><span class="sn">L2 · Sheer floral drop-waist</span></div><span class="badges"><span class="b-tier">Mid</span><span class="b-mrp">MRP ₹2,999–3,999</span><span class="b-fob">FOB ~$12–16</span><span class="b-cert">GRS opt</span></span></div>
+          <div class="spec-grid">
+            <div><h6>Silhouette</h6><p>Ruffle stand collar; balloon sleeve; button placket; gathered drop-waist; sheer swing.</p></div>
+            <div><h6>Fabric</h6><p><span class="em">Poly chiffon / organza</span> 40–60 gsm, soft-lilac floral; cotton slip lining.</p></div>
+            <div><h6>Trims</h6><p>Covered buttons; neck ruffle; self-tie; rolled hem.</p></div>
+            <div><h6>Colour</h6><p>Soft Lilac floral 15-3620.</p></div>
+          </div>
+        </div>
+        <div class="spec">
+          <div class="spec-h"><div class="sh-left"><img class="spec-thumb" src="WGSN_Dresses_SS27_captures/WGSN_Dresses_SS27_ref_12.jpg" alt="L3"><span class="sn">L3 · Textured modest maxi</span></div><span class="badges"><span class="b-tier">Core–Mid</span><span class="b-mrp">MRP ₹2,999–3,999</span><span class="b-fob">FOB ~$12–16</span><span class="b-cert">BCI</span></span></div>
+          <div class="spec-grid">
+            <div><h6>Silhouette</h6><p>High neck; puff sleeve; tiered skirt; wide waist sash; full coverage maxi.</p></div>
+            <div><h6>Fabric</h6><p><span class="em">Cotton dobby / seersucker</span>, 100% cotton, <span class="em">110–140 gsm</span> (self-stripe texture).</p></div>
+            <div><h6>Trims</h6><p>Shirring; self sash; covered buttons; thread loops.</p></div>
+            <div><h6>Colour</h6><p>Whisper White 11-0507.</p></div>
+          </div>
+        </div>
+        <div class="spec">
+          <div class="spec-h"><div class="sh-left"><img class="spec-thumb" src="WGSN_Dresses_SS27_captures/WGSN_Dresses_SS27_ref_17.jpg" alt="L4"><span class="sn">L4 · Pointelle romantic mini</span></div><span class="badges"><span class="b-tier">Elevated · handwork</span><span class="b-mrp">MRP ₹3,499–4,499</span><span class="b-fob">FOB ~$15–20</span><span class="b-cert">BCI</span></span></div>
+          <div class="spec-grid">
+            <div><h6>Silhouette</h6><p>Deep-V; ruffle shoulders; scalloped pointelle/crochet; fitted mini (slip lining).</p></div>
+            <div><h6>Fabric</h6><p><span class="em">Cotton pointelle / crochet</span>, 100% cotton, 5–7 gauge.</p></div>
+            <div><h6>Trims</h6><p>Crochet ruffle; scallop edge; picot; tonal beadwork option.</p></div>
+            <div><h6>Colour</h6><p>Rose Pink 15-1821 / Power Lilac 15-3620.</p></div>
+          </div>
+        </div>
+
+        <div class="pack">
+          <h4>Prompt pack — ready to run on Slayteq</h4>
+          <div class="prompt"><span class="ptag">① Garment</span> Soft romantic fine-art — tiered prairie midi, ruched sweetheart, puff sleeves; cotton voile, pale ditsy blue floral on cream (11-0507); sunlit meadow, hazy backlight; 85mm, photorealistic, nostalgic.</div>
+          <div class="prompt"><span class="ptag">② Garment</span> Weightless &amp; dreamy — sheer floral drop-waist swing, ruffle stand collar, balloon sleeves; airy organza; soft lilac floral (15-3620); pale room behind sheer curtains, dust motes; 85mm, photorealistic, ethereal.</div>
+          <div class="prompt mood"><span class="ptag">③ Mood board</span> Flat-lay collage: ditsy-floral voile &amp; organza swatches, broderie/lace edging, covered-button &amp; shirring samples, pressed wildflowers, vintage botanical page, ribbon ties, Pantone chips 11-0507 / 15-3620 / 13-1023 / 17-0220; hazy daylight, cream linen, top-down editorial.</div>
+        </div>
+        <div class="refs">Sources: <b>WGSN</b> Nostalgia: The prairie dress in action · Restorative Comfort · Key Items Women's Dresses S/S 27 (#PrettyFeminine).</div>
+      </div>
+    </div>
+
+    <!-- ============ THEME 4 ============ -->
+    <div class="theme" style="--mbg:#f7eeec;--mband:#efddd9;--mdot:#8a2230;--mfg:#4a1118">
+      <div class="thead">
+        <div><div class="tname">04 · BaRock · Dark-Romance Craft</div>
+          <div class="swatchrow"><span class="mini" style="background:#5A1E2A"></span><span class="mini" style="background:#C8102E"></span><span class="mini" style="background:#F2E9DC"></span><span class="mini" style="background:#8A6A4F"></span></div></div>
+        <div class="tags"><span class="tier">Price tier · Elevated</span><span class="tag">Test · Emerging</span></div>
+      </div>
+      <div class="tbody">
+        <div class="rh">WGSN references</div>
+        <div class="gallery">
+          <figure class="card"><div class="imgwrap"><img src="WGSN_Dresses_SS27_captures/WGSN_Dresses_SS27_ref_26.jpg" alt="Statement-red raw-edge"><span class="credit">WGSN · catwalk detail</span></div><figcaption><div class="cap-t"><span class="dot" style="background:#C8102E"></span>Statement-red raw-edge</div><div class="cap-d">High neck, frayed raw-edge ruffle placket · craft</div></figcaption></figure>
+          <figure class="card"><div class="imgwrap"><img src="WGSN_Dresses_SS27_captures/WGSN_Dresses_SS27_ref_22.jpg" alt="Broderie cutwork"><span class="credit">WGSN · retail detail</span></div><figcaption><div class="cap-t"><span class="dot" style="background:#F2E9DC"></span>Broderie cutwork</div><div class="cap-d">Floral cutwork eyelet, scalloped openwork, tie cuffs</div></figcaption></figure>
+        </div>
+
+        <div class="rh">Mood board · emotional direction</div>
+        <div class="moodboard">
+          <div class="mb-emotion"><span class="mb-label">Emotion</span>Intense · unguarded · hand-touched</div>
+          <div class="mb-grid">
+            <div class="mb-collage">
+              <img src="WGSN_Dresses_SS27_captures/WGSN_Dresses_SS27_ref_26.jpg" alt="">
+              <img src="WGSN_Dresses_SS27_captures/WGSN_Dresses_SS27_ref_22.jpg" alt="">
+              <img src="WGSN_Dresses_SS27_captures/WGSN_Dresses_SS27_ref_10.jpg" alt="">
+              <img src="WGSN_Dresses_SS27_captures/WGSN_Dresses_SS27_ref_17.jpg" alt="">
+              <img src="WGSN_Dresses_SS27_captures/WGSN_Dresses_SS27_ref_03_key_fashion_item_the_trapeze_minidress.jpg" alt="">
+              <img src="WGSN_Dresses_SS27_captures/WGSN_Dresses_SS27_ref_02_key_fashion_item_the_boho_halter_dress.jpg" alt="">
+            </div>
+            <div class="mb-side">
+              <div class="mb-dir">Creative direction: <b>beauty that refuses polish</b> — the artisanal hand as luxury signal (anti-AI-perfection). Chiaroscuro, déchiré edges, boudoir red and oxblood; ornate cutwork against raw rawness.</div>
+              <div class="mb-chips"><span class="mb-chip" style="background:#5A1E2A"></span><span class="mb-chip" style="background:#C8102E"></span><span class="mb-chip" style="background:#F2E9DC"></span><span class="mb-chip" style="background:#8A6A4F"></span></div>
+              <div class="mb-tags"><span class="mb-tag">raw edge</span><span class="mb-tag">bias slip</span><span class="mb-tag">cutwork</span><span class="mb-tag">oxblood</span><span class="mb-tag">fringing</span><span class="mb-tag">candlelight</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="rh">Look analysis · web-sourced</div>
+        <div class="analysis">
+          <div class="la"><h5>Statement-red raw-edge — deconstruction &amp; the artisanal hand</h5><p>Deconstruction is the dominant SS26 narrative: exposed seams, raw/frayed (déchiré) edges, flipped linings, hybrid garments — Glenn Martens a reference point. It reads as a hunger for authenticity against AI-generated perfection, with "the work of the hand" positioned as luxury.</p><p>This statement-red look — high neck, frayed raw-edge placket — sits in that craft story and pairs with dark-romance codes (sheer, boudoir lace/slip, deep reds/black).</p><div class="cite">Sources: <a href="https://wwd.com/fashion-news/fashion-trends/deconstruction-spring-2026-trend-1238356701/" target="_blank" rel="noopener">WWD — Deconstruction SS26</a> · <a href="https://fazbuy.com/blogs/news/fashions-unfinished-business-deconstructions-ss26-takeover" target="_blank" rel="noopener">Faz — raw edges</a> · <a href="https://www.accio.com/business/dark-romance-fashion-trend" target="_blank" rel="noopener">Accio — Dark Romance</a></div></div>
+          <div class="la"><h5>Broderie cutwork — the eyelet that won't quit</h5><p>Broderie anglaise is defining summer dressing: cutwork eyelets + raised embroidery on breathable cotton, adding light-catching dimension. Designers are sharpening silhouettes and proportion — volume on tiered/maxi, or as a trim on minimalist pieces.</p><p>It's seasonally fluid (layered under knits, with boots), supporting WGSN's cross-seasonality mandate; here cutwork + tie-cuffs double as modest, breathable coverage.</p><div class="cite">Sources: <a href="https://www.whowhatwear.com/fashion/dresses/broderie-dress-trend-2026" target="_blank" rel="noopener">Who What Wear — broderie 2026</a> · <a href="https://www.womanandhome.com/fashion/fashion-news/broderie-anglaise-dresses/" target="_blank" rel="noopener">Woman &amp; Home</a> · <a href="https://www.harpersbazaar.in/fashion/story/why-fashion-cant-quit-broderie-anglaise-1337662-2026-02-01" target="_blank" rel="noopener">Harper's Bazaar</a></div></div>
+        </div>
+
+        <p class="why">The directional, design-led bet — WGSN's <b>BaRock</b> and <b>#DarkRomance</b> threads plus the "expressive, maximalist details" mandate (lace, scalloped edges, fringing, raw edges, metallics) that justify higher price positioning. Romantic-meets-rock craft on slip/column bases, in oxblood and statement red. Test in occasion; scale the craft details across safer themes.</p>
+        <div class="grid">
+          <div class="attr"><h4>Color story</h4><div class="colors"><div class="col"><span class="dot" style="background:#5A1E2A"></span>Oxblood&nbsp;<span class="pan">· 19-1521</span></div><div class="col"><span class="dot" style="background:#C8102E"></span>Statement Red&nbsp;<span class="pan">· 18-1664</span></div><div class="col"><span class="dot" style="background:#F2E9DC"></span>Whisper White&nbsp;<span class="pan">· 11-0507</span></div></div><h4 style="margin-top:16px">Fabrics (overview)</h4><ul><li>Bias silk satin / satin-back crepe</li><li>Cotton broderie anglaise / corded lace</li><li>Raw-edge chiffon &amp; organza for craft</li></ul></div>
+          <div class="attr"><h4>Silhouettes</h4><ul><li>Craft-trim slip / bias column</li><li>High-neck statement occasion dress</li><li>Broderie cutwork day-to-occasion midi</li></ul><h4 style="margin-top:16px">Construction</h4><ul><li><b>Neck:</b> high neck or deep V, raw-edge frill</li><li><b>Fit:</b> bias slip / column with fabric contrast</li><li><b>Trims:</b> frayed raw edges, cutwork, fringing, metallic</li></ul></div>
+        </div>
+
+        <div class="rh">Per-look spec · fabric · trim · price</div>
+        <div class="spec">
+          <div class="spec-h"><div class="sh-left"><img class="spec-thumb" src="WGSN_Dresses_SS27_captures/WGSN_Dresses_SS27_ref_26.jpg" alt="L1"><span class="sn">L1 · Statement-red raw-edge column</span></div><span class="badges"><span class="b-tier">Elevated</span><span class="b-mrp">MRP ₹4,499–6,499</span><span class="b-fob">FOB ~$18–26</span><span class="b-cert">OEKO-TEX</span></span></div>
+          <div class="spec-grid">
+            <div><h6>Silhouette</h6><p>High neck; frayed raw-edge ruffle placket; bias slip/column base; fabric contrast.</p></div>
+            <div><h6>Fabric</h6><p><span class="em">Satin-back crepe</span> 95/5 poly-spx, <span class="em">80–110 gsm</span>. Luxe alt: 100% silk satin 16mm (~75 gsm).</p></div>
+            <div><h6>Trims</h6><p>Raw-edge frayed ruffle (in-house craft); concealed zip; hand-finished hem.</p></div>
+            <div><h6>Colour</h6><p>Statement Red 18-1664 / Oxblood 19-1521.</p></div>
+          </div>
+        </div>
+        <div class="spec">
+          <div class="spec-h"><div class="sh-left"><img class="spec-thumb" src="WGSN_Dresses_SS27_captures/WGSN_Dresses_SS27_ref_22.jpg" alt="L2"><span class="sn">L2 · Broderie cutwork midi</span></div><span class="badges"><span class="b-tier">Mid–Elevated</span><span class="b-mrp">MRP ₹3,499–4,999</span><span class="b-fob">FOB ~$15–20</span><span class="b-cert">OEKO-TEX · BCI</span></span></div>
+          <div class="spec-grid">
+            <div><h6>Silhouette</h6><p>Floral cutwork eyelet; scalloped openwork; tie cuffs; slip lining; day-to-occasion midi.</p></div>
+            <div><h6>Fabric</h6><p><span class="em">Cotton broderie anglaise</span>, 100% cotton, <span class="em">110–140 gsm</span> + cotton lawn lining.</p></div>
+            <div><h6>Trims</h6><p>Cutwork/schiffli embroidery; scallop edge; rouleau tie cuffs.</p></div>
+            <div><h6>Colour</h6><p>Whisper White 11-0507 (+ oxblood colourway).</p></div>
+          </div>
+        </div>
+
+        <div class="pack">
+          <h4>Prompt pack — ready to run on Slayteq</h4>
+          <div class="prompt"><span class="ptag">① Garment</span> Liquid drama — bias-cut satin slip column, high neck, frayed raw-edge ruffle placket; liquid silk satin; statement red (18-1664); shadowed interior, single warm key, chiaroscuro; 85mm, photorealistic, sensual.</div>
+          <div class="prompt"><span class="ptag">② Garment</span> Romantic-meets-rock — broderie cutwork midi, scalloped openwork, tie cuffs, slip lining; cotton broderie anglaise; whisper white (11-0507); dim plum-lit room, rich shadow; 85mm, photorealistic, statuesque.</div>
+          <div class="prompt mood"><span class="ptag">③ Mood board</span> Flat-lay collage: liquid satin draping, broderie &amp; corded-lace swatches, frayed raw-edge &amp; fringing samples, metallic thread spool, chiaroscuro portrait page, dark-wine orchid, Pantone chips 19-1521 / 18-1664 / 11-0507 / 18-1027; moody Rembrandt light, dark satin surface, top-down editorial.</div>
+        </div>
+        <div class="refs">Sources: <b>WGSN</b> Key Items Women's Dresses S/S 27 (BaRock) · Buyers' Briefing CMD Spring 2027 (maximalist detailing) · Feed #DarkRomance / #SlipDress.</div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ============ ADJACENT KEY ITEMS ============ -->
+  <section>
+    <div class="sec-h">Adjacent key items · co-ord &amp; styling (non-dress)</div>
+    <div class="gallery">
+      <figure class="card"><div class="imgwrap"><img src="WGSN_Dresses_SS27_captures/WGSN_Dresses_SS27_ref_04_key_fashion_item_knitted_the_openwork_.jpg" alt="Openwork knit vest"></div><figcaption><div class="cap-t">Knitted openwork vest</div><div class="cap-d">Layer over slip/sheer dress · seasonless</div></figcaption></figure>
+      <figure class="card"><div class="imgwrap"><img src="WGSN_Dresses_SS27_captures/WGSN_Dresses_SS27_ref_08_key_fashion_item_the_softvolume_harem_.jpg" alt="Soft-volume harem pant"></div><figcaption><div class="cap-t">#SoftVolume harem pant</div><div class="cap-d">Co-ord under trapeze tunic dress</div></figcaption></figure>
+      <figure class="card"><div class="imgwrap"><img src="WGSN_Dresses_SS27_captures/WGSN_Dresses_SS27_ref_07_key_fashion_item_the_ornate_craft_shir.jpg" alt="Ornate craft shirt"></div><figcaption><div class="cap-t">Ornate craft shirt</div><div class="cap-d">Layer / belt as shirt-dress</div></figcaption></figure>
+      <figure class="card"><div class="imgwrap"><img src="WGSN_Dresses_SS27_captures/WGSN_Dresses_SS27_ref_05_commercial_newness_cargo_capri.jpg" alt="Cargo capri"></div><figcaption><div class="cap-t">Cargo capri</div><div class="cap-d">Commercial newness · under mini</div></figcaption></figure>
+      <figure class="card"><div class="imgwrap"><img src="WGSN_Dresses_SS27_captures/WGSN_Dresses_SS27_ref_06_bermudashort_fashion_feed_filters_22ha.jpg" alt="Bermuda short"></div><figcaption><div class="cap-t">#BermudaShort (denim)</div><div class="cap-d">Co-ord / layering base</div></figcaption></figure>
+    </div>
+    <p class="tabnote">WGSN-captured non-dress key items, useful for the cross-seasonality WGSN calls for — e.g. trapeze mini as a tunic over slim trousers, or a sheer dress layered over a graphic tee (Ann Demeulemeester feed signal).</p>
+  </section>
+
+  <!-- ============ CONSOLIDATED SOURCING ============ -->
+  <section>
+    <div class="sec-h">Sourcing reference · Colours (Pantone TCX)</div>
+    <div class="tablewrap">
+      <table class="src">
+        <thead><tr><th>Swatch</th><th>Colour</th><th>Pantone TCX</th><th>Hex (nearest)</th><th>Used in</th></tr></thead>
+        <tbody>
+          <tr><td><span class="csw" style="background:#1F5FBF"></span></td><td><b>Luminous Blue</b> · COTY</td><td>18-4148</td><td>#1F5FBF</td><td>Soft Volume · Boho</td></tr>
+          <tr><td><span class="csw" style="background:#C8102E"></span></td><td><b>Statement Red</b></td><td>18-1664</td><td>#C8102E</td><td>Boho · BaRock</td></tr>
+          <tr><td><span class="csw" style="background:#5A1E2A"></span></td><td><b>Oxblood</b></td><td>19-1521</td><td>#5A1E2A</td><td>BaRock</td></tr>
+          <tr><td><span class="csw" style="background:#5E8C4E"></span></td><td><b>Meadow Green</b></td><td>17-0220</td><td>#5E8C4E</td><td>Boho · Prairie</td></tr>
+          <tr><td><span class="csw" style="background:#F2D479"></span></td><td><b>Butter Yellow</b></td><td>12-0721</td><td>#F2D479</td><td>Soft Volume</td></tr>
+          <tr><td><span class="csw" style="background:#C7A8DE"></span></td><td><b>Power Pastel Lilac</b></td><td>15-3620</td><td>#C7A8DE</td><td>Soft Volume · Prairie</td></tr>
+          <tr><td><span class="csw" style="background:#F4B98E"></span></td><td><b>Peach Fuzz</b></td><td>13-1023</td><td>#F4B98E</td><td>Prairie</td></tr>
+          <tr><td><span class="csw" style="background:#E6A93B"></span></td><td><b>Carambola</b></td><td>14-0951</td><td>#E6A93B</td><td>Boho</td></tr>
+          <tr><td><span class="csw" style="background:#8A6A4F"></span></td><td><b>Earthy Brown</b></td><td>18-1027</td><td>#8A6A4F</td><td>Boho</td></tr>
+          <tr><td><span class="csw" style="background:#F2E9DC"></span></td><td><b>Whisper White</b></td><td>11-0507</td><td>#F2E9DC</td><td>Prairie · BaRock</td></tr>
+          <tr><td><span class="csw" style="background:#E58FA6"></span></td><td><b>Rose Pink</b></td><td>15-1821</td><td>#E58FA6</td><td>Prairie</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="tabnote">Nearest indicative TCX references — confirm against physical chips before lab-dip / bulk. COTY = WGSN Colour of the Year (per Buyers' Briefing).</p>
+  </section>
+
+  <section>
+    <div class="sec-h">Sourcing reference · Fabrics (composition · GSM · market)</div>
+    <div class="tablewrap">
+      <table class="src">
+        <thead><tr><th>Fabric</th><th>Composition</th><th>GSM</th><th>Hand / finish</th><th>Region / mill</th><th>MOQ · lead</th><th>Certs</th></tr></thead>
+        <tbody>
+          <tr><td><b>Cotton voile</b></td><td>100% cotton</td><td>90–110</td><td>Crisp, dry, airy</td><td>Surat greige → Tirupur dye</td><td>~500m · 30–40d</td><td>BCI, OEKO-TEX</td></tr>
+          <tr><td><b>Cotton poplin</b></td><td>100% cotton</td><td>110–130</td><td>Smooth, structured</td><td>Tirupur / Erode</td><td>~500m · 30d</td><td>BCI, OEKO-TEX</td></tr>
+          <tr><td><b>Cotton lawn</b></td><td>100% cotton</td><td>80–100</td><td>Fine, soft</td><td>Surat / Tirupur</td><td>~500m · 30d</td><td>BCI</td></tr>
+          <tr><td><b>Cotton dobby / seersucker</b></td><td>100% cotton</td><td>110–140</td><td>Self-stripe texture</td><td>Erode / Surat</td><td>~500m · 35d</td><td>BCI</td></tr>
+          <tr><td><b>Rayon challis</b></td><td>100% viscose</td><td>100–120</td><td>Fluid drape</td><td>Surat (digital + rotary)</td><td>50–100m digital / 300m rotary · 35d</td><td>EcoVero opt</td></tr>
+          <tr><td><b>Modal-viscose</b></td><td>50/50 modal-viscose</td><td>110–130</td><td>Silky, cool</td><td>Surat / China</td><td>~800m · 40d</td><td>EcoVero / GRS</td></tr>
+          <tr><td><b>Viscose / habotai</b></td><td>100% viscose</td><td>90–110</td><td>Light, fluid (sarong)</td><td>Surat</td><td>~500m · 35d</td><td>EcoVero opt</td></tr>
+          <tr><td><b>Poly georgette</b></td><td>100% polyester</td><td>60–80</td><td>Floaty, sheer-ish</td><td>Surat</td><td>~500m · 30d</td><td>GRS opt</td></tr>
+          <tr><td><b>Poly chiffon</b></td><td>100% polyester</td><td>40–60</td><td>Sheer, floaty</td><td>Surat</td><td>~500m · 30d</td><td>GRS opt</td></tr>
+          <tr><td><b>Organza</b></td><td>100% poly / nylon</td><td>40–60</td><td>Crisp sheer</td><td>Surat / China</td><td>~500m · 35d</td><td>—</td></tr>
+          <tr><td><b>Satin-back crepe</b></td><td>95/5 poly-spandex</td><td>80–110</td><td>Liquid, matte-shine</td><td>Surat</td><td>~600m · 30–40d</td><td>OEKO-TEX</td></tr>
+          <tr><td><b>Silk satin (charmeuse)</b></td><td>100% silk, 16mm</td><td>~75</td><td>Liquid lustre (luxe)</td><td>Bangalore / China</td><td>~300m · 45d</td><td>—</td></tr>
+          <tr><td><b>Cotton broderie anglaise</b></td><td>100% cotton</td><td>110–140</td><td>Eyelet cutwork</td><td>Surat / China embroidery</td><td>~300m/design · 40d</td><td>OEKO-TEX</td></tr>
+          <tr><td><b>Corded / Chantilly lace</b></td><td>nylon / cotton</td><td>60–120</td><td>Fine openwork</td><td>China / Première Vision</td><td>~300m · 45d</td><td>—</td></tr>
+          <tr><td><b>Cotton crochet / pointelle</b></td><td>100% cotton</td><td>5–7 gauge</td><td>Open, hand-textured</td><td>Tirupur (handwork)</td><td>300–500 pc · 45–60d</td><td>BCI, handloom</td></tr>
+          <tr><td><b>Ribbed knit</b></td><td>cotton / elastane</td><td>180–220</td><td>Soft stretch rib</td><td>Tirupur</td><td>~500 pc · 35d</td><td>BCI</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="tabnote">GSM, MOQ &amp; lead-time are indicative design direction for costing conversations — confirm with sourcing/vendors. India-first (Surat prints &amp; sheers · Tirupur knits/crochet · Erode/Ludhiana wovens · Bangalore silks), with China / Première Vision for novelty lace.</p>
+  </section>
+
+  <section>
+    <div class="sec-h">Sourcing reference · Trims</div>
+    <div class="tablewrap">
+      <table class="src">
+        <thead><tr><th>Trim</th><th>Type / spec</th><th>Placement</th><th>Region / source</th><th>MOQ</th></tr></thead>
+        <tbody>
+          <tr><td><b>Placement embroidery</b></td><td>Multi-needle schiffli, 2–3 col</td><td>Neckline → hem border</td><td>Surat (Pandesara) / Bareilly</td><td>300–500 pc</td></tr>
+          <tr><td><b>Cutwork / broderie</b></td><td>Schiffli cutwork eyelet</td><td>All-over / panel</td><td>Surat / China</td><td>300m / design</td></tr>
+          <tr><td><b>3D floral appliqué</b></td><td>Organza / crochet petals + bead</td><td>Bodice / shoulder</td><td>Surat handwork / Tirupur</td><td>~300 pc</td></tr>
+          <tr><td><b>Hand-crochet panels</b></td><td>5–7 gauge, scallop edge</td><td>Full garment / trim</td><td>Tirupur handwork</td><td>300–500 pc</td></tr>
+          <tr><td><b>Tassel / fringe</b></td><td>Cotton / rayon, 60–80mm</td><td>Hem / tie ends</td><td>Ludhiana handwork</td><td>~500m</td></tr>
+          <tr><td><b>Scalloped lace / picot edge</b></td><td>Cotton, narrow</td><td>Neck / sleeve / hem</td><td>Surat / China</td><td>~500m</td></tr>
+          <tr><td><b>Raw-edge / frayed ruffle</b></td><td>Self-fabric, hand-finished</td><td>Placket / hem</td><td>In-house craft</td><td>—</td></tr>
+          <tr><td><b>Sunray / permanent pleating</b></td><td>Heat-set on poly</td><td>Skirt / panel</td><td>Surat pleaters</td><td>per panel</td></tr>
+          <tr><td><b>Shirring / smocking</b></td><td>Elastic shirring</td><td>Bodice / waist / cuff</td><td>In-house</td><td>—</td></tr>
+          <tr><td><b>Covered buttons + rouleau</b></td><td>Self-fabric</td><td>CB / front placket</td><td>In-house / Delhi</td><td>gross</td></tr>
+          <tr><td><b>Self-tie belt / sash</b></td><td>Self-fabric</td><td>Waist</td><td>In-house</td><td>—</td></tr>
+          <tr><td><b>Metallic scroll belt</b></td><td>Zamak / brass casting</td><td>Waist (statement)</td><td>Delhi / Moradabad hardware</td><td>~500 pc</td></tr>
+          <tr><td><b>Lettuce / merrow edge</b></td><td>Merrow overlock</td><td>Hem / sleeve (knit)</td><td>Tirupur</td><td>—</td></tr>
+          <tr><td><b>Invisible zip</b></td><td>YKK 56cm</td><td>CB</td><td>YKK India</td><td>std</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="tabnote">Trim direction for the four themes — placement embroidery, cutwork, crochet, fringe, raw-edge and metallics are the season's elevation levers (WGSN: maximalist details support higher price positioning).</p>
+  </section>
+
+  <section>
+    <div class="sec-h">Sources &amp; methodology</div>
+    <div class="srcbox">
+      <h4>Primary source — WGSN Pulse</h4>
+      <ul>
+        <li>WGSN Pulse query: <b>"spring summer 2027 dresses for women"</b> (Fashion Design access) — captured 30 Jun 2026.</li>
+        <li>Buying Director's Briefing: Women's Apparel Spring 2027 · Key Items Fashion: Women's Dresses S/S 27 · Designers' Briefing S/S 27 (Eclectic Resort) · Nostalgia / Restorative Comfort · Key Items Woven Tops S/S 27 · Buyers' Briefing CMD Spring 2027.</li>
+      </ul>
+      <h4>Data</h4>
+      <ul><li>WGSN TrendCurve Forecast Spring 2027 — UK &amp; US women's dresses. Charts in <b>WGSN_Dresses_SS27_captures/</b>. Proof points: shirt styling +7.5ppt, #HalterNeck +2.4ppt, #SlipDress +1.4ppt (S/S 26 vs S/S 25).</li></ul>
+      <h4>External trend sources — web research (Jun 2026)</h4>
+      <ul>
+        <li><b>Trapeze / swing:</b> <a href="https://www.bridgetteraes.com/2023/04/17/trapeze-dresses-for-summer-how-to-wear-these-relaxed-warm-weather-styles/" target="_blank" rel="noopener">Bridgette Raes</a></li>
+        <li><b>Drop-waist / column:</b> <a href="https://www.whowhatwear.com/fashion/dresses/summer-dress-trends-2026" target="_blank" rel="noopener">Who What Wear</a> · <a href="https://ruesophie.com/blogs/the-style-edit/drop-waist-dress-trend-guide" target="_blank" rel="noopener">Rue Sophie</a> · <a href="https://www.mystylebox.ca/blogs/fashion-beauty-blog/2026-2027-fall-and-winter-fashion-trends" target="_blank" rel="noopener">MyStyleBox (Chanel, Ferragamo)</a></li>
+        <li><b>Boho / Resort:</b> <a href="https://www.whowhatwear.com/fashion/trends/bohemian-fashion-trends-2026" target="_blank" rel="noopener">Who What Wear</a> · <a href="https://www.marieclaire.co.uk/fashion/bold-boho-trend" target="_blank" rel="noopener">Marie Claire UK</a> · <a href="https://www.metromodefashion.com/post/boho-renaissance-why-fashion-s-free-spirited-70s-revival-is-defining-2026" target="_blank" rel="noopener">Metromode</a> · <a href="https://www.whowhatwear.com/fashion/shopping/pareo-sarong-wrap-scarf-skirt-trend-summer-2026" target="_blank" rel="noopener">WWW sarong</a> · <a href="https://ruesophie.com/blogs/the-style-edit/boho-chic-revival-2026-fringe-crochet" target="_blank" rel="noopener">Rue Sophie fringe/crochet</a></li>
+        <li><b>Prairie / sheer:</b> <a href="https://www.sewmamasew.com/25-summer-cottagecore-outfits-2026/" target="_blank" rel="noopener">Sew Mama Sew</a> · <a href="https://www.accio.com/business/cottagecore-dress-trends-2026" target="_blank" rel="noopener">Accio (decline)</a> · <a href="https://www.whowhatwear.com/fashion/runway/jacquemus-spring-summer-2027-runway" target="_blank" rel="noopener">WWW Jacquemus SS27</a> · <a href="https://www.marieclaire.com/fashion/spring-summer-2026-sheer-trend-outfits/" target="_blank" rel="noopener">Marie Claire sheer</a></li>
+        <li><b>Dark Romance / broderie:</b> <a href="https://wwd.com/fashion-news/fashion-trends/deconstruction-spring-2026-trend-1238356701/" target="_blank" rel="noopener">WWD deconstruction</a> · <a href="https://www.accio.com/business/dark-romance-fashion-trend" target="_blank" rel="noopener">Accio dark romance</a> · <a href="https://www.whowhatwear.com/fashion/dresses/broderie-dress-trend-2026" target="_blank" rel="noopener">WWW broderie</a> · <a href="https://www.harpersbazaar.in/fashion/story/why-fashion-cant-quit-broderie-anglaise-1337662-2026-02-01" target="_blank" rel="noopener">Harper's Bazaar broderie</a></li>
+      </ul>
+      <h4>Imagery</h4>
+      <ul><li>Reference images are original WGSN assets from the Pulse "Images" tab (<b>WGSN_Dresses_SS27_captures/ref_01–28</b>) — used as trend reference, not final designs.</li></ul>
+    </div>
+  </section>
+
+  <div class="note"><b>Imagery &amp; numbers note:</b> the lookbook + mood boards use WGSN reference photography. Garment prompt packs are <b>text-only</b>, ready to run on Slayteq later. GSM, MOQ, lead-time, MRP (₹) and FOB ($) are <b>indicative design/merch direction</b> to confirm with sourcing — not firm quotes. Click any image or chart to enlarge.</div>
+
+  <footer>
+    <b>Trend DNA</b> — Dresses SS27, built from a WGSN Pulse study + web research by Geniemode's trend engine · June 2026.<br>
+    Capture pack: <b>~/Downloads/WGSN_Dresses_SS27_captures/</b> (28 reference designs, 2 TrendCurve charts, data.md).
+  </footer>
+
+</div>
+
+<div id="lightbox" aria-hidden="true">
+  <img id="lightbox-img" alt="Enlarged">
+  <div id="lightbox-close" title="Close">&times;</div>
+</div>
+<style>
+  #lightbox{display:none;position:fixed;inset:0;background:rgba(22,20,18,.93);z-index:9999;align-items:center;justify-content:center;cursor:zoom-out;padding:28px}
+  #lightbox.open{display:flex}
+  #lightbox img{max-width:95vw;max-height:92vh;object-fit:contain;border-radius:6px;box-shadow:0 16px 70px rgba(0,0,0,.6)}
+  #lightbox-close{position:fixed;top:18px;right:26px;color:#fff;font-size:40px;line-height:1;cursor:pointer;opacity:.8;font-family:Arial,sans-serif}
+  #lightbox-close:hover{opacity:1}
+</style>
+<script>
+(function(){
+  // ---- Copy buttons on every prompt ----
+  function promptText(p){
+    var c=p.cloneNode(true);
+    c.querySelectorAll('.ptag,.copy-btn').forEach(function(n){n.remove();});
+    return c.innerText.trim();
+  }
+  function copyText(t){
+    var ok=false;
+    try{ var ta=document.createElement('textarea'); ta.value=t; ta.style.position='fixed'; ta.style.top='-9999px'; document.body.appendChild(ta); ta.focus(); ta.select(); ok=document.execCommand('copy'); ta.remove(); }catch(e){}
+    if(!ok && navigator.clipboard){ try{ navigator.clipboard.writeText(t); ok=true; }catch(e2){} }
+    return ok;
+  }
+  document.querySelectorAll('.prompt').forEach(function(p){
+    var b=document.createElement('button');
+    b.className='copy-btn'; b.type='button'; b.textContent='Copy';
+    b.addEventListener('click',function(ev){
+      ev.stopPropagation();
+      var ok=copyText(promptText(p));
+      b.textContent=ok?'Copied!':'Press ⌘C'; b.classList.add('done');
+      setTimeout(function(){b.textContent='Copy'; b.classList.remove('done');},1600);
+    });
+    p.appendChild(b);
+  });
+
+  // ---- Lightbox ----
+  var lb=document.getElementById('lightbox'),li=document.getElementById('lightbox-img');
+  function close(){lb.classList.remove('open');li.src='';}
+  document.addEventListener('click',function(e){
+    if(e.target.closest('.copy-btn'))return;
+    var img=e.target.closest('figure.card img, .chartcard img, .mb-collage img, .spec-thumb');
+    if(img&&!lb.classList.contains('open')){li.src=img.src;lb.classList.add('open');return;}
+    if(lb.classList.contains('open')){close();}
+  });
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')close();});
+})();
+</script>
+</body>
+</html>
